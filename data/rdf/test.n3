@@ -1,0 +1,9 @@
+
+<../data/rdf/sample_event.n3#performance> a <http://purl.org/NET/c4dm/event.owl#Event>;
+   <http://purl.org/NET/c4dm/event.owl#agent> [ a <http://xmlns.com/foaf/0.1/Person>;
+     <http://xmlns.com/foaf/0.1/name> "P. H."];
+   <http://purl.org/NET/c4dm/event.owl#factor> <http://purl.org/ontology/mo/mit#Santur>;
+   <http://purl.org/NET/c4dm/event.owl#place> <http://sws.geonames.org/2643744/>;
+   <http://purl.org/NET/c4dm/event.owl#time> [ a <http://purl.org/NET/c4dm/timeline.owl#Interval>;
+     <http://purl.org/NET/c4dm/timeline.owl#at> "2007-10-15T12:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+     <http://purl.org/NET/c4dm/timeline.owl#duration> "PT1H"^^<http://www.w3.org/2001/XMLSchema#duration>] .

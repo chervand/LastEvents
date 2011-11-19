@@ -1,0 +1,4 @@
+# ruby -I lib bin/anagram -d dict.txt code
+require '../lib/LastEvents'
+runner = LastEvents::Runner.new(ARGV)
+runner.run

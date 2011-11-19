@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+<events xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" location="Madrid, Spain" page="1" perPage="10" totalPages="24" total="233" festivalsonly="0">
+    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3097955</id>
+  <title>Atom Rhumba + Lüger + Sogorda y Surfea</title>
+  <artists>
+    <artist>Atom Rhumba</artist>
+    <artist>Lüger</artist>
+    <artist>Sogorda y Surfea</artist>
+    <headliner>Atom Rhumba</headliner>
+  </artists>
+    <venue>
+    <id>9183457</id>
+    <name>Rockitchen</name>
+    <location>
+      <city>Madrid</city>
+      <country>Spain</country>
+      <street>Calle de Fundadores, 7</street>
+      <postalcode>28028</postalcode>
+      <geo:point>
+         <geo:lat>40.424694</geo:lat>
+         <geo:long>-3.667792</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/9183457+Rockitchen</url>
+    <website>http://www.facebook.com/group.php?gid=116533501711010</website>
+    <phonenumber></phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/61397099.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/61397099.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/61397099.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/61397099.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/61397099/Rockitchen+27820_1469963590915_1288353660.jpg</image>
+  </venue>    <startDate>Wed, 16 Nov 2011 21:00:00</startDate>
+  <description><![CDATA[<div class="bbcode">14€ anticipada en Ticketea<br />21€ taquilla</div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/293402.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/293402.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/293402.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/293402.jpg</image>
+  <attendance>13</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3097955</tag>    
+  <url>http://www.last.fm/event/3097955+Atom+Rhumba+-+L%C3%BCger+-+Sogorda+y+Surfea</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>1</cancelled>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>2088189</id>
+  <title>Silvia Superstar</title>
+  <artists>
+    <artist>Silvia Superstar</artist>
+    <headliner>Silvia Superstar</headliner>
+  </artists>
+    <venue>
+    <id>8791825</id>
+    <name>La Boite</name>
+    <location>
+      <city>Madrid</city>
+      <country>Spain</country>
+      <street>Calle de Tetuán 27</street>
+      <postalcode>28013</postalcode>
+      <geo:point>
+         <geo:lat>40.418162</geo:lat>
+         <geo:long>-3.703228</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8791825+La+Boite</url>
+    <website>http://www.boitelive.es</website>
+    <phonenumber>915229620</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/53218235.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/53218235.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/53218235.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/53218235.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/53218235/La+Boite+009boite.jpg</image>
+  </venue>    <startDate>Wed, 16 Nov 2011 21:30:00</startDate>
+  <description><![CDATA[<div class="bbcode">10€ taquilla<br /><br /><a href="http://www.myspace.com/silviasuperstarspain" rel="nofollow">www.myspace.com/silviasuperstarspain</a></div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/36646035.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/36646035.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/36646035.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/36646035.jpg</image>
+  <attendance>6</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=2088189</tag>    
+  <url>http://www.last.fm/event/2088189+Silvia+Superstar+at+La+Boite+on+16+November+2011</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>sexy</tag>
+      <tag>under 2000 listeners</tag>
+      <tag>indie</tag>
+      <tag>female vocal</tag>
+      <tag>pop rock</tag>
+      <tag>punk rock</tag>
+      <tag>cool</tag>
+      <tag>cover</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>1978134</id>
+  <title>Machine Head</title>
+  <artists>
+    <artist>Machine Head</artist>
+    <artist>Bring Me the Horizon</artist>
+    <artist>DevilDriver</artist>
+    <artist>Darkest Hour</artist>
+    <headliner>Machine Head</headliner>
+  </artists>
+    <venue>
+    <id>8792380</id>
+    <name>La Riviera</name>
+    <location>
+      <city></city>
+      <country>Spain</country>
+      <street>Paseo Virgen del Puerto</street>
+      <postalcode>28005</postalcode>
+      <geo:point>
+         <geo:lat>40.407517</geo:lat>
+         <geo:long>-3.72141</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8792380+La+Riviera</url>
+    <website>http://www.salariviera.com/</website>
+    <phonenumber>913 652 415</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/21524955.png</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/21524955.png</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/21524955.png</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/21524955.png</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/21524955/La+Riviera+riviera.png</image>
+  </venue>    <startDate>Wed, 16 Nov 2011 21:34:01</startDate>
+  <description><![CDATA[<div class="bbcode">MACHINE HEAD <br />+ DARKEST HOUR<br />+ DEVILDRIVER <br />+ BRING ME THE HORIZON <br />Miércoles, 16 de noviembre<br />MADRID Riviera<br />Precio: 27€/32€<br /><br />¡¡A LA VENTA EL VIERNES, 1 DE JULIO!!<br />Puntos de Venta: Red Ticketmaster, <a href="http://www.ltinews.net/entradas.html" rel="nofollow">www.ltinews.net/entradas.html</a>, 902 15 00 25, FNAC, Carrefour, oficinas HalcónViajes<br /><br />Más info:<br /><a href="http://www.machinehead1.com" rel="nofollow">www.machinehead1.com</a></div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/68951398.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/68951398.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/68951398.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/68951398.jpg</image>
+  <attendance>296</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=1978134</tag>    
+  <url>http://www.last.fm/event/1978134+Machine+Head+at+La+Riviera+on+16+November+2011</url>
+  <website>http://www.ltinews.com</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>metalcore</tag>
+      <tag>metal</tag>
+      <tag>hardcore</tag>
+      <tag>groove metal</tag>
+      <tag>melodic death metal</tag>
+      <tag>thrash metal</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>2004626</id>
+  <title>Akron Family + Timber Timbre en Madrid con Heineken Music Selector</title>
+  <artists>
+    <artist>Akron/Family</artist>
+    <artist>Timber Timbre</artist>
+    <headliner>Akron/Family</headliner>
+  </artists>
+    <venue>
+    <id>8784027</id>
+    <name>El Sol</name>
+    <location>
+      <city>Madrid</city>
+      <country>Spain</country>
+      <street>Calle de los Jardines 3</street>
+      <postalcode>28013</postalcode>
+      <geo:point>
+         <geo:lat>40.418961</geo:lat>
+         <geo:long>-3.701874</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8784027+El+Sol</url>
+    <website>http://www.elsolmad.com</website>
+    <phonenumber>91 532 6490</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/2131769.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/2131769.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/2131769.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/2131769.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/2131769/El+Sol.jpg</image>
+  </venue>    <startDate>Wed, 16 Nov 2011 22:30:00</startDate>
+  <description><![CDATA[<div class="bbcode">Maestros del rock heterodoxo y experimentador, este trío estadounidense bebe del folk lisérgico y de la psicodelia para crear un sonido personal, como demuestra su &quot;Akron/Family II: The Cosmic Birth and Journey of Shinju TNT&quot;.</div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/58860061.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/58860061.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/58860061.png</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/58860061.png</image>
+  <attendance>81</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=2004626</tag>    
+  <url>http://www.last.fm/event/2004626+Akron+Family+-+Timber+Timbre+en+Madrid+con+Heineken+Music+Selector</url>
+  <website>http://musica.heineken.es/hms/ficha.aspx?i=46</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>indie</tag>
+      <tag>folk</tag>
+      <tag>love</tag>
+      <tag>canadian</tag>
+      <tag>freak folk</tag>
+      <tag>experimental</tag>
+      <tag>indie folk</tag>
+      <tag>sleepy</tag>
+      <tag>salon</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>2091906</id>
+  <title>Aathma + Garuda</title>
+  <artists>
+    <artist>Aathma</artist>
+    <artist>Garuda</artist>
+    <headliner>Aathma</headliner>
+  </artists>
+    <venue>
+    <id>8791879</id>
+    <name>Wurlitzer Ballroom</name>
+    <location>
+      <city>Madrid</city>
+      <country>Spain</country>
+      <street>Calle de las Tres Cruces, 12</street>
+      <postalcode>28013</postalcode>
+      <geo:point>
+         <geo:lat>40.419766</geo:lat>
+         <geo:long>-3.702596</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8791879+Wurlitzer+Ballroom</url>
+    <website>http://www.wurlitzerballroom.com</website>
+    <phonenumber>+34-915 222 677</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/3539364.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/3539364.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/3539364.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/3539364.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/3539364/Wurlitzer+Ballroom+Wurlitzer.jpg</image>
+  </venue>    <startDate>Wed, 16 Nov 2011 22:30:00</startDate>
+  <description><![CDATA[<div class="bbcode">5 euros (ticketea.com)<br />6 en puerta<br />10 euros con disco.</div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/42251613.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/42251613.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/42251613.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/42251613.jpg</image>
+  <attendance>15</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=2091906</tag>    
+  <url>http://www.last.fm/event/2091906+Aathma+-+Garuda</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>doom metal</tag>
+      <tag>hardcore</tag>
+      <tag>spanish</tag>
+      <tag>sludge</tag>
+      <tag>post-metal</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3109442</id>
+  <title>Onyx</title>
+  <artists>
+    <artist>Onyx</artist>
+    <artist>La SDJ Crew</artist>
+    <artist>MDE Click</artist>
+    <headliner>Onyx</headliner>
+  </artists>
+    <venue>
+    <id>9183457</id>
+    <name>Rockitchen</name>
+    <location>
+      <city>Madrid</city>
+      <country>Spain</country>
+      <street>Calle de Fundadores, 7</street>
+      <postalcode>28028</postalcode>
+      <geo:point>
+         <geo:lat>40.424694</geo:lat>
+         <geo:long>-3.667792</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/9183457+Rockitchen</url>
+    <website>http://www.facebook.com/group.php?gid=116533501711010</website>
+    <phonenumber></phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/61397099.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/61397099.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/61397099.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/61397099.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/61397099/Rockitchen+27820_1469963590915_1288353660.jpg</image>
+  </venue>    <startDate>Thu, 17 Nov 2011 00:15:01</startDate>
+  <description><![CDATA[<div class="bbcode">Jueves 17 de Noviembre Sala Rockitchen<br />ONYX  <br />Tambien estara  La SDJ Crew - MDE Click <br />16€ anticipada en <br /> Triburbana Shop &amp; Grimey Store<br />18€ taquilla</div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/27606627.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/27606627.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/27606627.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/27606627.jpg</image>
+  <attendance>2</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3109442</tag>    
+  <url>http://www.last.fm/event/3109442+Onyx+at+Rockitchen+on+17+November+2011</url>
+  <website>http://www.facebook.com/event.php?eid=207004776034617</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>rap</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3107266</id>
+  <title>Electrónica rusa</title>
+  <artists>
+    <artist>Lydia Kavina</artist>
+    <artist>CoH</artist>
+    <artist>Cisfinitum</artist>
+    <artist>Ariu Kara</artist>
+    <artist>Andrei Oid</artist>
+    <artist>Evelina Domnitch</artist>
+    <artist>Dmitry Gelfand</artist>
+    <headliner>Lydia Kavina</headliner>
+  </artists>
+    <venue>
+    <id>8800928</id>
+    <name>La Casa Encendida</name>
+    <location>
+      <city>Madrid</city>
+      <country>Spain</country>
+      <street>Ronda Valencia, 2</street>
+      <postalcode>28012</postalcode>
+      <geo:point>
+         <geo:lat>40.405802</geo:lat>
+         <geo:long>-3.699712</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8800928+La+Casa+Encendida</url>
+    <website>http://www.lacasaencendida.com/</website>
+    <phonenumber>916024641</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/207583.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/207583.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/207583.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/207583.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/207583/La+Casa+Encendida.jpg</image>
+  </venue>    <startDate>Thu, 17 Nov 2011 12:40:01</startDate>
+  <endDate>Sat, 19 Nov 2011 12:40:01</endDate>
+  <description><![CDATA[<div class="bbcode">-- Jueves 17<br />17.00 - 18.30 <strong>Master class de theremin con Lydia Kavina</strong><br />20.30 - 21.30 <strong>Lydia Kavina</strong> <br />21.30 - 22.30 <strong>Cisfinitum</strong><br /><br />-- Viernes 18<br />20.30 - 21:30 <strong>Sonolevitation, de Dmitry Gelfand &amp; Evelina Domnitch</strong><br />21.30 - 22.30 <strong>COH</strong><br /><br />-- Sábado 19<br />20.30 - 21.30 <strong>Ariu Kara</strong><br />21.30 - 22.30 <strong>Andrei Oid</strong></div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/511812.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/511812.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/511812.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/511812.jpg</image>
+  <attendance>18</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3107266</tag>    
+  <url>http://www.last.fm/festival/3107266+Electr%C3%B3nica+rusa</url>
+  <website>http://www.lacasaencendida.es/LCE/lceCruce/0,0,73537_0_73531_22303%24P1%3D16,00.html</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>1988409</id>
+  <title>The Subways + Layabouts</title>
+  <artists>
+    <artist>The Subways</artist>
+    <artist>Layabouts</artist>
+    <headliner>The Subways</headliner>
+  </artists>
+    <venue>
+    <id>8782348</id>
+    <name>Caracol</name>
+    <location>
+      <city>Madrid</city>
+      <country>Spain</country>
+      <street>Bernardino Obregón 18</street>
+      <postalcode>28012</postalcode>
+      <geo:point>
+         <geo:lat>40.403993</geo:lat>
+         <geo:long>-3.699921</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8782348+Caracol</url>
+    <website>http://www.salacaracol.com</website>
+    <phonenumber>91 528 54 71</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/3292378.gif</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/3292378.gif</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/3292378.gif</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/3292378.gif</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/3292378/Caracol+lasala01.gif</image>
+  </venue>    <startDate>Thu, 17 Nov 2011 15:18:01</startDate>
+  <description><![CDATA[<div class="bbcode">¡Entradas agotadas!<br /><br />20:00 Apertura de puertas<br />21:00 Layabouts <br />22:00 The Subways</div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/13357651.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/13357651.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/13357651.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/13357651.jpg</image>
+  <attendance>98</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=1988409</tag>    
+  <url>http://www.last.fm/event/1988409+The+Subways+-+Layabouts</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>indie</tag>
+      <tag>alterantive</tag>
+      <tag>rock</tag>
+      <tag>british</tag>
+      <tag>indie rock</tag>
+      <tag>hard rock</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>2078318</id>
+  <title>Lizz Wright</title>
+  <artists>
+    <artist>Lizz Wright</artist>
+    <headliner>Lizz Wright</headliner>
+  </artists>
+    <venue>
+    <id>8976031</id>
+    <name>Teatro Fernán Gómez</name>
+    <location>
+      <city>Madrid</city>
+      <country>Spain</country>
+      <street>Plaza de Colón, 4</street>
+      <postalcode>28046</postalcode>
+      <geo:point>
+         <geo:lat>40.425055</geo:lat>
+         <geo:long>-3.690466</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8976031+Teatro+Fern%C3%A1n+G%C3%B3mez</url>
+    <website>http://www.esmadrid.com/teatrofernangomez/portal.do</website>
+    <phonenumber>91 480 03 00</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/14602709.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/14602709.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/14602709.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/14602709.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/14602709/Teatro+Fernn+Gmez.jpg</image>
+  </venue>    <startDate>Thu, 17 Nov 2011 15:51:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/52768985.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/52768985.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/52768985.png</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/52768985.png</image>
+  <attendance>2</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=2078318</tag>    
+  <url>http://www.last.fm/event/2078318+Lizz+Wright+at+Teatro+Fern%C3%A1n+G%C3%B3mez+on+17+November+2011</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>female vocalists</tag>
+      <tag>jazz</tag>
+      <tag>soul</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>2078319</id>
+  <title>Rodrigo y Gabriela</title>
+  <artists>
+    <artist>Rodrigo y Gabriela</artist>
+    <headliner>Rodrigo y Gabriela</headliner>
+  </artists>
+    <venue>
+    <id>8845306</id>
+    <name>Circo Teatro Price</name>
+    <location>
+      <city>Madrid</city>
+      <country>Spain</country>
+      <street>Ronda de Atocha, 35</street>
+      <postalcode>28012</postalcode>
+      <geo:point>
+         <geo:lat>40.405992</geo:lat>
+         <geo:long>-3.698907</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8845306+Circo+Teatro+Price</url>
+    <website>http://www.esmadrid.com/circoprice/portal.do</website>
+    <phonenumber>91 528 81 22</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/543590.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/543590.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/543590.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/543590.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/543590/Circo+Teatro+Price.jpg</image>
+  </venue>    <startDate>Thu, 17 Nov 2011 15:52:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/41432757.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/41432757.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/41432757.png</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/41432757.png</image>
+  <attendance>14</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=2078319</tag>    
+  <url>http://www.last.fm/event/2078319+Rodrigo+y+Gabriela+at+Circo+Teatro+Price+on+17+November+2011</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>guitar</tag>
+      <tag>latin</tag>
+      <tag>acoustic</tag>
+      <tag>instrumental</tag>
+      <tag>flamenco</tag>
+    </tags>
+    </event></events></lfm>
