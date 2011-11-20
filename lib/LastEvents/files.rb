@@ -11,7 +11,7 @@ module LastEvents
       file = File.new(path, 'w')
       #TODO Change puts to returs
       if file.write(data)
-        puts "Data has been written to #{file_name}.xml"
+        puts "XML data saved to #{file_name}.xml"
       else
         puts "Write error"
       end
