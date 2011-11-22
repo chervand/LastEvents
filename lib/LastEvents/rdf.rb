@@ -23,7 +23,7 @@ module LastEvents
 graph = RDF::Graph.new("http://rubygems.org/")     
       
 statement = RDF::Statement.new({
-  :subject   => RDF::Node.new("Mark"),
+  :subject   => RDF::URI.new("Mark"),
   :predicate => RDF::DC.creator,
   :object    => RDF::URI.new("http://ar.to/#self"),
 })
@@ -35,6 +35,7 @@ graph.insert(statement)
 
 
 RDF::N3::Writer.open("../../data/rdf/graph.n3") do |writer|
+   writer.prefix :dc, RDF::URI('http://purl.org/dc/terms/')
    writer << graph
 end
 

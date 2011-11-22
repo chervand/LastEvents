@@ -51,7 +51,7 @@ module LastEvents
           file_name = "#{@location}-#{time.year}-#{time.month}-#{time.day}"
           LastEvents::Files.new.save_xml_data(xml, file_name)
           
-          LastEvents::RDF.new.serialize(xml)
+          #LastEvents::RDF.new.serialize(xml)
           
         end
       end
