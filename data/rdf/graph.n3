@@ -1,3 +1,5 @@
-@prefix dc: <http://purl.org/dc/terms/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix mit: <http://purl.org/ontology/mo/mit#> .
 
-<Mark> dc:creator <http://ar.to/#self> .
+<http://www.last.fm/event/2041307+Captain+Ahab+at+Final+Club+on+21+November+2011> a event:Event;
+   event:Factor mit:Santur .
