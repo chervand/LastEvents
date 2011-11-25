@@ -1,5 +1,0 @@
-@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
-@prefix mit: <http://purl.org/ontology/mo/mit#> .
-
-<http://www.last.fm/event/2041307+Captain+Ahab+at+Final+Club+on+21+November+2011> a event:Event;
-   event:Factor mit:Santur .

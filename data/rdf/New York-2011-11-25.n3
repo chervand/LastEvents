@@ -1,0 +1,446 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+
+<http://www.last.fm/event/1995380> a event:Event;
+   dc:title "The Plastic Traps @ Tea Lounge";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "The Plastic Traps"];
+   event:factor [ mo:headliner "The Plastic Traps"];
+   event:place [ gn:name "Tea Lounge";
+     rdf:resource "";
+     geo:lat "40.674845";
+     geo:long "-73.97629"];
+   event:time [ a tl:Instant;
+     tl:at "Fri, 25 Nov 2011 21:00:00"] .
+
+<http://www.last.fm/event/2014116> a event:Event;
+   dc:title "Stephen Kellogg &amp; The Sixers";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Stephen Kellogg &amp; The Sixers"],
+     [ a mo:MusicArtist;
+     foaf:name "Jon McLaughlin"];
+   event:factor [ mo:headliner "Stephen Kellogg &amp; The Sixers"];
+   event:place [ gn:name "Bowery Ballroom";
+     rdf:resource "http://www.boweryballroom.com/";
+     geo:lat "40.720274";
+     geo:long "-73.993456"];
+   event:product [ mo:genre "singer-songwriter"],
+     [ mo:genre "acoustic"],
+     [ mo:genre "indie"],
+     [ mo:genre "piano"],
+     [ mo:genre "pop"],
+     [ mo:genre "rock"],
+     [ mo:genre "jon mclaughlin"],
+     [ mo:genre "piano rock"],
+     [ mo:genre "alt-country"];
+   event:time [ a tl:Instant;
+     tl:at "Fri, 25 Nov 2011 19:30:00"] .
+
+<http://www.last.fm/event/2030668> a event:Event;
+   dc:title "CHAMELEONS VOX / Black Swan Lane";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Chameleons Vox"],
+     [ a mo:MusicArtist;
+     foaf:name "Black Swan Lane"];
+   event:factor [ mo:headliner "Chameleons Vox"];
+   event:place [ gn:name "Littlefield";
+     rdf:resource "http://www.littlefieldnyc.com/";
+     geo:lat "40.679076";
+     geo:long "-73.983521"];
+   event:product [ mo:genre "shoegaze"],
+     [ mo:genre "post-punk"],
+     [ mo:genre "dream pop"];
+   event:time [ a tl:Instant;
+     tl:at "Fri, 25 Nov 2011 20:00:00"] .
+
+<http://www.last.fm/event/2046467> a event:Event;
+   dc:title "moe.";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "moe."],
+     [ a mo:MusicArtist;
+     foaf:name "Dumpstaphunk"];
+   event:factor [ mo:headliner "moe."];
+   event:place [ gn:name "Terminal 5";
+     rdf:resource "http://terminal5nyc.com/";
+     geo:lat "40.769708";
+     geo:long "-73.992762"];
+   event:product [ mo:genre "new orleans"],
+     [ mo:genre "strings organs rubber wind"],
+     [ mo:genre "rock"],
+     [ mo:genre "jam"],
+     [ mo:genre "moe"],
+     [ mo:genre "jam bands"],
+     [ mo:genre "afro armpit funk"],
+     [ mo:genre "jam band"],
+     [ mo:genre "funk"];
+   event:time [ a tl:Instant;
+     tl:at "Fri, 25 Nov 2011 19:00:00"] .
+
+<http://www.last.fm/event/2050440> a event:Event;
+   dc:title "Ukon Wacka North American Tour";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Korpiklaani"],
+     [ a mo:MusicArtist;
+     foaf:name "Arkona"],
+     [ a mo:MusicArtist;
+     foaf:name "Polkadot Cadaver"],
+     [ a mo:MusicArtist;
+     foaf:name "Yonder Realm"],
+     [ a mo:MusicArtist;
+     foaf:name "Forged in Flame"];
+   event:factor [ mo:headliner "Korpiklaani"];
+   event:place [ gn:name "Gramercy Theatre";
+     rdf:resource "";
+     geo:lat "40.7399";
+     geo:long "-73.984911"];
+   event:product [ mo:genre "metal"],
+     [ mo:genre "folk metal"];
+   event:time [ a tl:Instant;
+     tl:at "Fri, 25 Nov 2011 19:00:00"] .
+
+<http://www.last.fm/event/2052388> a event:Event;
+   dc:title "Guster";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Guster"],
+     [ a mo:MusicArtist;
+     foaf:name "Brett Dennen"];
+   event:factor [ mo:headliner "Guster"];
+   event:place [ gn:name "Wellmont Theatre";
+     rdf:resource "http://wellmonttheater.com/";
+     geo:lat "40.812646";
+     geo:long "-74.2167"];
+   event:product [ mo:genre "indie"],
+     [ mo:genre "alternative"],
+     [ mo:genre "acoustic"],
+     [ mo:genre "brett dennen"],
+     [ mo:genre "rock"],
+     [ mo:genre "guster"],
+     [ mo:genre "singer-songwriter"],
+     [ mo:genre "folk"],
+     [ mo:genre "mellow"];
+   event:time [ a tl:Instant;
+     tl:at "Fri, 25 Nov 2011 19:00:00"] .
+
+<http://www.last.fm/event/2057286> a event:Event;
+   dc:title "Dance Gavin Dance";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Dance Gavin Dance"],
+     [ a mo:MusicArtist;
+     foaf:name "Our Last Night"],
+     [ a mo:MusicArtist;
+     foaf:name "I Set My Friends on Fire"],
+     [ a mo:MusicArtist;
+     foaf:name "A Lot Like Birds"],
+     [ a mo:MusicArtist;
+     foaf:name "The Bunny The Bear"];
+   event:factor [ mo:headliner "Dance Gavin Dance"];
+   event:place [ gn:name "Starland Ballroom";
+     rdf:resource "http://www.starlandballroom.com";
+     geo:lat "40.440432";
+     geo:long "-74.354941"];
+   event:product [ mo:genre "post-hardcore"],
+     [ mo:genre "experimental"],
+     [ mo:genre "screamo"];
+   event:time [ a tl:Instant;
+     tl:at "Fri, 25 Nov 2011 18:10:01"] .
+
+<http://www.last.fm/event/2070082> a event:Event;
+   dc:title "The Cure presents \"Reflections\"";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "The Cure"];
+   event:factor [ mo:headliner "The Cure"];
+   event:place [ gn:name "Beacon Theatre";
+     rdf:resource "http://www.beacontheatrenyc.com/";
+     geo:lat "40.780315";
+     geo:long "-73.981402"];
+   event:product [ mo:genre "new wave"],
+     [ mo:genre "the cure"],
+     [ mo:genre "alternative"],
+     [ mo:genre "post-punk"],
+     [ mo:genre "rock"],
+     [ mo:genre "80s"];
+   event:time [ a tl:Instant;
+     tl:at "Fri, 25 Nov 2011 19:00:00"] .
+
+<http://www.last.fm/event/2089523> a event:Event;
+   dc:title "5 Years of Massive Event";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Roger Shah"],
+     [ a mo:MusicArtist;
+     foaf:name "Mat Zo"],
+     [ a mo:MusicArtist;
+     foaf:name "Tydi"];
+   event:factor [ mo:headliner "Roger Shah"];
+   event:place [ gn:name "Highline Ballroom";
+     rdf:resource "http://www.highlineballroom.com/";
+     geo:lat "40.743128";
+     geo:long "-74.005666"];
+   event:product [ mo:genre "progressive trance"],
+     [ mo:genre "trance"];
+   event:time [ a tl:Instant;
+     tl:at "Fri, 25 Nov 2011 22:00:00"] .
+
+<http://www.last.fm/event/3093278> a event:Event;
+   dc:title "Massive Event 5-Year Anniversary ";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Simon Patterson"],
+     [ a mo:MusicArtist;
+     foaf:name "Tydi"],
+     [ a mo:MusicArtist;
+     foaf:name "Roger Shah"];
+   event:factor [ mo:headliner "Simon Patterson"];
+   event:place [ gn:name "Highline Ballroom";
+     rdf:resource "http://www.highlineballroom.com/";
+     geo:lat "40.743128";
+     geo:long "-74.005666"];
+   event:product [ mo:genre "trance"],
+     [ mo:genre "progressive trance"],
+     [ mo:genre "uplifting trance"];
+   event:time [ a tl:Instant;
+     tl:at "Fri, 25 Nov 2011 22:00:00"] .
+
+<http://www.last.fm/event/3094085> a event:Event;
+   dc:title "concert";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Diane Cluck"],
+     [ a mo:MusicArtist;
+     foaf:name "Jeffrey Lewis"],
+     [ a mo:MusicArtist;
+     foaf:name "Jeffrey Lewis &amp; The Junkyard"],
+     [ a mo:MusicArtist;
+     foaf:name "Jeffrey Lewis And The Junkyard"];
+   event:factor [ mo:headliner "Diane Cluck"];
+   event:place [ gn:name "Mercury Lounge";
+     rdf:resource "http://www.mercuryloungenyc.com/";
+     geo:lat "40.722036";
+     geo:long "-73.986806"];
+   event:product [ mo:genre "folk"],
+     [ mo:genre "anti-folk"],
+     [ mo:genre "singer-songwriter"];
+   event:time [ a tl:Instant;
+     tl:at "Fri, 25 Nov 2011 19:30:00"] .
+
+<http://www.last.fm/event/3098390> a event:Event;
+   dc:title "DJ ChaChi";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "DJ ChaChi"];
+   event:factor [ mo:headliner "DJ ChaChi"];
+   event:place [ gn:name "SL";
+     rdf:resource "";
+     geo:lat "40.741534";
+     geo:long "-74.005972"];
+   event:product [ mo:genre "dj"],
+     [ mo:genre "electronica"],
+     [ mo:genre "hip-hop"];
+   event:time [ a tl:Instant;
+     tl:at "Fri, 25 Nov 2011 23:00:00"] .
+
+<http://www.last.fm/event/3099442> a event:Event;
+   dc:title "Bounce";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "DJ Joe Pompeo"],
+     [ a mo:MusicArtist;
+     foaf:name "Lisa Shaw"],
+     [ a mo:MusicArtist;
+     foaf:name "Mr. V"],
+     [ a mo:MusicArtist;
+     foaf:name "AB Logic"],
+     [ a mo:MusicArtist;
+     foaf:name "DJ Syne"],
+     [ a mo:MusicArtist;
+     foaf:name "Mike Stefan"];
+   event:factor [ mo:headliner "DJ Joe Pompeo"];
+   event:place [ gn:name "(le) poisson rouge";
+     rdf:resource "http://lePoissonRouge.com";
+     geo:lat "40.728495";
+     geo:long "-73.999835"];
+   event:time [ a tl:Instant;
+     tl:at "Fri, 25 Nov 2011 22:00:00"] .
+
+<http://www.last.fm/event/3099465> a event:Event;
+   dc:title "The Freedom Party w/ DJ Herbert Holler , DJ Cosi and DJ Marc Smooth @ LPR";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "DJ Herbert Holler"],
+     [ a mo:MusicArtist;
+     foaf:name "DJ Cosi"],
+     [ a mo:MusicArtist;
+     foaf:name "DJ Marc Smooth"];
+   event:factor [ mo:headliner "DJ Herbert Holler"];
+   event:place [ gn:name "(le) poisson rouge";
+     rdf:resource "http://lePoissonRouge.com";
+     geo:lat "40.728495";
+     geo:long "-73.999835"];
+   event:time [ a tl:Instant;
+     tl:at "Fri, 25 Nov 2011 23:00:00"] .
+
+<http://www.last.fm/event/3105124> a event:Event;
+   dc:title "Elysian Fields";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Elysian Fields"],
+     [ a mo:MusicArtist;
+     foaf:name "Elizabeth &amp; the Catapult"];
+   event:factor [ mo:headliner "Elysian Fields"];
+   event:place [ gn:name "(le) poisson rouge";
+     rdf:resource "http://lePoissonRouge.com";
+     geo:lat "40.728495";
+     geo:long "-73.999835"];
+   event:product [ mo:genre "indie"],
+     [ mo:genre "female vocalists"],
+     [ mo:genre "sexy"],
+     [ mo:genre "alternative"],
+     [ mo:genre "indie pop"];
+   event:time [ a tl:Instant;
+     tl:at "Fri, 25 Nov 2011 18:30:00"] .
+
+<http://www.last.fm/event/3106266> a event:Event;
+   dc:title "The Dog &amp; Pony Show presents: DJ Garth";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "DJ Garth"],
+     [ a mo:MusicArtist;
+     foaf:name "taimur"],
+     [ a mo:MusicArtist;
+     foaf:name "Paul Raffaele"],
+     [ a mo:MusicArtist;
+     foaf:name "Kevin Osha"];
+   event:factor [ mo:headliner "DJ Garth"];
+   event:place [ gn:name "Glasslands Gallery";
+     rdf:resource "http://glasslands.blogspot.com/";
+     geo:lat "40.715192";
+     geo:long "-73.966414"];
+   event:time [ a tl:Instant;
+     tl:at "Fri, 25 Nov 2011 22:00:00"] .
+
+<http://www.last.fm/event/3106904> a event:Event;
+   dc:title "AN21 &amp; MAX VANGELI | Friday November 25 @ Pacha NYC ";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "AN21"],
+     [ a mo:MusicArtist;
+     foaf:name "Max Vangeli"];
+   event:factor [ mo:headliner "AN21"];
+   event:place [ gn:name "Pacha";
+     rdf:resource "http://www.pachanyc.com/";
+     geo:lat "40.763795";
+     geo:long "-73.997477"];
+   event:product [ mo:genre "totec radio"],
+     [ mo:genre "progressive house"],
+     [ mo:genre "vocal house"],
+     [ mo:genre "electronic"],
+     [ mo:genre "house"];
+   event:time [ a tl:Instant;
+     tl:at "Fri, 25 Nov 2011 22:00:00"] .
+
+<http://www.last.fm/event/3110434> a event:Event;
+   dc:title "Thriller Live: Tribute to Michael Jackson";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Michael Jackson"],
+     [ a mo:MusicArtist;
+     foaf:name "The Jackson 5"];
+   event:factor [ mo:headliner "Michael Jackson"];
+   event:place [ gn:name "The Black Box Theater";
+     rdf:resource "";
+     geo:lat "40.729982";
+     geo:long "-73.995903"];
+   event:product [ mo:genre "pop"],
+     [ mo:genre "christmas"],
+     [ mo:genre "motown"],
+     [ mo:genre "michael jackson"],
+     [ mo:genre "80s"],
+     [ mo:genre "70s"],
+     [ mo:genre "funk"],
+     [ mo:genre "soul"];
+   event:time [ a tl:Instant;
+     tl:at "Fri, 25 Nov 2011 20:00:00"] .
+
+<http://www.last.fm/event/3111174> a event:Event;
+   dc:title "The ChameleonsVox + Tyburn Saints+ Black Swan Lake ";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Tyburn Saints"],
+     [ a mo:MusicArtist;
+     foaf:name "The Chameleons"],
+     [ a mo:MusicArtist;
+     foaf:name "Black Swan Lake"];
+   event:factor [ mo:headliner "Tyburn Saints"];
+   event:place [ gn:name "Littlefield";
+     rdf:resource "http://www.littlefieldnyc.com/";
+     geo:lat "40.679076";
+     geo:long "-73.983521"];
+   event:time [ a tl:Instant;
+     tl:at "Fri, 25 Nov 2011 20:00:00"] .
+
+<http://www.last.fm/event/3113394> a event:Event;
+   dc:title "Black on Black Friday Poetry Open Mic 11/25/11";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Ibrahim \"P.O.E.T.\" Siddiq"],
+     [ a mo:MusicArtist;
+     foaf:name "Mr. Ace"];
+   event:factor [ mo:headliner "Ibrahim \"P.O.E.T.\" Siddiq"];
+   event:place [ gn:name "Bluestockings";
+     rdf:resource "http://bluestockings.com/";
+     geo:lat "40.721394";
+     geo:long "-73.988916"];
+   event:time [ a tl:Instant;
+     tl:at "Fri, 25 Nov 2011 18:30:00"] .
+
+<http://www.last.fm/event/3113411> a event:Event;
+   dc:title "Jim Breuer";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Jim Breuer"];
+   event:factor [ mo:headliner "Jim Breuer"];
+   event:place [ gn:name "Theatre at Westbury";
+     rdf:resource "";
+     geo:lat "40.780021";
+     geo:long "-73.579559"];
+   event:product [ mo:genre "stand-up"],
+     [ mo:genre "stand-up comedy"],
+     [ mo:genre "comedy"];
+   event:time [ a tl:Instant;
+     tl:at "Fri, 25 Nov 2011 03:09:01"] .
+
+<http://www.last.fm/event/3118791> a event:Event;
+   dc:title "Girls &amp; Boys with Congorock &amp; Kid Sister";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Congorock"],
+     [ a mo:MusicArtist;
+     foaf:name "Kid Sister"];
+   event:factor [ mo:headliner "Congorock"];
+   event:place [ gn:name "Webster Hall";
+     rdf:resource "http://www.websterhall.com/";
+     geo:lat "40.731689";
+     geo:long "-73.989293"];
+   event:product [ mo:genre "electronic"],
+     [ mo:genre "electro"],
+     [ mo:genre "dance"],
+     [ mo:genre "hip-hop"],
+     [ mo:genre "hip hop"],
+     [ mo:genre "dubstep"],
+     [ mo:genre "fidget house"],
+     [ mo:genre "electro hip hop"],
+     [ mo:genre "house"];
+   event:time [ a tl:Instant;
+     tl:at "Fri, 25 Nov 2011 22:00:00"] .
+
+<http://www.last.fm/event/3121580> a event:Event;
+   dc:title "Dehumanized";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Dehumanized"],
+     [ a mo:MusicArtist;
+     foaf:name "Hypoxia"],
+     [ a mo:MusicArtist;
+     foaf:name "Demized"],
+     [ a mo:MusicArtist;
+     foaf:name "Tomorrow's Victim"],
+     [ a mo:MusicArtist;
+     foaf:name "Open Denile"];
+   event:factor [ mo:headliner "Dehumanized"];
+   event:place [ gn:name "The Place Bar and Lounge";
+     rdf:resource "";
+     geo:lat "40.72781";
+     geo:long "-73.942082"];
+   event:time [ a tl:Instant;
+     tl:at "Fri, 25 Nov 2011 19:30:00"] .
