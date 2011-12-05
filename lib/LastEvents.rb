@@ -11,7 +11,7 @@ require_relative 'LastEvents/queries'
 module LastEvents
   class Runner
     def initialize(argv)
-      @location = "Prague"
+      @location = nil
       @titles = false
       parse(argv)
     end
@@ -47,19 +47,27 @@ module LastEvents
       puts "Nil location"
       else
         puts "Requesting Last.FM for events in #{@location}"
-        #TODO Find in a book how to use class instances
         xml = LastEvents::XML.new.get_events(@location, Time.new.day)
-        #xml = LastEvents::LastFM.new().geoGetEvents(@location)
         if xml.nil?
           puts "Nil response"
         else
           time = Time.new #local time, Time.new.getgm for GMT time
           file_name = "#{@location}-#{time.year}-#{time.month}-#{time.day}"
-          LastEvents::Files.new.save_xml_data(xml, file_name)
+          
+          puts "Saving XML data"
+          if LastEvents::Files.new.save_xml_data(xml, file_name)
+            puts "XML data saved to #{file_name}.xml"
+          else
+            puts "XML write error"
+          end
+          
           puts "Serializing RDF/N3 data"
-          LastEvents::Graph.new(xml).serialize_n3(file_name)
-          puts "Serializing complete"
-          puts "RDF/N3 data saved to #{file_name}.n3"
+          if LastEvents::Graph.new(xml).serialize_n3(file_name)
+            puts "RDF/N3 data saved to #{file_name}.n3"
+          else
+            puts "RDF write error"
+          end
+          
           if @titles
             query = LastEvents::Queries.new(file_name)
             if query.graph
@@ -70,6 +78,7 @@ module LastEvents
               end
             end           
           end
+          
         end
       end
     end

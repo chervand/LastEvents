@@ -1,0 +1,161 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+
+<http://www.last.fm/event/2035565> a event:Event;
+   dc:title "Brand New";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Brand New"];
+   event:factor [ mo:headliner "Brand New"];
+   event:place [ gn:name "The Paramount Theater";
+     rdf:resource "http://www.paramountny.com/";
+     geo:lat "40.869684";
+     geo:long "-73.426032"];
+   event:product [ mo:genre "emo"],
+     [ mo:genre "alternative"],
+     [ mo:genre "alternative rock"],
+     [ mo:genre "indie"],
+     [ mo:genre "brand new"],
+     [ mo:genre "rock"];
+   event:time [ a tl:Instant;
+     tl:at "Mon, 28 Nov 2011 20:00:00"] .
+
+<http://www.last.fm/event/2064181> a event:Event;
+   dc:title "The Thrash And Burn Tour 2011";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Winds of Plague"],
+     [ a mo:MusicArtist;
+     foaf:name "As Blood Runs Black"],
+     [ a mo:MusicArtist;
+     foaf:name "Chelsea Grin"],
+     [ a mo:MusicArtist;
+     foaf:name "For The Fallen Dreams"],
+     [ a mo:MusicArtist;
+     foaf:name "In The Midst Of Lions"],
+     [ a mo:MusicArtist;
+     foaf:name "Upon A Burning Body"],
+     [ a mo:MusicArtist;
+     foaf:name "Like Moths To Flames"];
+   event:factor [ mo:headliner "Winds of Plague"];
+   event:place [ gn:name "Gramercy Theatre";
+     rdf:resource "";
+     geo:lat "40.7399";
+     geo:long "-73.984911"];
+   event:product [ mo:genre "metalcore"],
+     [ mo:genre "deathcore"],
+     [ mo:genre "hardcore"],
+     [ mo:genre "death metal"];
+   event:time [ a tl:Instant;
+     tl:at "Mon, 28 Nov 2011 17:29:01"] .
+
+<http://www.last.fm/event/3093283> a event:Event;
+   dc:title "Curren$y";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Trademark Da Skydiver"],
+     [ a mo:MusicArtist;
+     foaf:name "Curren$y"],
+     [ a mo:MusicArtist;
+     foaf:name "Young Roddy"];
+   event:factor [ mo:headliner "Trademark Da Skydiver"];
+   event:place [ gn:name "Highline Ballroom";
+     rdf:resource "http://www.highlineballroom.com/";
+     geo:lat "40.743128";
+     geo:long "-74.005666"];
+   event:product [ mo:genre "hip-hop"],
+     [ mo:genre "hip hop"],
+     [ mo:genre "rap"];
+   event:time [ a tl:Instant;
+     tl:at "Mon, 28 Nov 2011 21:00:00"] .
+
+<http://www.last.fm/event/3099513> a event:Event;
+   dc:title "Nasty Mondays NYC featuring DJs Max and Sören w/ DJ Ivan Rodriguez ";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "DJ Max"],
+     [ a mo:MusicArtist;
+     foaf:name "ivan rodriguez"],
+     [ a mo:MusicArtist;
+     foaf:name "DJ Sören"];
+   event:factor [ mo:headliner "DJ Max"];
+   event:place [ gn:name "(le) poisson rouge";
+     rdf:resource "http://lePoissonRouge.com";
+     geo:lat "40.728495";
+     geo:long "-73.999835"];
+   event:time [ a tl:Instant;
+     tl:at "Mon, 28 Nov 2011 22:00:00"] .
+
+<http://www.last.fm/event/3114576> a event:Event;
+   dc:title "Edith Piaf, alive and living in New York";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Floanne"];
+   event:factor [ mo:headliner "Floanne"];
+   event:place [ gn:name "The Metropolitan Room";
+     rdf:resource "";
+     geo:lat "40.741567";
+     geo:long "-73.992276"];
+   event:time [ a tl:Instant;
+     tl:at "Mon, 28 Nov 2011 19:00:00"] .
+
+<http://www.last.fm/event/3114577> a event:Event;
+   dc:title "Edith Piaf, alive and living in New York";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Floanne"];
+   event:factor [ mo:headliner "Floanne"];
+   event:place [ gn:name "The Metropolitan Room";
+     rdf:resource "";
+     geo:lat "40.741567";
+     geo:long "-73.992276"];
+   event:time [ a tl:Instant;
+     tl:at "Mon, 28 Nov 2011 19:00:00"] .
+
+<http://www.last.fm/event/3118857> a event:Event;
+   dc:title "Frank Ocean";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Frank Ocean"];
+   event:factor [ mo:headliner "Frank Ocean"];
+   event:place [ gn:name "Bowery Ballroom";
+     rdf:resource "http://www.boweryballroom.com/";
+     geo:lat "40.720274";
+     geo:long "-73.993456"];
+   event:product [ mo:genre "rnb"],
+     [ mo:genre "hip-hop"],
+     [ mo:genre "soul"],
+     [ mo:genre "r&amp;b"],
+     [ mo:genre "smooth"],
+     [ mo:genre "ofwgkta"];
+   event:time [ a tl:Instant;
+     tl:at "Mon, 28 Nov 2011 21:00:00"] .
+
+<http://www.last.fm/event/3120826> a event:Event;
+   dc:title "Musicians On Call Presents CHICAGO";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Chicago"];
+   event:factor [ mo:headliner "Chicago"];
+   event:place [ gn:name "B.B. King Blues Club and Grill";
+     rdf:resource "http://www.bbkingblues.com/";
+     geo:lat "40.756864";
+     geo:long "-73.988579"];
+   event:product [ mo:genre "chicago"],
+     [ mo:genre "soft rock"],
+     [ mo:genre "classic rock"],
+     [ mo:genre "70s"],
+     [ mo:genre "80s"],
+     [ mo:genre "rock"];
+   event:time [ a tl:Instant;
+     tl:at "Mon, 28 Nov 2011 19:00:00"] .
+
+<http://www.last.fm/event/3126903> a event:Event;
+   dc:title "11.28 : Deep Space : Francois K : @ Cielo";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Francois K"];
+   event:factor [ mo:headliner "Francois K"];
+   event:place [ gn:name "Cielo";
+     rdf:resource "http://www.cieloclub.com/";
+     geo:lat "40.741674";
+     geo:long "-74.007036"];
+   event:time [ a tl:Instant;
+     tl:at "Mon, 28 Nov 2011 21:44:01"] .

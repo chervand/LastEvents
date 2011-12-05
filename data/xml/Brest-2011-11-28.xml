@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" location="Brest, France" total="1">
+  <event>
+  <id>3126002</id>
+  <title>Izia</title>
+  <artists>
+    <artist>Izia</artist>
+    <headliner>Izia</headliner>
+  </artists>
+    <venue>
+    <id>8790849</id>
+    <name>La Carène (Salle des Musiques Actuelles)</name>
+    <location>
+      <city>Brest</city>
+      <country>France</country>
+      <street>30 rue Jean-Marie Le Bris</street>
+      <postalcode>29200</postalcode>
+      <geo:point>
+         <geo:lat>48.383407</geo:lat>
+         <geo:long>-4.485122</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8790849+La+Car%C3%A8ne+%28Salle+des+Musiques+Actuelles%29</url>
+    <website>http://www.lacarene.fr</website>
+    <phonenumber>+33-(0)2 98 46 66 00</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/55823309.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/55823309.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/55823309.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/55823309.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/55823309/La+Carne+Salle+des+Musiques+Actuelles+BrestSalMusicActuRi.jpg</image>
+  </venue>    <startDate>Sat, 28 Jan 2012 18:38:01</startDate>
+  <description/>
+  <image size="small">http://userserve-ak.last.fm/serve/34/27519181.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/27519181.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/27519181.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/27519181.jpg</image>
+  <attendance>0</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3126002</tag>    
+  <url>http://www.last.fm/event/3126002+Izia+at+La+Car%C3%A8ne+%28Salle+des+Musiques+Actuelles%29+on+28+January+2012</url>
+  <website/>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>female vocalists</tag>
+      <tag>rock</tag>
+      <tag>french</tag>
+    </tags>
+    </event>
+</events>

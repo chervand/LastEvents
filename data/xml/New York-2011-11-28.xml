@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" location="New York, United States" total="9">
+  <event>
+  <id>2064181</id>
+  <title>The Thrash And Burn Tour 2011</title>
+  <artists>
+    <artist>Winds of Plague</artist>
+    <artist>As Blood Runs Black</artist>
+    <artist>Chelsea Grin</artist>
+    <artist>For The Fallen Dreams</artist>
+    <artist>In The Midst Of Lions</artist>
+    <artist>Upon A Burning Body</artist>
+    <artist>Like Moths To Flames</artist>
+    <headliner>Winds of Plague</headliner>
+  </artists>
+    <venue>
+    <id>9067732</id>
+    <name>Gramercy Theatre</name>
+    <location>
+      <city>New York, NY</city>
+      <country>United States</country>
+      <street>127 East 23rd Street</street>
+      <postalcode>10010</postalcode>
+      <geo:point>
+         <geo:lat>40.7399</geo:lat>
+         <geo:long>-73.984911</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/9067732+Gramercy+Theatre</url>
+    <website/>
+    <phonenumber>(212) 614-6932</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/57824545.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/57824545.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/57824545.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/57824545.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/57824545/Gramercy+Theatre+gramercy.jpg</image>
+  </venue>    <startDate>Mon, 28 Nov 2011 17:29:01</startDate>
+  <description/>
+  <image size="small">http://userserve-ak.last.fm/serve/34/32878937.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/32878937.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/32878937.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/32878937.jpg</image>
+  <attendance>9</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=2064181</tag>    
+  <url>http://www.last.fm/event/2064181+The+Thrash+And+Burn+Tour+2011</url>
+  <website/>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>metalcore</tag>
+      <tag>deathcore</tag>
+      <tag>hardcore</tag>
+      <tag>death metal</tag>
+    </tags>
+    </event>
+  <event>
+  <id>3120826</id>
+  <title>Musicians On Call Presents CHICAGO</title>
+  <artists>
+    <artist>Chicago</artist>
+    <headliner>Chicago</headliner>
+  </artists>
+    <venue>
+    <id>9039411</id>
+    <name>B.B. King Blues Club and Grill</name>
+    <location>
+      <city>New York</city>
+      <country>United States</country>
+      <street>237 West 42nd Street</street>
+      <postalcode>10036</postalcode>
+      <geo:point>
+         <geo:lat>40.756864</geo:lat>
+         <geo:long>-73.988579</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/9039411+B.B.+King+Blues+Club+and+Grill</url>
+    <website>http://www.bbkingblues.com/</website>
+    <phonenumber>212-997-4144</phonenumber>
+    <image size="small"/>
+	<image size="medium"/>
+	<image size="large"/>
+	<image size="extralarge"/>
+	<image size="mega"/>
+  </venue>    <startDate>Mon, 28 Nov 2011 19:00:00</startDate>
+  <description><![CDATA[<div class="bbcode">Musicians On Call Presents CHICAGO<br />November 28 7pm<br />B.B. King Blues Club &amp; Grill, Times Square<br /><br />Musicians On Call is proud to welcome Chicago to New York City for a benefit concert on November 28, 2011 at the legendary B.B. King Blues Club &amp; Grill, Times Square.  Guests will enjoy hors d’oeuvres, an open bar and exclusive meet-and-greets with the artists for our top sponsors.<br /><br />Proceeds from the event will benefit Musicians On Call, an organization that brings live and recorded music to the bedsides of patients in healthcare facilities.  Since 1999, MOC volunteer musicians have performed for over 250,000 patients and their families.   Your generosity helps support our Bedside Performance Programs and allows us to continue to make a difference in the lives of patients.<br /><br />For more information, visit <a href="http://www.musiciansoncall.org/chicago" rel="nofollow">www.musiciansoncall.org/chicago</a>, email <a href="mailto:chicago@musiciansoncall.org">chicago@musiciansoncall.org</a>, or call 212-741-2709.</div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/43505075.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/43505075.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/43505075.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/43505075.jpg</image>
+  <attendance>1</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3120826</tag>    
+  <url>http://www.last.fm/event/3120826+Musicians+On+Call+Presents+CHICAGO</url>
+  <website>http://www.musiciansoncall.org/chicago</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>chicago</tag>
+      <tag>soft rock</tag>
+      <tag>classic rock</tag>
+      <tag>70s</tag>
+      <tag>80s</tag>
+      <tag>rock</tag>
+    </tags>
+    </event>
+  <event>
+  <id>3114576</id>
+  <title>Edith Piaf, alive and living in New York</title>
+  <artists>
+    <artist>Floanne</artist>
+    <headliner>Floanne</headliner>
+  </artists>
+    <venue>
+    <id>8917788</id>
+    <name>The Metropolitan Room</name>
+    <location>
+      <city>New York City, NY</city>
+      <country>United States</country>
+      <street/>
+      <postalcode/>
+      <geo:point>
+         <geo:lat>40.741567</geo:lat>
+         <geo:long>-73.992276</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8917788+The+Metropolitan+Room</url>
+    <website/>
+    <phonenumber/>
+    <image size="small"/>
+	<image size="medium"/>
+	<image size="large"/>
+	<image size="extralarge"/>
+	<image size="mega"/>
+  </venue>    <startDate>Mon, 28 Nov 2011 19:00:00</startDate>
+  <description><![CDATA[<div class="bbcode">Written and performed by Floanne<br />Directed by Alice Jankell<br />Musical direction/piano by Rachel Kaufman<br />Upright bass: Ray Parker<br />Percussion: Mario Monaco<br /><br />French actress and singer Floanne Ankah recounts the Piaf story in recognition of the 50th anniversary of her death.  This authentic French ‘chanteuse’ and farm girl opens the door to her culture, by taking a closer look at the legendary ‘Little Sparrow’ —with that husky, mournful voice so popular in the 1940’ and 50’s.<br /><br />The performance is a culturally rich and moving presentation that will make you smile, with tunes transporting you to other times and places.  Down to earth, sensual and bohemian as her beloved Edith, Floanne will make you discover her poignant music and share her unconventional life.<br /><br />The New York premiere of Edith Piaf, Alive and Living in New York is a medley of vintage tunes from Floanne’s native France… with a modern twist.  She will embody the legend, interpreting the melodies from her point of view as a child, imagining Piaf’s characters coming to life.  Yes, both Floanne and Edith Piaf will be attending the rendez-vous. <br /><br />Floanne has been reviving the tradition of French Music Hall, performing her Chanson, as well as original compositions, with top jazz and cabaret artists.  She is returning at the Metropolitan Room and The Triad, where she performed previous programs, accompanied by her band and her musical weapon, Rachel Kaufman.  This marks Floanne’s first time collaboration with theater director Alice Jankell, who is lending a cutting edge presentation to the cabaret form.  Will you join us for the evening?<br /><br />FLOANNE is a New York actress and singer from France.  Her vocal repertoire includes French classics, and original compositions.  Ms. Ankah learned her craft as a chanteuse under the mentorship of Jean Brassard and Isengart, and continunes to train her opera voice as a coloratura soprano with April Evans.  She has performed her critically acclaimed cabaret at monthly residencies around town and on NPR.<br /><br />«Floanne is the French Madonna» —TimeOut NY <br /><br />«The last time I left shivers runnig down my spine was at one of Floanne’s concert. Her voice is very unique, with a ‘je ne sais pas quoi’ hypnotizing effect.» —She is French</div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/49266017.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/49266017.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/49266017.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/49266017.jpg</image>
+  <attendance>1</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3114576</tag>    
+  <url>http://www.last.fm/event/3114576+Edith+Piaf%2C+alive+and+living+in+New+York</url>
+  <website>http://www.floanne.com</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    </event>
+  <event>
+  <id>3114577</id>
+  <title>Edith Piaf, alive and living in New York</title>
+  <artists>
+    <artist>Floanne</artist>
+    <headliner>Floanne</headliner>
+  </artists>
+    <venue>
+    <id>8917788</id>
+    <name>The Metropolitan Room</name>
+    <location>
+      <city>New York City, NY</city>
+      <country>United States</country>
+      <street/>
+      <postalcode/>
+      <geo:point>
+         <geo:lat>40.741567</geo:lat>
+         <geo:long>-73.992276</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8917788+The+Metropolitan+Room</url>
+    <website/>
+    <phonenumber/>
+    <image size="small"/>
+	<image size="medium"/>
+	<image size="large"/>
+	<image size="extralarge"/>
+	<image size="mega"/>
+  </venue>    <startDate>Mon, 28 Nov 2011 19:00:00</startDate>
+  <description><![CDATA[<div class="bbcode">Written and performed by Floanne<br />Directed by Alice Jankell<br />Musical direction/piano by Rachel Kaufman<br />Upright bass: Ray Parker<br />Percussion: Mario Monaco<br /><br />French actress and singer Floanne Ankah recounts the Piaf story in recognition of the 50th anniversary of her death.  This authentic French ‘chanteuse’ and farm girl opens the door to her culture, by taking a closer look at the legendary ‘Little Sparrow’ —with that husky, mournful voice so popular in the 1940’ and 50’s.<br /><br />The performance is a culturally rich and moving presentation that will make you smile, with tunes transporting you to other times and places.  Down to earth, sensual and bohemian as her beloved Edith, Floanne will make you discover her poignant music and share her unconventional life.<br /><br />The New York premiere of Edith Piaf, Alive and Living in New York is a medley of vintage tunes from Floanne’s native France… with a modern twist.  She will embody the legend, interpreting the melodies from her point of view as a child, imagining Piaf’s characters coming to life.  Yes, both Floanne and Edith Piaf will be attending the rendez-vous. <br /><br />Floanne has been reviving the tradition of French Music Hall, performing her Chanson, as well as original compositions, with top jazz and cabaret artists.  She is returning at the Metropolitan Room and The Triad, where she performed previous programs, accompanied by her band and her musical weapon, Rachel Kaufman.  This marks Floanne’s first time collaboration with theater director Alice Jankell, who is lending a cutting edge presentation to the cabaret form.  Will you join us for the evening?<br /><br />FLOANNE is a New York actress and singer from France.  Her vocal repertoire includes French classics, and original compositions.  Ms. Ankah learned her craft as a chanteuse under the mentorship of Jean Brassard and Isengart, and continunes to train her opera voice as a coloratura soprano with April Evans.  She has performed her critically acclaimed cabaret at monthly residencies around town and on NPR.<br /><br />«Floanne is the French Madonna» —TimeOut NY <br /><br />«The last time I left shivers runnig down my spine was at one of Floanne’s concert. Her voice is very unique, with a ‘je ne sais pas quoi’ hypnotizing effect.» —She is French</div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/49266017.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/49266017.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/49266017.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/49266017.jpg</image>
+  <attendance>0</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3114577</tag>    
+  <url>http://www.last.fm/event/3114577+Edith+Piaf%2C+alive+and+living+in+New+York</url>
+  <website>http://www.floanne.com</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    </event>
+  <event>
+  <id>2035565</id>
+  <title>Brand New</title>
+  <artists>
+    <artist>Brand New</artist>
+    <headliner>Brand New</headliner>
+  </artists>
+    <venue>
+    <id>10228884</id>
+    <name>The Paramount Theater</name>
+    <location>
+      <city>Huntington</city>
+      <country>United States</country>
+      <street>370 New York Ave</street>
+      <postalcode>11743</postalcode>
+      <geo:point>
+         <geo:lat>40.869684</geo:lat>
+         <geo:long>-73.426032</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/10228884+The+Paramount+Theater</url>
+    <website>http://www.paramountny.com/</website>
+    <phonenumber>(631) 673-7300</phonenumber>
+    <image size="small"/>
+	<image size="medium"/>
+	<image size="large"/>
+	<image size="extralarge"/>
+	<image size="mega"/>
+  </venue>    <startDate>Mon, 28 Nov 2011 20:00:00</startDate>
+  <description><![CDATA[<div class="bbcode">Brand New at The Paramount in Huntington, NY</div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/38853643.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/38853643.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/38853643.png</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/38853643.png</image>
+  <attendance>51</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=2035565</tag>    
+  <url>http://www.last.fm/event/2035565+Brand+New</url>
+  <website/>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>emo</tag>
+      <tag>alternative</tag>
+      <tag>alternative rock</tag>
+      <tag>indie</tag>
+      <tag>brand new</tag>
+      <tag>rock</tag>
+    </tags>
+    </event>
+  <event>
+  <id>3093283</id>
+  <title>Curren$y</title>
+  <artists>
+    <artist>Trademark Da Skydiver</artist>
+    <artist>Curren$y</artist>
+    <artist>Young Roddy</artist>
+    <headliner>Trademark Da Skydiver</headliner>
+  </artists>
+    <venue>
+    <id>8825122</id>
+    <name>Highline Ballroom</name>
+    <location>
+      <city>New York</city>
+      <country>United States</country>
+      <street>431 West 16th Street</street>
+      <postalcode>10011</postalcode>
+      <geo:point>
+         <geo:lat>40.743128</geo:lat>
+         <geo:long>-74.005666</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8825122+Highline+Ballroom</url>
+    <website>http://www.highlineballroom.com/</website>
+    <phonenumber>(212) 414-5994</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/23401189.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/23401189.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/23401189.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/23401189.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/23401189/Highline+Ballroom+stage_1.jpg</image>
+  </venue>    <startDate>Mon, 28 Nov 2011 21:00:00</startDate>
+  <description><![CDATA[<div class="bbcode">Jet Life Album Release Party<br /><br />Concert starts @ 9PM<br />Doors open @ 7PM<br /><br />Tickets $15.00 in advance<br />$20.00 day of show. <br /><br />Full dinner menu available<br />General Admission Standing Room<br />Limited seating available<br />First come, first seated<br />All ages<br /><br /><br />Packages &amp; Discounts for Large Groups of 10 or more (Subject to Availability)<span title="Unknown tag" class="bbcode_unknown">Curren$y</span></div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/48984319.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/48984319.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/48984319.png</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/48984319.png</image>
+  <attendance>5</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3093283</tag>    
+  <url>http://www.last.fm/event/3093283+Curren%24y</url>
+  <website>http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=4033915&amp;REFID=lfm&amp;utm_source=lastfm&amp;utm_medium=eventlink%2B&amp;utm_campaign=reverend%2Bbilly</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>hip-hop</tag>
+      <tag>hip hop</tag>
+      <tag>rap</tag>
+    </tags>
+    </event>
+  <event>
+  <id>3118857</id>
+  <title>Frank Ocean</title>
+  <artists>
+    <artist>Frank Ocean</artist>
+    <headliner>Frank Ocean</headliner>
+  </artists>
+    <venue>
+    <id>8779095</id>
+    <name>Bowery Ballroom</name>
+    <location>
+      <city>New York</city>
+      <country>United States</country>
+      <street>6 Delancey Street</street>
+      <postalcode>10002</postalcode>
+      <geo:point>
+         <geo:lat>40.720274</geo:lat>
+         <geo:long>-73.993456</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8779095+Bowery+Ballroom</url>
+    <website>http://www.boweryballroom.com/</website>
+    <phonenumber>212-533-2111</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/57494.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/57494.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/57494.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/57494.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/57494/Bowery+Ballroom.jpg</image>
+  </venue>    <startDate>Mon, 28 Nov 2011 21:00:00</startDate>
+  <description><![CDATA[<div class="bbcode">Doors 8pm / Show 9pm<br />$20<br />18+</div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/60872269.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/60872269.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/60872269.png</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/60872269.png</image>
+  <attendance>4</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3118857</tag>    
+  <url>http://www.last.fm/event/3118857+Frank+Ocean+at+Bowery+Ballroom+on+28+November+2011</url>
+  <website>http://www.boweryballroom.com/event/78309</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>rnb</tag>
+      <tag>hip-hop</tag>
+      <tag>soul</tag>
+      <tag>r&amp;b</tag>
+      <tag>smooth</tag>
+      <tag>ofwgkta</tag>
+    </tags>
+    </event>
+  <event>
+  <id>3126903</id>
+  <title>11.28 : Deep Space : Francois K : @ Cielo</title>
+  <artists>
+    <artist>Francois K</artist>
+    <headliner>Francois K</headliner>
+  </artists>
+    <venue>
+    <id>8807009</id>
+    <name>Cielo</name>
+    <location>
+      <city>New York</city>
+      <country>United States</country>
+      <street>18 Little W 12th St</street>
+      <postalcode>10014</postalcode>
+      <geo:point>
+         <geo:lat>40.741674</geo:lat>
+         <geo:long>-74.007036</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8807009+Cielo</url>
+    <website>http://www.cieloclub.com/</website>
+    <phonenumber>212-645-5700</phonenumber>
+    <image size="small"/>
+	<image size="medium"/>
+	<image size="large"/>
+	<image size="extralarge"/>
+	<image size="mega"/>
+  </venue>    <startDate>Mon, 28 Nov 2011 21:44:01</startDate>
+  <description><![CDATA[<div class="bbcode">Deep Space ft. Francois K : Nov 28th @ Cielo : <br /><br />Deep Space is an adventure into future dub, spacey vibes, and abstract grooves.<br />It’s the kind of event where sounds of all origins are played, not limited to one particular format but always sharing this common link of dub, whether improvised live at the mixing console or played from original recordings.<br />We have NO dress code - just an OPEN mind<br /><br />November 28th<br />François K.<br /><br />FREE ADMISSION AND COMPLIMENTARY VODKA COCKTAILS BEFORE 11PM WITH EFLYER <br /><br />To get free admission, join DEEP SPACE SELECTOR, by sending an email to <a href="mailto:selector@deepspacenyc.com">selector@deepspacenyc.com</a>.<br /><br />When you receive our weekly eflyer, Deep Space Selector, simply print out flyer for free admission to our party before 11pm on most Mondays.<br />Selector members also receive discounts to special events, win tickets and music, and generally get to fly in our spaceship with more leg room.<br /><br />Cielo, 18 Little W. 12th Street, NYC<br />between Washington St. and 9th Ave<br />A C E 1 9 2 or 3 at 14th St; L at 8th Ave<br />21+ with photo ID<br /><br />NEW! Deep Space videos on YouTube: <br /><a href="http://www.youtube.com/deepspacevideos" rel="nofollow">www.youtube.com/deepspacevideos</a><br /><br />Join our Deep Space Fan Page on Facebook:<br /><a href="http://www.facebook.com/pages/New-York-NY/Deep-Space/38308587559" rel="nofollow">www.facebook.com/pages/New-York-NY/Deep-Space/38308587559</a><br /><br /><a href="http://www.deepspacenyc.com" rel="nofollow">www.deepspacenyc.com</a><br /><br /><a href="http://www.myspace.com/deepspacenyc" rel="nofollow">www.myspace.com/deepspacenyc</a></div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/22655107.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/22655107.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/22655107.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/22655107.jpg</image>
+  <attendance>1</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3126903</tag>    
+  <url>http://www.last.fm/event/3126903+11.28+%3A+Deep+Space+%3A+Francois+K+%3A+%40+Cielo</url>
+  <website/>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    </event>
+  <event>
+  <id>3099513</id>
+  <title>Nasty Mondays NYC featuring DJs Max and Sören w/ DJ Ivan Rodriguez </title>
+  <artists>
+    <artist>DJ Max</artist>
+    <artist>ivan rodriguez</artist>
+    <artist>DJ Sören</artist>
+    <headliner>DJ Max</headliner>
+  </artists>
+    <venue>
+    <id>8931541</id>
+    <name>(le) poisson rouge</name>
+    <location>
+      <city>New York</city>
+      <country>United States</country>
+      <street>158 Bleecker Street</street>
+      <postalcode>10012</postalcode>
+      <geo:point>
+         <geo:lat>40.728495</geo:lat>
+         <geo:long>-73.999835</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8931541+%28le%29+poisson+rouge</url>
+    <website>http://lePoissonRouge.com</website>
+    <phonenumber>212-505-FISH</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/10368285.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/10368285.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/10368285.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/10368285.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/10368285/le+poisson+rouge+logoredinblack.jpg</image>
+  </venue>    <startDate>Mon, 28 Nov 2011 22:00:00</startDate>
+  <description><![CDATA[<div class="bbcode">The Gallery at LPR<br /><br />November 28th, 2011<br /><br />9:00pm<br /><br />FREE! // 21+<br /><br />Nasty Mondays NYC<br />featuring DJs Max and Sören<br />Nasty Mondays Barcelona is Spain's biggest weekly party. Once every month the duo of Nasty Mondays DJs Max and Sören make the trek across the ocean to bring a taste of the all night Barcelona party scene to New York at Nasty Mondays NYC. Mixing 50's rockabilly with 80's new wave, 90’s grunge, spinning recent hits and remixes, Nasty Mondays NYC has grown to one of the best and dirtiest parties in NYC in just over a year. DJ's Max and Sören have set the standard for the Barcelona playlist, starting a movement of in-club arrangements that has lasted five years and is still going strong.<br /><br />For more information please visit:<br /><a href="http://lepoissonrouge.com/events/view/2802" rel="nofollow">http://lepoissonrouge.com/events/view/2802</a></div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/67131954.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/67131954.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/67131954.png</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/67131954.png</image>
+  <attendance>0</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3099513</tag>    
+  <url>http://www.last.fm/event/3099513+Nasty+Mondays+NYC+featuring+DJs+Max+and+S%C3%B6ren+w-+DJ+Ivan+Rodriguez+</url>
+  <website>http://lepoissonrouge.com/events/view/2802</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    </event>
+</events>

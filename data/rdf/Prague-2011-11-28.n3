@@ -1,0 +1,96 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+
+<http://www.last.fm/event/1938902> a event:Event;
+   dc:title "The Orchestra - The Former Members Of E.L.O. &amp; Electric Light Orchestra Part II.";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Electric Light Orchestra"];
+   event:factor [ mo:headliner "Electric Light Orchestra"];
+   event:place [ gn:name "Kongresové Centrum";
+     rdf:resource "http://www.kcp.cz";
+     geo:lat "50.061767";
+     geo:long "14.428664"];
+   event:product [ mo:genre "classic rock"],
+     [ mo:genre "progressive rock"],
+     [ mo:genre "70s"],
+     [ mo:genre "rock"];
+   event:time [ a tl:Instant;
+     tl:at "Mon, 28 Nov 2011 18:03:01"] .
+
+<http://www.last.fm/event/3095135> a event:Event;
+   dc:title "MOTÖRHEAD CZECH REP";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "MOTÖRHEAD CZECH REP"];
+   event:factor [ mo:headliner "MOTÖRHEAD CZECH REP"];
+   event:place [ gn:name "Kain";
+     rdf:resource "http://www.kain.cz/";
+     geo:lat "50.087295";
+     geo:long "14.444034"];
+   event:time [ a tl:Instant;
+     tl:at "Mon, 28 Nov 2011 10:53:01"] .
+
+<http://www.last.fm/event/3095151> a event:Event;
+   dc:title "Patron (rock Liberec)";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Patron (rock Liberec)"],
+     [ a mo:MusicArtist;
+     foaf:name "MOTÖRHEAD CZECH REP Revival"];
+   event:factor [ mo:headliner "Patron (rock Liberec)"];
+   event:place [ gn:name "Kain";
+     rdf:resource "http://www.kain.cz/";
+     geo:lat "50.087295";
+     geo:long "14.444034"];
+   event:product [ mo:genre "czech"],
+     [ mo:genre "female fronted"],
+     [ mo:genre "hard rock"];
+   event:time [ a tl:Instant;
+     tl:at "Mon, 28 Nov 2011 20:00:00"] .
+
+<http://www.last.fm/event/3106896> a event:Event;
+   dc:title "Free Mondays In Nightpunk";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Ufajr"],
+     [ a mo:MusicArtist;
+     foaf:name "DJs"];
+   event:factor [ mo:headliner "Ufajr"];
+   event:place [ gn:name "Roxy";
+     rdf:resource "http://www.roxy.cz";
+     geo:lat "50.090681";
+     geo:long "14.425809"];
+   event:product [ mo:genre "czech"],
+     [ mo:genre "techno"],
+     [ mo:genre "to nie jest kurwa techno"],
+     [ mo:genre "indie"],
+     [ mo:genre "electro"],
+     [ mo:genre "house"],
+     [ mo:genre "post-rock"],
+     [ mo:genre "cool"],
+     [ mo:genre "fidget"],
+     [ mo:genre "fidget house"];
+   event:time [ a tl:Instant;
+     tl:at "Mon, 28 Nov 2011 20:35:01"] .
+
+<http://www.last.fm/event/3107557> a event:Event;
+   dc:title "One Man Show (CD \"Perfect Days Ltd.\" - Release Concert) ";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "circus ponorka"];
+   event:factor [ mo:headliner "circus ponorka"];
+   event:place [ gn:name "Jazz Dock";
+     rdf:resource "http://www.jazzdock.cz";
+     geo:lat "50.076914";
+     geo:long "14.408828"];
+   event:product [ mo:genre "monday morning"],
+     [ mo:genre "acoustic"],
+     [ mo:genre "pop-folk"],
+     [ mo:genre "pop"],
+     [ mo:genre "singer-songwriter"],
+     [ mo:genre "soft rock"],
+     [ mo:genre "one-man band"];
+   event:time [ a tl:Instant;
+     tl:at "Mon, 28 Nov 2011 20:39:01"] .

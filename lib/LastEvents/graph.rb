@@ -49,16 +49,8 @@ module LastEvents
         end
       end
       RDF::N3::Writer.open(file_path, :prefixes => @prefixes) do |writer|
-        writer << @graph
+        writer << @graph 
       end
-    end
-
-    if __FILE__ == $0
-    file = File.open('../../data/xml/Prague-2011-11-25.xml', 'r')
-    xml = Nokogiri.XML(file)
-    gr = LastEvents::Graph.new(xml)
-    gr.serialize_n3("ttt")
-    file.close
     end
 
   end

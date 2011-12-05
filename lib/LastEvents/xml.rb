@@ -30,29 +30,32 @@ module LastEvents
     def get_events(location, date)
       i = 1
       @total = 0
+      @totalPages = 0
       @location_attr = ""
       @events = ""
       @cur_date = date.to_i
       @date = date.to_i
       
       while @cur_date.to_i < @date.to_i + 1 && api = LastEvents::LastFM.new.geoGetEvents(location, 10, i)
-        #&& page = self.xml_load_from_file("Prague-2011-11-20-#{i}.xml")
-          page = Nokogiri::XML(api) 
-                  
+        page = Nokogiri::XML(api)
+        @totalPages =  page.xpath("//events/@totalPages").to_s
+        if i == @totalPages.to_i #FIXME it's stupid
+          break
+        else
           page.xpath("//events/event").each do |event|
             da = event.xpath("startDate/text()").to_s.split
             @cur_date = da[1].to_i
+            #FIXME fix date format (not only day)!!!!
             if @cur_date != @date
               event.remove
             end
           end
-          
-          @location_attr = page.xpath("//events/@location")
-          @total = @total + page.xpath("//events/event").count       
-          @events = @events + page.xpath("//events/event").to_s
-          i = i + 1
+        end       
+        @location_attr = page.xpath("//events/@location")
+        @total = @total + page.xpath("//events/event").count       
+        @events = @events + page.xpath("//events/event").to_s
+        i = i + 1
       end #end of loop
-      
       @nodes = Nokogiri::XML::DocumentFragment.parse(@events)
       if @total == 0
         @xml = nil

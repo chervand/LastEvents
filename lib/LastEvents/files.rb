@@ -16,17 +16,13 @@ module LastEvents
       file = File.new(path, 'w')
       #TODO Change puts to returs
       if file.write(data)
-        puts "XML data saved to #{file_name}.xml"
+        return true
       else
-        puts "Write error"
+        return false
       end
       file.close
       #TODO Handle exceptions
     end
-    
-    if __FILE__ == $0
-      #data = "print\nprint\nprint"
-      puts LastEvents::Files.new.get_rdf_data_path("graph.rdf")
-    end
+
   end
 end
