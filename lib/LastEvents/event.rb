@@ -33,7 +33,6 @@ module LastEvents
         :description => @xml_event.xpath('//description/text()').to_s,
         :artists => artists,
         :headliner => @xml_event.xpath('//headliner/text()').to_s,
-        #TODO convert date to OWL
         :startDate => @xml_event.xpath('//startDate/text()').to_s,
         :place => {
           :name => @xml_event.xpath('//venue/name/text()').to_s,
@@ -101,25 +100,36 @@ module LastEvents
         }
       end
 
-      #event.factor
-      headliner = RDF::Node.new
       @statements << {
         :subject   => @LFM[@parsed_event[:id]],
-        :predicate => @EVENT['factor'],
-        :object    => headliner,
-      }
-      @statements << {
-        :subject   => headliner,
         :predicate => @MO['headliner'],
         :object    => @parsed_event[:headliner],
       }
+
+      #event.factor
+      #headliner = RDF::Node.new
+      #@statements << {
+      #  :subject   => @LFM[@parsed_event[:id]],
+      #  :predicate => @EVENT['factor'],
+      #  :object    => headliner,
+      #}
+      #@statements << {
+      #  :subject   => headliner,
+      #  :predicate => RDF['type'],
+      #  :object    => @MO['headliner'],
+      #}
+      #@statements << {
+      #  :subject   => headliner,
+      #  :predicate => RDF::FOAF['name'],
+      #  :object    => @parsed_event[:headliner],
+      #}
       
       #event.product
       @parsed_event[:tags].each do |tag|
         product= RDF::Node.new
         @statements << {
           :subject   => @LFM[@parsed_event[:id]],
-          :predicate => @EVENT['product'],
+          :predicate => @EVENT['factor'],
           :object    => product,
         }
         @statements << {
@@ -131,6 +141,10 @@ module LastEvents
 
       #event.timeline
       timeline = RDF::Node.new
+      date = @parsed_event[:startDate].to_s
+      ar = date.split
+      parsed_date = Date.parse("#{ar[3]}-#{ar[2]}-#{ar[1]}").to_s + "T#{ar[4]}" #to_f
+      xsd_date = RDF::Literal.new(parsed_date, :datatype => RDF::XSD.dateTime)
       @statements << {
         :subject   => @LFM[@parsed_event[:id]],
         :predicate => @EVENT['time'], #same as OWL Time
@@ -144,7 +158,7 @@ module LastEvents
       @statements << {
         :subject   => timeline,
         :predicate => @TL['at'],
-        :object    => @parsed_event[:startDate] #TODO convert date type to OWL
+        :object    => xsd_date
       }
       
       #event.place
