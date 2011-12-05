@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" location="Praha, Czech Republic" total="6">
+  <event>
+  <id>2084227</id>
+  <title>Hudba Praha</title>
+  <artists>
+    <artist>Hudba Praha</artist>
+    <headliner>Hudba Praha</headliner>
+  </artists>
+    <venue>
+    <id>8779243</id>
+    <name>Palác Akropolis</name>
+    <location>
+      <city>Praha</city>
+      <country>Czech Republic</country>
+      <street>Kubelíkova 1548/27</street>
+      <postalcode>130 00</postalcode>
+      <geo:point>
+         <geo:lat>50.082232</geo:lat>
+         <geo:long>14.448977</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8779243+Pal%C3%A1c+Akropolis</url>
+    <website>http://www.palacakropolis.cz</website>
+    <phonenumber>+420 296 330 911</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/249558.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/249558.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/249558.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/249558.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/249558/Palc+Akropolis.jpg</image>
+  </venue>    <startDate>Mon, 05 Dec 2011 12:04:01</startDate>
+  <description/>
+  <image size="small">http://userserve-ak.last.fm/serve/34/5838240.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/5838240.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/5838240.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/5838240.jpg</image>
+  <attendance>0</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=2084227</tag>    
+  <url>http://www.last.fm/event/2084227+Hudba+Praha+at+Pal%C3%A1c+Akropolis+on+5+December+2011</url>
+  <website/>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>czech</tag>
+      <tag>big beat</tag>
+      <tag>underground</tag>
+      <tag>rock</tag>
+    </tags>
+    </event>
+  <event>
+  <id>3094512</id>
+  <title>Raindance (USA) ~ Hardcore Live</title>
+  <artists>
+    <artist>Raindance</artist>
+    <headliner>Raindance</headliner>
+  </artists>
+    <venue>
+    <id>8944380</id>
+    <name>Café na půl cesty</name>
+    <location>
+      <city>Praha</city>
+      <country>Czech Republic</country>
+      <street/>
+      <postalcode/>
+      <geo:point>
+         <geo:lat>50.049899</geo:lat>
+         <geo:long>14.431491</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8944380+Caf%C3%A9+na+p%C5%AFl+cesty</url>
+    <website/>
+    <phonenumber/>
+    <image size="small">http://userserve-ak.last.fm/serve/34/47110083.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/47110083.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/47110083.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/47110083.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/47110083/Caf+na+pl+cesty+0251372.jpg</image>
+  </venue>    <startDate>Mon, 05 Dec 2011 12:45:01</startDate>
+  <description/>
+  <image size="small">http://userserve-ak.last.fm/serve/34/61802805.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/61802805.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/61802805.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/61802805.jpg</image>
+  <attendance>7</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3094512</tag>    
+  <url>http://www.last.fm/event/3094512+Raindance+%28USA%29+%7E+Hardcore+Live</url>
+  <website>http://www.greendoors.cz</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>world</tag>
+      <tag>hardcore</tag>
+      <tag>chillout</tag>
+      <tag>native american chant</tag>
+    </tags>
+    </event>
+  <event>
+  <id>1968849</id>
+  <title>Kvelertak</title>
+  <artists>
+    <artist>Kvelertak</artist>
+    <artist>Toxic Holocaust</artist>
+    <artist>Doomriders</artist>
+    <artist>The Secret</artist>
+    <artist>Wolves Like Us</artist>
+    <headliner>Kvelertak</headliner>
+  </artists>
+    <venue>
+    <id>8786729</id>
+    <name>Matrix Klub</name>
+    <location>
+      <city>Praha</city>
+      <country>Czech Republic</country>
+      <street>Koněvova 13</street>
+      <postalcode>130 00</postalcode>
+      <geo:point>
+         <geo:lat>50.087528</geo:lat>
+         <geo:long>14.454802</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8786729+Matrix+Klub</url>
+    <website>http://www.matrixklub.cz/</website>
+    <phonenumber>731 411 355</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/609871.gif</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/609871.gif</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/609871.gif</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/609871.gif</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/609871/Matrix+Klub.gif</image>
+  </venue>    <startDate>Mon, 05 Dec 2011 18:36:01</startDate>
+  <description><![CDATA[<div class="bbcode">Kvelertak announce their first headliner UK and European tour!</div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/46323639.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/46323639.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/46323639.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/46323639.jpg</image>
+  <attendance>112</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=1968849</tag>    
+  <url>http://www.last.fm/event/1968849+Kvelertak+at+Matrix+Klub+on+5+December+2011</url>
+  <website/>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>hardcore</tag>
+    </tags>
+    </event>
+  <event>
+  <id>2091545</id>
+  <title>Jana Lota</title>
+  <artists>
+    <artist>Jana Lota</artist>
+    <headliner>Jana Lota</headliner>
+  </artists>
+    <venue>
+    <id>8894957</id>
+    <name>Divadlo Hybernia</name>
+    <location>
+      <city>Praha</city>
+      <country>Czech Republic</country>
+      <street>Náměstí Republiky 4</street>
+      <postalcode>11000</postalcode>
+      <geo:point>
+         <geo:lat>50.087622</geo:lat>
+         <geo:long>14.428757</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8894957+Divadlo+Hybernia</url>
+    <website>http://www.divadlo-hybernia.cz/</website>
+    <phonenumber>221419420, 221419427, 221419416</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/62377627.gif</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/62377627.gif</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/62377627.gif</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/62377627.gif</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/62377627/Divadlo+Hybernia+divadlo_557.gif</image>
+  </venue>    <startDate>Mon, 05 Dec 2011 19:14:01</startDate>
+  <description/>
+  <image size="small">http://userserve-ak.last.fm/serve/34/10409807.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/10409807.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/10409807.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/10409807.jpg</image>
+  <attendance>0</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=2091545</tag>    
+  <url>http://www.last.fm/event/2091545+Jana+Lota+at+Divadlo+Hybernia+on+5+December+2011</url>
+  <website/>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>czech</tag>
+      <tag>viking metal</tag>
+      <tag>under 2000 listeners</tag>
+      <tag>black metal</tag>
+      <tag>norwegian black metal</tag>
+      <tag>pagan metal</tag>
+    </tags>
+    </event>
+  <event>
+  <id>3119565</id>
+  <title>Free Mondays w/ Evelynne</title>
+  <artists>
+    <artist>evelynne</artist>
+    <headliner>evelynne</headliner>
+  </artists>
+    <venue>
+    <id>8779248</id>
+    <name>Roxy</name>
+    <location>
+      <city>Praha</city>
+      <country>Czech Republic</country>
+      <street>Dlouhá 33</street>
+      <postalcode>110 00</postalcode>
+      <geo:point>
+         <geo:lat>50.090681</geo:lat>
+         <geo:long>14.425809</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8779248+Roxy</url>
+    <website>http://www.roxy.cz</website>
+    <phonenumber/>
+    <image size="small">http://userserve-ak.last.fm/serve/34/249642.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/249642.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/249642.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/249642.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/249642/Roxy.jpg</image>
+  </venue>    <startDate>Mon, 05 Dec 2011 19:32:01</startDate>
+  <description/>
+  <image size="small">http://userserve-ak.last.fm/serve/34/34790851.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/34790851.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/34790851.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/34790851.jpg</image>
+  <attendance>0</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3119565</tag>    
+  <url>http://www.last.fm/event/3119565+Free+Mondays+w-+Evelynne</url>
+  <website/>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>czech</tag>
+      <tag>emo</tag>
+      <tag>punk rock</tag>
+      <tag>screamo</tag>
+    </tags>
+    </event>
+  <event>
+  <id>1962280</id>
+  <title>Metronomy</title>
+  <artists>
+    <artist>Metronomy</artist>
+    <artist>Gross Magic</artist>
+    <headliner>Metronomy</headliner>
+  </artists>
+    <venue>
+    <id>8781272</id>
+    <name>Lucerna Music Bar</name>
+    <location>
+      <city>Praha</city>
+      <country>Czech Republic</country>
+      <street>Vodičkova 36</street>
+      <postalcode>111 50</postalcode>
+      <geo:point>
+         <geo:lat>50.081417</geo:lat>
+         <geo:long>14.425301</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8781272+Lucerna+Music+Bar</url>
+    <website>http://www.musicbar.cz</website>
+    <phonenumber>+420 224 217 108</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/107724.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/107724.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/107724.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/107724.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/107724/Lucerna+Music+Bar.jpg</image>
+  </venue>    <startDate>Mon, 05 Dec 2011 20:00:00</startDate>
+  <description><![CDATA[<div class="bbcode">Vstupenky za 400,- Kč + poplatky jsou k zakoupení v sítích Ticketpro, Ticketstream a Ticketportal, v pokladně LMB bez poplatku, v den koncertu pak za 500,- Kč.</div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/56980129.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/56980129.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/56980129.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/56980129.jpg</image>
+  <attendance>269</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=1962280</tag>    
+  <url>http://www.last.fm/event/1962280+Metronomy+at+Lucerna+Music+Bar+on+5+December+2011</url>
+  <website/>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>new rave</tag>
+      <tag>indie</tag>
+      <tag>electronic</tag>
+      <tag>experimental</tag>
+      <tag>electro</tag>
+      <tag>british</tag>
+      <tag>indie rock</tag>
+      <tag>indie pop</tag>
+    </tags>
+    </event>
+</events>

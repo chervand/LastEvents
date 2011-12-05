@@ -1,0 +1,118 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.last.fm/event/1962280> a event:Event;
+   dc:title "Metronomy";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Metronomy"],
+     [ a mo:MusicArtist;
+     foaf:name "Gross Magic"];
+   event:factor [ mo:genre "new rave"],
+     [ mo:genre "indie"],
+     [ mo:genre "electronic"],
+     [ mo:genre "experimental"],
+     [ mo:genre "electro"],
+     [ mo:genre "british"],
+     [ mo:genre "indie rock"],
+     [ mo:genre "indie pop"];
+   event:place [ gn:name "Lucerna Music Bar";
+     rdf:resource "http://www.musicbar.cz";
+     geo:lat "50.081417";
+     geo:long "14.425301"];
+   event:time [ a tl:Instant;
+     tl:at "2011-12-05T20:00:00"^^xsd:dateTime];
+   mo:headliner "Metronomy" .
+
+<http://www.last.fm/event/1968849> a event:Event;
+   dc:title "Kvelertak";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Kvelertak"],
+     [ a mo:MusicArtist;
+     foaf:name "Toxic Holocaust"],
+     [ a mo:MusicArtist;
+     foaf:name "Doomriders"],
+     [ a mo:MusicArtist;
+     foaf:name "The Secret"],
+     [ a mo:MusicArtist;
+     foaf:name "Wolves Like Us"];
+   event:factor [ mo:genre "hardcore"];
+   event:place [ gn:name "Matrix Klub";
+     rdf:resource "http://www.matrixklub.cz/";
+     geo:lat "50.087528";
+     geo:long "14.454802"];
+   event:time [ a tl:Instant;
+     tl:at "2011-12-05T18:36:01"^^xsd:dateTime];
+   mo:headliner "Kvelertak" .
+
+<http://www.last.fm/event/2084227> a event:Event;
+   dc:title "Hudba Praha";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Hudba Praha"];
+   event:factor [ mo:genre "czech"],
+     [ mo:genre "big beat"],
+     [ mo:genre "underground"],
+     [ mo:genre "rock"];
+   event:place [ gn:name "Palác Akropolis";
+     rdf:resource "http://www.palacakropolis.cz";
+     geo:lat "50.082232";
+     geo:long "14.448977"];
+   event:time [ a tl:Instant;
+     tl:at "2011-12-05T12:04:01"^^xsd:dateTime];
+   mo:headliner "Hudba Praha" .
+
+<http://www.last.fm/event/2091545> a event:Event;
+   dc:title "Jana Lota";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Jana Lota"];
+   event:factor [ mo:genre "czech"],
+     [ mo:genre "viking metal"],
+     [ mo:genre "under 2000 listeners"],
+     [ mo:genre "black metal"],
+     [ mo:genre "norwegian black metal"],
+     [ mo:genre "pagan metal"];
+   event:place [ gn:name "Divadlo Hybernia";
+     rdf:resource "http://www.divadlo-hybernia.cz/";
+     geo:lat "50.087622";
+     geo:long "14.428757"];
+   event:time [ a tl:Instant;
+     tl:at "2011-12-05T19:14:01"^^xsd:dateTime];
+   mo:headliner "Jana Lota" .
+
+<http://www.last.fm/event/3094512> a event:Event;
+   dc:title "Raindance (USA) ~ Hardcore Live";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Raindance"];
+   event:factor [ mo:genre "world"],
+     [ mo:genre "hardcore"],
+     [ mo:genre "chillout"],
+     [ mo:genre "native american chant"];
+   event:place [ gn:name "Café na půl cesty";
+     rdf:resource "";
+     geo:lat "50.049899";
+     geo:long "14.431491"];
+   event:time [ a tl:Instant;
+     tl:at "2011-12-05T12:45:01"^^xsd:dateTime];
+   mo:headliner "Raindance" .
+
+<http://www.last.fm/event/3119565> a event:Event;
+   dc:title "Free Mondays w/ Evelynne";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "evelynne"];
+   event:factor [ mo:genre "czech"],
+     [ mo:genre "emo"],
+     [ mo:genre "punk rock"],
+     [ mo:genre "screamo"];
+   event:place [ gn:name "Roxy";
+     rdf:resource "http://www.roxy.cz";
+     geo:lat "50.090681";
+     geo:long "14.425809"];
+   event:time [ a tl:Instant;
+     tl:at "2011-12-05T19:32:01"^^xsd:dateTime];
+   mo:headliner "evelynne" .
