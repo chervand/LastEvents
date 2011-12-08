@@ -1,4 +1,8 @@
 To run the application, you need to install Ruby interpreter (http://ruby-lang.org/),
-Ruby libraries Nokogiri (http://nokogiri.org/) and RDF.rb (http://rdf.rubyforge.org/).
+Ruby libraries: Nokogiri (http://nokogiri.org/) and RDF.rb (http://rdf.rubyforge.org/).
+
+Command line run example: 
+
+LastEvents/bin$ ruby LastEvents -l "New York" -t
 
 For more information view mi-swe_chervand.pdf
