@@ -9,14 +9,51 @@ require_relative 'LastEvents/xml'
 require_relative 'LastEvents/graph'
 require_relative 'LastEvents/queries'
 
+# MI-RUB & MI-SWE Project at FIT CTU in Prague (http://fit.cvut.cz)
+#
+# ==Author
+#
+# Andrey Chervinka (mailto:chervand@fit.cvut.cz)
+#
+# ==Description
+#
+# The application requests http://last.fm API for todays events
+# in defined location and converts XML response to RDF-N3
+# ontology (for more information view mi-swe_chervand.pdf).
+# XML and RDF files are stored at data/xml/ and data/rdf folders.
+#
+# ==Runing
+#
+# To run the application, you need to install
+# Ruby interpreter (http://ruby-lang.org/),
+# Ruby libraries: Nokogiri (http://nokogiri.org/)
+# and RDF.rb (http://rdf.rubyforge.org/).
+#
+# ===Parameters
+#
+# * +-l+ - location name
+# * +-t+ - writes out titles of events (execute query to rdf file)
+#
+# ====Command line run example:
+#
+#  LastEvents/bin$ ruby LastEvents -l "New York" -t
+# or
+#  LastEvents/bin$ ruby LastEvents -l Prague
 module LastEvents
+  # Interprets comand line user interface
+  # and options parser
   class Runner
+    # Runs +parse+ method
     def initialize(argv)
       @location = nil
       @titles = false
       parse(argv)
     end
 
+    # Parses comand line parameters
+    # * +--help+ or +-h+
+    # * +--location+ or +-l+
+    # * +--titles+ or +-t+
     def parse(argv)
       OptionParser.new do |opts|
         opts.banner = "Usage:  LastEvents [options]"
@@ -34,36 +71,35 @@ module LastEvents
           argv = ["-h"] if argv.empty?
           opts.parse!(argv)
         rescue OptionParser::ParseError => e
-        STDERR.puts e.message, "\n", opts
-        exit(-1)
+          STDERR.puts e.message, "\n", opts
+          exit(-1)
         end
       end
     end
 
+    # Interprets runner of the application
+    # and writes out system messages
     def run
       if @location.nil?
         puts "Nil location"
-      
       else
         files = LastEvents::Files.new
-        time = Time.new #local time, Time.new.getgm for GMT time
+        # Time.new for local time, Time.new.getgm for GMT time
+        time = Time.new
         file_name = "#{@location}-#{time.year}-#{time.month}-#{time.day}"
-        
         if files.xml_exists file_name
-          #puts "XML file already exists, reading from file"
-          xml = Nokogiri::XML(File.read "../data/xml/#{file_name}.xml")        
+          # puts "XML file already exists, reading from file"
+          xml = Nokogiri::XML(File.read "../data/xml/#{file_name}.xml")
         else
           puts "Requesting Last.FM for events in #{@location}"
-          xml = LastEvents::XML.new.get_events(@location, time.day)          
+          xml = LastEvents::XML.new.get_events(@location, time.day)
         end
-        
         if xml.nil?
           puts "Nil response"
-          
-        else                   
+        else
           if files.xml_exists(file_name)
-            #puts "XML file already exists"
-          else           
+            # puts "XML file already exists"
+            else
             puts "Saving XML data"
             if files.save_xml_data(xml, file_name)
               puts "XML data saved to #{file_name}.xml"
@@ -71,7 +107,6 @@ module LastEvents
               puts "XML write error"
             end
           end
-          
           if files.rdf_exists file_name
             #puts "RDF file already exists"
             puts "Files already exists, reading from file"
@@ -82,9 +117,7 @@ module LastEvents
             else
               puts "RDF write error"
             end
-            
           end
-          
           if @titles
             query = LastEvents::Queries.new(file_name)
             if query.graph
@@ -93,12 +126,10 @@ module LastEvents
               titles.each do |t|
                 puts "#{t}"
               end
-            end           
+            end
           end
-          
         end
       end
     end
-
   end
 end

@@ -1,8 +1,32 @@
-To run the application, you need to install Ruby interpreter (http://ruby-lang.org/),
-Ruby libraries: Nokogiri (http://nokogiri.org/) and RDF.rb (http://rdf.rubyforge.org/).
-
-Command line run example: 
-
-LastEvents/bin$ ruby LastEvents -l "New York" -t
-
-For more information view mi-swe_chervand.pdf
+# =LastEvents
+#
+# MI-RUB & MI-SWE Project at FIT CTU in Prague (http://fit.cvut.cz)
+#
+# ==Author 
+# 
+# Andrey Chervinka (mailto:chervand@fit.cvut.cz)
+#
+# ==Description
+#
+# The application requests http://last.fm API for todays events
+# in defined location and converts XML response to RDF-N3
+# ontology (for more information view mi-swe_chervand.pdf).
+# XML and RDF files are stored at data/xml/ and data/rdf folders.
+#
+# ==Runing
+#
+# To run the application, you need to install 
+# Ruby interpreter (http://ruby-lang.org/),
+# Ruby libraries: Nokogiri (http://nokogiri.org/) 
+# and RDF.rb (http://rdf.rubyforge.org/).
+#
+# ===Parameters
+#
+# * +-l+ - location name
+# * +-t+ - writes out titles of events (execute query to rdf file)
+# 
+# ====Command line run example: 
+# 
+#  LastEvents/bin$ ruby LastEvents -l "New York" -t
+# or
+#  LastEvents/bin$ ruby LastEvents -l Prague
