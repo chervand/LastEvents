@@ -1,0 +1,26 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.last.fm/event/2023653> a event:Event;
+   dc:title "Galakoncert";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Jonas Kaufmann"],
+     [ a mo:MusicArtist;
+     foaf:name "The Prague Symphony Orchestra"],
+     [ a mo:MusicArtist;
+     foaf:name "Jochen Rieder"];
+   event:factor [ mo:genre "classical"];
+   event:place [ gn:name "Obecní dům";
+     rdf:resource "http://www.obecnidum.cz/";
+     geo:lat "50.087864";
+     geo:long "14.428471"];
+   event:time [ a tl:Instant;
+     tl:at "2012-01-08T10:32:01"^^xsd:dateTime];
+   mo:headliner "Jonas Kaufmann" .

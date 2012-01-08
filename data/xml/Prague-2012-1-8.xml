@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" location="Praha, Czech Republic" total="1">
+  <event>
+  <id>2023653</id>
+  <title>Galakoncert</title>
+  <artists>
+    <artist>Jonas Kaufmann</artist>
+    <artist>The Prague Symphony Orchestra</artist>
+    <artist>Jochen Rieder</artist>
+    <headliner>Jonas Kaufmann</headliner>
+  </artists>
+    <venue>
+    <id>8835283</id>
+    <name>Obecní dům</name>
+    <location>
+      <city>Praha 1</city>
+      <country>Czech Republic</country>
+      <street>Náměstí Republiky 5</street>
+      <postalcode>111 21</postalcode>
+      <geo:point>
+         <geo:lat>50.087864</geo:lat>
+         <geo:long>14.428471</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8835283+Obecn%C3%AD+d%C5%AFm</url>
+    <website>http://www.obecnidum.cz/</website>
+    <phonenumber>+420 222 002 101</phonenumber>
+    <image size="small"/>
+	<image size="medium"/>
+	<image size="large"/>
+	<image size="extralarge"/>
+	<image size="mega"/>
+  </venue>    <startDate>Sun, 08 Jan 2012 10:32:01</startDate>
+  <description><![CDATA[<div class="bbcode">Jonas Kaufmann - Tenor<br />Jochen Rieder - Conductor<br />The Prague Symphony Orchestra FOK<br />Obecní dům (The Municipal House - Smetana Hall)<br />Praha (Prague)<br />8 January, 2012</div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/54943765.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/54943765.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/54943765.png</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/54943765.png</image>
+  <attendance>0</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=2023653</tag>    
+  <url>http://www.last.fm/event/2023653+Galakoncert</url>
+  <website/>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>classical</tag>
+    </tags>
+    </event>
+</events>
