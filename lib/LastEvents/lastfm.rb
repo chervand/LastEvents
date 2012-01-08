@@ -18,7 +18,7 @@ module LastEvents
       }              
       @uri.query = URI.encode_www_form(params)     
       response = Net::HTTP.get_response(@uri)
-      return response.body if response.is_a?(Net::HTTPSuccess)
+      return response.body if response.is_a?(Net::HTTPSuccess) #TODO Handle connection errors
     end
     
   end

@@ -1,6 +1,7 @@
 require 'optparse'
 require 'rubygems'
 require 'rdf'
+require 'nokogiri'
 
 require_relative 'LastEvents/files'
 require_relative 'LastEvents/lastfm'
@@ -40,32 +41,48 @@ module LastEvents
     end
 
     def run
-      #TODO Check if such file aready exists
-      #TODO Handle connection error
-
       if @location.nil?
-      puts "Nil location"
+        puts "Nil location"
+      
       else
-        puts "Requesting Last.FM for events in #{@location}"
-        xml = LastEvents::XML.new.get_events(@location, Time.new.day)
+        files = LastEvents::Files.new
+        time = Time.new #local time, Time.new.getgm for GMT time
+        file_name = "#{@location}-#{time.year}-#{time.month}-#{time.day}"
+        
+        if files.xml_exists file_name
+          #puts "XML file already exists, reading from file"
+          xml = Nokogiri::XML(File.read "../data/xml/#{file_name}.xml")        
+        else
+          puts "Requesting Last.FM for events in #{@location}"
+          xml = LastEvents::XML.new.get_events(@location, time.day)          
+        end
+        
         if xml.nil?
           puts "Nil response"
-        else
-          time = Time.new #local time, Time.new.getgm for GMT time
-          file_name = "#{@location}-#{time.year}-#{time.month}-#{time.day}"
           
-          puts "Saving XML data"
-          if LastEvents::Files.new.save_xml_data(xml, file_name)
-            puts "XML data saved to #{file_name}.xml"
-          else
-            puts "XML write error"
+        else                   
+          if files.xml_exists(file_name)
+            #puts "XML file already exists"
+          else           
+            puts "Saving XML data"
+            if files.save_xml_data(xml, file_name)
+              puts "XML data saved to #{file_name}.xml"
+            else
+              puts "XML write error"
+            end
           end
           
-          puts "Serializing RDF/N3 data"
-          if LastEvents::Graph.new(xml).serialize_n3(file_name)
-            puts "RDF/N3 data saved to #{file_name}.n3"
+          if files.rdf_exists file_name
+            #puts "RDF file already exists"
+            puts "Files already exists, reading from file"
           else
-            puts "RDF write error"
+            puts "Serializing RDF/N3 data"
+            if LastEvents::Graph.new(xml).serialize_n3(file_name)
+              puts "RDF/N3 data saved to #{file_name}.n3"
+            else
+              puts "RDF write error"
+            end
+            
           end
           
           if @titles
