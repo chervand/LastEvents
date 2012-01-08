@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>File: README [RDoc Documentation]</title>
+
+	<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+</head>
+
+<body class="file">
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="./README.html">README</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./LastEvents.html">LastEvents</a></li>
+				
+					<li><a href="./LastEvents/Event.html">LastEvents::Event</a></li>
+				
+					<li><a href="./LastEvents/Files.html">LastEvents::Files</a></li>
+				
+					<li><a href="./LastEvents/Graph.html">LastEvents::Graph</a></li>
+				
+					<li><a href="./LastEvents/LastFM.html">LastEvents::LastFM</a></li>
+				
+					<li><a href="./LastEvents/Queries.html">LastEvents::Queries</a></li>
+				
+					<li><a href="./LastEvents/Runner.html">LastEvents::Runner</a></li>
+				
+					<li><a href="./LastEvents/XML.html">LastEvents::XML</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<p>
+MI-RUB &amp; MI-SWE Project at FIT CTU in Prague (<a
+href="http://fit.cvut.cz">fit.cvut.cz</a>)
+</p>
+<h2>Author </h2>
+<p>
+Andrey Chervinka (<a
+href="mailto:chervand@fit.cvut.cz">chervand@fit.cvut.cz</a>)
+</p>
+<h2>Description</h2>
+<p>
+The application requests <a href="http://last.fm">last.fm</a> API for
+todays events in defined location and converts XML response to RDF-N3
+ontology (for more information view mi-swe_chervand.pdf). XML and RDF files
+are stored at data/xml/ and data/rdf folders.
+</p>
+<h2>Runing</h2>
+<p>
+To run the application, you need to install  Ruby interpreter (<a
+href="http://ruby-lang.org/">ruby-lang.org/</a>), Ruby libraries: Nokogiri
+(<a href="http://nokogiri.org/">nokogiri.org/</a>)  and RDF.rb (<a
+href="http://rdf.rubyforge.org/">rdf.rubyforge.org/</a>).
+</p>
+<h3>Parameters</h3>
+<ul>
+<li><p>
+<tt>-l</tt> - location name
+</p>
+</li>
+<li><p>
+<tt>-t</tt> - writes out titles of events (execute query to rdf file)
+</p>
+</li>
+</ul>
+<h4>Command line run example: </h4>
+<pre>
+ LastEvents/bin$ ruby LastEvents -l &quot;New York&quot; -t
+</pre>
+<p>
+or
+</p>
+<pre>
+ LastEvents/bin$ ruby LastEvents -l Prague</pre>
+
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+</body>
+</html>
+

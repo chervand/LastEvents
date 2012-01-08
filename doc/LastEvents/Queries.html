@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: LastEvents::Queries</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/LastEvents/queries_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/LastEvents/queries.rb">lib/LastEvents/queries.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-c-new">::new</a></li>
+					
+					<li><a href="#method-i-get_titles">#get_titles</a></li>
+					
+					<li><a href="#method-i-load_graph_from_n3">#load_graph_from_n3</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../README.html">README</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../LastEvents.html">LastEvents</a></li>
+				
+					<li><a href="../LastEvents/Event.html">LastEvents::Event</a></li>
+				
+					<li><a href="../LastEvents/Files.html">LastEvents::Files</a></li>
+				
+					<li><a href="../LastEvents/Graph.html">LastEvents::Graph</a></li>
+				
+					<li><a href="../LastEvents/LastFM.html">LastEvents::LastFM</a></li>
+				
+					<li><a href="../LastEvents/Queries.html">LastEvents::Queries</a></li>
+				
+					<li><a href="../LastEvents/Runner.html">LastEvents::Runner</a></li>
+				
+					<li><a href="../LastEvents/XML.html">LastEvents::XML</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">LastEvents::Queries</h1>
+
+		<div id="description">
+			
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+		<div id="attribute-method-details" class="method-section section">
+			<h3 class="section-header">Attributes</h3>
+
+			
+			<div id="graph-attribute-method" class="method-detail">
+				<a name="graph"></a>
+				
+				<div class="method-heading attribute-method-heading">
+					<span class="method-name">graph</span><span
+						class="attribute-access-type">[R]</span>
+				</div>
+
+				<div class="method-description">
+				
+				
+				
+				</div>
+			</div>
+			
+		</div>
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="new-method" class="method-detail ">
+				<a name="method-c-new"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">new</span><span
+						class="method-args">(file_name)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="new-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/LastEvents/queries.rb, line 10</span>
+10:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">file_name</span>)
+11:       <span class="ruby-ivar">@graph</span> = <span class="ruby-identifier">load_graph_from_n3</span>(<span class="ruby-identifier">file_name</span>)
+12:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="get-titles-method" class="method-detail ">
+				<a name="method-i-get_titles"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">get_titles</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					
+					
+
+					
+					<div class="method-source-code"
+						id="get-titles-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/LastEvents/queries.rb, line 31</span>
+31:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">get_titles</span>
+32:       <span class="ruby-identifier">query</span> = <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Query</span>.<span class="ruby-identifier">new</span> <span class="ruby-keyword kw">do</span>
+33:         <span class="ruby-identifier">pattern</span> [<span class="ruby-value">:subject</span>, <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">DC</span>.<span class="ruby-identifier">title</span>, <span class="ruby-value">:object</span>]
+34:       <span class="ruby-keyword kw">end</span>
+35:       <span class="ruby-identifier">titles</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+36:       <span class="ruby-identifier">query</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-ivar">@graph</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">solution</span><span class="ruby-operator">|</span>
+37:         <span class="ruby-identifier">titles</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">solution</span>[<span class="ruby-value">:object</span>].<span class="ruby-identifier">to_s</span>
+38:       <span class="ruby-keyword kw">end</span>
+39:       <span class="ruby-identifier">titles</span>.<span class="ruby-identifier">sort!</span>
+40:       <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-operator">!</span><span class="ruby-identifier">titles</span>.<span class="ruby-identifier">empty?</span>
+41:       <span class="ruby-identifier">titles</span>
+42:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="load-graph-from-n--method" class="method-detail ">
+				<a name="method-i-load_graph_from_n3"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">load_graph_from_n3</span><span
+						class="method-args">(file_name)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+TODO Move to <a href="Graph.html">Graph</a> class
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="load-graph-from-n--source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/LastEvents/queries.rb, line 15</span>
+15:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">load_graph_from_n3</span>(<span class="ruby-identifier">file_name</span>)     
+16:       <span class="ruby-identifier">file_path</span> = <span class="ruby-constant">LastEvents</span><span class="ruby-operator">::</span><span class="ruby-constant">Files</span>.<span class="ruby-identifier">new</span>.<span class="ruby-identifier">get_rdf_data_path</span>(<span class="ruby-identifier">file_name</span>) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;.n3&quot;</span>
+17:       <span class="ruby-keyword kw">if</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exists?</span>(<span class="ruby-identifier">file_path</span>)
+18:         <span class="ruby-identifier">graph</span> = <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Graph</span>.<span class="ruby-identifier">new</span>
+19:         <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">N3</span><span class="ruby-operator">::</span><span class="ruby-constant">Reader</span>.<span class="ruby-identifier">open</span>(<span class="ruby-identifier">file_path</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">reader</span><span class="ruby-operator">|</span>
+20:           <span class="ruby-identifier">reader</span>.<span class="ruby-identifier">each_statement</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">statement</span><span class="ruby-operator">|</span>
+21:             <span class="ruby-identifier">graph</span>.<span class="ruby-identifier">insert</span> <span class="ruby-identifier">statement</span>
+22:           <span class="ruby-keyword kw">end</span>
+23:         <span class="ruby-keyword kw">end</span>
+24:       <span class="ruby-keyword kw">else</span>
+25:         <span class="ruby-comment cmt">#TODO raise 'no file' error</span>
+26:       <span class="ruby-keyword kw">end</span>
+27:       <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">graph</span>.<span class="ruby-identifier">graph?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">graph</span>.<span class="ruby-identifier">empty?</span>
+28:       <span class="ruby-identifier">graph</span>
+29:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

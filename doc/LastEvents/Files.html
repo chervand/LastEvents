@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: LastEvents::Files</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/LastEvents/files_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/LastEvents/files.rb">lib/LastEvents/files.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-i-get_project_path">#get_project_path</a></li>
+					
+					<li><a href="#method-i-get_rdf_data_path">#get_rdf_data_path</a></li>
+					
+					<li><a href="#method-i-rdf_exists">#rdf_exists</a></li>
+					
+					<li><a href="#method-i-save_xml_data">#save_xml_data</a></li>
+					
+					<li><a href="#method-i-xml_exists">#xml_exists</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../README.html">README</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../LastEvents.html">LastEvents</a></li>
+				
+					<li><a href="../LastEvents/Event.html">LastEvents::Event</a></li>
+				
+					<li><a href="../LastEvents/Files.html">LastEvents::Files</a></li>
+				
+					<li><a href="../LastEvents/Graph.html">LastEvents::Graph</a></li>
+				
+					<li><a href="../LastEvents/LastFM.html">LastEvents::LastFM</a></li>
+				
+					<li><a href="../LastEvents/Queries.html">LastEvents::Queries</a></li>
+				
+					<li><a href="../LastEvents/Runner.html">LastEvents::Runner</a></li>
+				
+					<li><a href="../LastEvents/XML.html">LastEvents::XML</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">LastEvents::Files</h1>
+
+		<div id="description">
+			<p>
+Provides work with files
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="get-project-path-method" class="method-detail ">
+				<a name="method-i-get_project_path"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">get_project_path</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns path to the project&#8217;s root folder
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="get-project-path-source">
+<pre>
+   <span class="ruby-comment cmt"># File lib/LastEvents/files.rb, line 5</span>
+5:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">get_project_path</span>
+6:       <span class="ruby-identifier">root_path</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">dirname</span>(<span class="ruby-keyword kw">__FILE__</span> ) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;/../../&quot;</span>
+7:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">root_path</span>.<span class="ruby-identifier">to_s</span>
+8:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="get-rdf-data-path-method" class="method-detail ">
+				<a name="method-i-get_rdf_data_path"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">get_rdf_data_path</span><span
+						class="method-args">(file_name)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Returns path to the RDF data folder
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="get-rdf-data-path-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/LastEvents/files.rb, line 11</span>
+11:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">get_rdf_data_path</span>(<span class="ruby-identifier">file_name</span>)
+12:       <span class="ruby-identifier">rdf_data_path</span> = <span class="ruby-identifier">get_project_path</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;data/rdf/&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">file_name</span>
+13:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">rdf_data_path</span>.<span class="ruby-identifier">to_s</span>
+14:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="rdf-exists-method" class="method-detail ">
+				<a name="method-i-rdf_exists"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">rdf_exists</span><span
+						class="method-args">(file_name)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Checks if <file_name>.n3 file exists in data/rdf/ folder
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="rdf-exists-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/LastEvents/files.rb, line 36</span>
+36:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">rdf_exists</span>(<span class="ruby-identifier">file_name</span>)
+37:       <span class="ruby-identifier">path</span> = <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">get_project_path</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;data/rdf/&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">file_name</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;.n3&quot;</span>
+38:       <span class="ruby-constant">File</span>.<span class="ruby-identifier">exist?</span> <span class="ruby-identifier">path</span>
+39:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="save-xml-data-method" class="method-detail ">
+				<a name="method-i-save_xml_data"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">save_xml_data</span><span
+						class="method-args">(data, file_name)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Saves <a href="XML.html">XML</a> data to <file_name>.xml file in data/xml/
+folder. Returns true or false
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="save-xml-data-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/LastEvents/files.rb, line 18</span>
+18:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">save_xml_data</span>(<span class="ruby-identifier">data</span>, <span class="ruby-identifier">file_name</span>)
+19:       <span class="ruby-identifier">path</span> = <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">get_project_path</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;data/xml/&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">file_name</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;.xml&quot;</span>
+20:       <span class="ruby-identifier">file</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">path</span>, <span class="ruby-value str">'w'</span>)
+21:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">file</span>.<span class="ruby-identifier">write</span>(<span class="ruby-identifier">data</span>)
+22:       <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">true</span>
+23:       <span class="ruby-keyword kw">else</span>
+24:       <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">false</span>
+25:       <span class="ruby-keyword kw">end</span>
+26:       <span class="ruby-identifier">file</span>.<span class="ruby-identifier">close</span>
+27:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+			<div id="xml-exists-method" class="method-detail ">
+				<a name="method-i-xml_exists"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">xml_exists</span><span
+						class="method-args">(file_name)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Checks if <file_name>.xml file exists in data/xml/ folder
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="xml-exists-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/LastEvents/files.rb, line 30</span>
+30:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">xml_exists</span>(<span class="ruby-identifier">file_name</span>)
+31:       <span class="ruby-identifier">path</span> = <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">get_project_path</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;data/xml/&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">file_name</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;.xml&quot;</span>
+32:       <span class="ruby-constant">File</span>.<span class="ruby-identifier">exist?</span> <span class="ruby-identifier">path</span>
+33:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: LastEvents::LastFM</title>
+
+	<link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="../lib/LastEvents/lastfm_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/LastEvents/lastfm.rb">lib/LastEvents/lastfm.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#method-i-geoGetEvents">#geoGetEvents</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../README.html">README</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../LastEvents.html">LastEvents</a></li>
+				
+					<li><a href="../LastEvents/Event.html">LastEvents::Event</a></li>
+				
+					<li><a href="../LastEvents/Files.html">LastEvents::Files</a></li>
+				
+					<li><a href="../LastEvents/Graph.html">LastEvents::Graph</a></li>
+				
+					<li><a href="../LastEvents/LastFM.html">LastEvents::LastFM</a></li>
+				
+					<li><a href="../LastEvents/Queries.html">LastEvents::Queries</a></li>
+				
+					<li><a href="../LastEvents/Runner.html">LastEvents::Runner</a></li>
+				
+					<li><a href="../LastEvents/XML.html">LastEvents::XML</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">LastEvents::LastFM</h1>
+
+		<div id="description">
+			<p>
+Provides tools for work with last.fm API
+</p>
+<p>
+More info at <a href="http://www.last.fm/api/">www.last.fm/api/</a>
+</p>
+
+		</div>
+
+		<!-- Constants -->
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-instance-method-details" class="method-section section">
+			<h3 class="section-header">Public Instance Methods</h3>
+
+		
+			<div id="geo-et-vents-method" class="method-detail ">
+				<a name="method-i-geoGetEvents"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">geoGetEvents</span><span
+						class="method-args">(location, limit = 10, page = 1)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Sends request to the geoGetEvents method and returns <a
+href="XML.html">XML</a> data. More info at <a
+href="http://www.last.fm/api/show?service=270">www.last.fm/api/show?service=270</a>
+</p>
+<h4>Parameters</h4>
+<ul>
+<li><p>
+<tt>location</tt> - location name as &#8220;Prague&#8221;
+</p>
+</li>
+<li><p>
+<tt>limit</tt> - events per page
+</p>
+</li>
+<li><p>
+<tt>page</tt> - page number
+</p>
+</li>
+</ul>
+<pre>
+ LastEvents::LastFM.new.geoGetEvents(&quot;Prague&quot;, 15, 1)</pre>
+					
+
+					
+					<div class="method-source-code"
+						id="geo-et-vents-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/LastEvents/lastfm.rb, line 21</span>
+21:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">geoGetEvents</span>(<span class="ruby-identifier">location</span>, <span class="ruby-identifier">limit</span> = <span class="ruby-value">10</span>, <span class="ruby-identifier">page</span> = <span class="ruby-value">1</span>)
+22:       <span class="ruby-identifier">params</span> = {
+23:         <span class="ruby-value">:method</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;geo.getevents&quot;</span>,
+24:         <span class="ruby-value">:location</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">location</span>,
+25:         <span class="ruby-value">:api_key</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@api_key</span>,
+26:         <span class="ruby-value">:limit</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">limit</span>,
+27:         <span class="ruby-value">:page</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">page</span>
+28:       }
+29:       <span class="ruby-comment cmt">#--</span>
+30:       <span class="ruby-comment cmt"># TODO Handle connection errors</span>
+31:       <span class="ruby-comment cmt">#++</span>
+32:       <span class="ruby-ivar">@uri</span>.<span class="ruby-identifier">query</span> = <span class="ruby-constant">URI</span>.<span class="ruby-identifier">encode_www_form</span>(<span class="ruby-identifier">params</span>)
+33:       <span class="ruby-identifier">response</span> = <span class="ruby-constant">Net</span><span class="ruby-operator">::</span><span class="ruby-constant">HTTP</span>.<span class="ruby-identifier">get_response</span>(<span class="ruby-ivar">@uri</span>)
+34:       <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">response</span>.<span class="ruby-identifier">body</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">response</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Net</span><span class="ruby-operator">::</span><span class="ruby-constant">HTTPSuccess</span>)
+35:     <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+
