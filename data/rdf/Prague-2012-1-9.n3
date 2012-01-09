@@ -1,0 +1,29 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.last.fm/event/3149547> a event:Event;
+   dc:title "Doom Town";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Doom Town"],
+     [ a mo:MusicArtist;
+     foaf:name "Fear of Extinction"];
+   event:factor [ mo:genre "punk"],
+     [ mo:genre "garage punk"],
+     [ mo:genre "crust"],
+     [ mo:genre "old school punk"],
+     [ mo:genre "rock"],
+     [ mo:genre "punk rock"];
+   event:place [ gn:name "Café na půl cesty";
+     rdf:resource "";
+     geo:lat "50.049899";
+     geo:long "14.431491"];
+   event:time [ a tl:Instant;
+     tl:at "2012-01-09T21:04:01"^^xsd:dateTime];
+   mo:headliner "Doom Town" .

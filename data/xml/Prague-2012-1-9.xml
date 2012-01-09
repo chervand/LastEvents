@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" location="Praha, Czech Republic" total="1">
+  <event>
+  <id>3149547</id>
+  <title>Doom Town</title>
+  <artists>
+    <artist>Doom Town</artist>
+    <artist>Fear of Extinction</artist>
+    <headliner>Doom Town</headliner>
+  </artists>
+    <venue>
+    <id>8944380</id>
+    <name>Café na půl cesty</name>
+    <location>
+      <city>Praha</city>
+      <country>Czech Republic</country>
+      <street/>
+      <postalcode/>
+      <geo:point>
+         <geo:lat>50.049899</geo:lat>
+         <geo:long>14.431491</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8944380+Caf%C3%A9+na+p%C5%AFl+cesty</url>
+    <website/>
+    <phonenumber/>
+    <image size="small">http://userserve-ak.last.fm/serve/34/47110083.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/47110083.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/47110083.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/47110083.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/47110083/Caf+na+pl+cesty+0251372.jpg</image>
+  </venue>    <startDate>Mon, 09 Jan 2012 21:04:01</startDate>
+  <description/>
+  <image size="small">http://userserve-ak.last.fm/serve/34/53658747.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/53658747.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/53658747.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/53658747.jpg</image>
+  <attendance>7</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3149547</tag>    
+  <url>http://www.last.fm/event/3149547+Doom+Town+at+Caf%C3%A9+na+p%C5%AFl+cesty+on+9+January+2012</url>
+  <website>http://www.greendoors.cz</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>punk</tag>
+      <tag>garage punk</tag>
+      <tag>crust</tag>
+      <tag>old school punk</tag>
+      <tag>rock</tag>
+      <tag>punk rock</tag>
+    </tags>
+    </event>
+</events>
