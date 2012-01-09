@@ -139,7 +139,10 @@
 		<h1 class="class">LastEvents::XML</h1>
 
 		<div id="description">
-			
+			<p>
+Provides tools for work with xml data
+</p>
+
 		</div>
 
 		<!-- Constants -->
@@ -167,52 +170,55 @@
 
 				<div class="method-description">
 					
-					
+					<p>
+Separates needed (todays) events from last.fm&#8217;s  geoGetEvents
+response. Returns xml data build with <a
+href="XML.html#method-i-xml_build">xml_build</a> method
+</p>
 					
 
 					
 					<div class="method-source-code"
 						id="get-events-source">
 <pre>
-    <span class="ruby-comment cmt"># File lib/LastEvents/xml.rb, line 30</span>
-30:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">get_events</span>(<span class="ruby-identifier">location</span>, <span class="ruby-identifier">date</span>)
-31:       <span class="ruby-identifier">i</span> = <span class="ruby-value">1</span>
-32:       <span class="ruby-ivar">@total</span> = <span class="ruby-value">0</span>
-33:       <span class="ruby-ivar">@totalPages</span> = <span class="ruby-value">0</span>
-34:       <span class="ruby-ivar">@location_attr</span> = <span class="ruby-value str">&quot;&quot;</span>
-35:       <span class="ruby-ivar">@events</span> = <span class="ruby-value str">&quot;&quot;</span>
-36:       <span class="ruby-ivar">@cur_date</span> = <span class="ruby-identifier">date</span>.<span class="ruby-identifier">to_i</span>
-37:       <span class="ruby-ivar">@date</span> = <span class="ruby-identifier">date</span>.<span class="ruby-identifier">to_i</span>
-38:       
-39:       <span class="ruby-keyword kw">while</span> <span class="ruby-ivar">@cur_date</span>.<span class="ruby-identifier">to_i</span> <span class="ruby-operator">&lt;</span> <span class="ruby-ivar">@date</span>.<span class="ruby-identifier">to_i</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">api</span> = <span class="ruby-constant">LastEvents</span><span class="ruby-operator">::</span><span class="ruby-constant">LastFM</span>.<span class="ruby-identifier">new</span>.<span class="ruby-identifier">geoGetEvents</span>(<span class="ruby-identifier">location</span>, <span class="ruby-value">10</span>, <span class="ruby-identifier">i</span>)
-40:         <span class="ruby-identifier">page</span> = <span class="ruby-constant">Nokogiri</span><span class="ruby-operator">::</span><span class="ruby-constant">XML</span>(<span class="ruby-identifier">api</span>)
-41:         <span class="ruby-ivar">@totalPages</span> =  <span class="ruby-identifier">page</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">&quot;//events/@totalPages&quot;</span>).<span class="ruby-identifier">to_s</span>
-42:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">==</span> <span class="ruby-ivar">@totalPages</span>.<span class="ruby-identifier">to_i</span> <span class="ruby-comment cmt">#FIXME it's stupid</span>
-43:           <span class="ruby-keyword kw">break</span>
-44:         <span class="ruby-keyword kw">else</span>
-45:           <span class="ruby-identifier">page</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">&quot;//events/event&quot;</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">event</span><span class="ruby-operator">|</span>
-46:             <span class="ruby-identifier">da</span> = <span class="ruby-identifier">event</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">&quot;startDate/text()&quot;</span>).<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">split</span>
-47:             <span class="ruby-ivar">@cur_date</span> = <span class="ruby-identifier">da</span>[<span class="ruby-value">1</span>].<span class="ruby-identifier">to_i</span>
-48:             <span class="ruby-comment cmt">#FIXME fix date format (not only day)!!!!</span>
-49:             <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@cur_date</span> <span class="ruby-operator">!=</span> <span class="ruby-ivar">@date</span>
-50:               <span class="ruby-identifier">event</span>.<span class="ruby-identifier">remove</span>
-51:             <span class="ruby-keyword kw">end</span>
-52:           <span class="ruby-keyword kw">end</span>
-53:         <span class="ruby-keyword kw">end</span>       
-54:         <span class="ruby-ivar">@location_attr</span> = <span class="ruby-identifier">page</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">&quot;//events/@location&quot;</span>)
-55:         <span class="ruby-ivar">@total</span> = <span class="ruby-ivar">@total</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">page</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">&quot;//events/event&quot;</span>).<span class="ruby-identifier">count</span>       
-56:         <span class="ruby-ivar">@events</span> = <span class="ruby-ivar">@events</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">page</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">&quot;//events/event&quot;</span>).<span class="ruby-identifier">to_s</span>
-57:         <span class="ruby-identifier">i</span> = <span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
-58:       <span class="ruby-keyword kw">end</span> <span class="ruby-comment cmt">#end of loop</span>
-59:       <span class="ruby-ivar">@nodes</span> = <span class="ruby-constant">Nokogiri</span><span class="ruby-operator">::</span><span class="ruby-constant">XML</span><span class="ruby-operator">::</span><span class="ruby-constant">DocumentFragment</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-ivar">@events</span>)
-60:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@total</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
-61:         <span class="ruby-ivar">@xml</span> = <span class="ruby-keyword kw">nil</span>
-62:       <span class="ruby-keyword kw">else</span>
-63:         <span class="ruby-ivar">@doc</span> = <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">xml_build</span>(<span class="ruby-ivar">@nodes</span>, <span class="ruby-ivar">@location_attr</span>, <span class="ruby-ivar">@total</span>)
-64:         <span class="ruby-ivar">@xml</span> = <span class="ruby-constant">Nokogiri</span><span class="ruby-operator">::</span><span class="ruby-constant">XML</span>(<span class="ruby-ivar">@doc</span>)
-65:       <span class="ruby-keyword kw">end</span>
-66:       <span class="ruby-ivar">@xml</span>
-67:     <span class="ruby-keyword kw">end</span></pre>
+    <span class="ruby-comment cmt"># File lib/LastEvents/xml.rb, line 38</span>
+38:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">get_events</span>(<span class="ruby-identifier">location</span>, <span class="ruby-identifier">date</span>)
+39:       <span class="ruby-identifier">i</span> = <span class="ruby-value">1</span>
+40:       <span class="ruby-ivar">@total</span> = <span class="ruby-value">0</span>
+41:       <span class="ruby-ivar">@totalPages</span> = <span class="ruby-value">0</span>
+42:       <span class="ruby-ivar">@location_attr</span> = <span class="ruby-value str">&quot;&quot;</span>
+43:       <span class="ruby-ivar">@events</span> = <span class="ruby-value str">&quot;&quot;</span>
+44:       <span class="ruby-ivar">@cur_date</span> = <span class="ruby-identifier">date</span>.<span class="ruby-identifier">to_i</span>
+45:       <span class="ruby-ivar">@date</span> = <span class="ruby-identifier">date</span>.<span class="ruby-identifier">to_i</span>
+46:       <span class="ruby-keyword kw">while</span> <span class="ruby-ivar">@cur_date</span>.<span class="ruby-identifier">to_i</span> <span class="ruby-operator">&lt;</span> <span class="ruby-ivar">@date</span>.<span class="ruby-identifier">to_i</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">api</span> = <span class="ruby-constant">LastEvents</span><span class="ruby-operator">::</span><span class="ruby-constant">LastFM</span>.<span class="ruby-identifier">new</span>.<span class="ruby-identifier">geoGetEvents</span>(<span class="ruby-identifier">location</span>, <span class="ruby-value">10</span>, <span class="ruby-identifier">i</span>)
+47:         <span class="ruby-identifier">page</span> = <span class="ruby-constant">Nokogiri</span><span class="ruby-operator">::</span><span class="ruby-constant">XML</span>(<span class="ruby-identifier">api</span>)
+48:         <span class="ruby-ivar">@totalPages</span> =  <span class="ruby-identifier">page</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">&quot;//events/@totalPages&quot;</span>).<span class="ruby-identifier">to_s</span>
+49:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">==</span> <span class="ruby-ivar">@totalPages</span>.<span class="ruby-identifier">to_i</span> <span class="ruby-comment cmt">#FIXME it's stupid</span>
+50:           <span class="ruby-keyword kw">break</span>
+51:         <span class="ruby-keyword kw">else</span>
+52:           <span class="ruby-identifier">page</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">&quot;//events/event&quot;</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">event</span><span class="ruby-operator">|</span>
+53:             <span class="ruby-identifier">da</span> = <span class="ruby-identifier">event</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">&quot;startDate/text()&quot;</span>).<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">split</span>
+54:             <span class="ruby-ivar">@cur_date</span> = <span class="ruby-identifier">da</span>[<span class="ruby-value">1</span>].<span class="ruby-identifier">to_i</span>
+55:             <span class="ruby-comment cmt">#FIXME fix date format (not only day)!!!!</span>
+56:             <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@cur_date</span> <span class="ruby-operator">!=</span> <span class="ruby-ivar">@date</span>
+57:               <span class="ruby-identifier">event</span>.<span class="ruby-identifier">remove</span>
+58:             <span class="ruby-keyword kw">end</span>
+59:           <span class="ruby-keyword kw">end</span>
+60:         <span class="ruby-keyword kw">end</span>       
+61:         <span class="ruby-ivar">@location_attr</span> = <span class="ruby-identifier">page</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">&quot;//events/@location&quot;</span>)
+62:         <span class="ruby-ivar">@total</span> = <span class="ruby-ivar">@total</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">page</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">&quot;//events/event&quot;</span>).<span class="ruby-identifier">count</span>       
+63:         <span class="ruby-ivar">@events</span> = <span class="ruby-ivar">@events</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">page</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">&quot;//events/event&quot;</span>).<span class="ruby-identifier">to_s</span>
+64:         <span class="ruby-identifier">i</span> = <span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+65:       <span class="ruby-keyword kw">end</span> <span class="ruby-comment cmt"># end of loop</span>
+66:       <span class="ruby-ivar">@nodes</span> = <span class="ruby-constant">Nokogiri</span><span class="ruby-operator">::</span><span class="ruby-constant">XML</span><span class="ruby-operator">::</span><span class="ruby-constant">DocumentFragment</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-ivar">@events</span>)
+67:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@total</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+68:         <span class="ruby-ivar">@xml</span> = <span class="ruby-keyword kw">nil</span>
+69:       <span class="ruby-keyword kw">else</span>
+70:         <span class="ruby-ivar">@doc</span> = <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">xml_build</span>(<span class="ruby-ivar">@nodes</span>, <span class="ruby-ivar">@location_attr</span>, <span class="ruby-ivar">@total</span>)
+71:         <span class="ruby-ivar">@xml</span> = <span class="ruby-constant">Nokogiri</span><span class="ruby-operator">::</span><span class="ruby-constant">XML</span>(<span class="ruby-ivar">@doc</span>)
+72:       <span class="ruby-keyword kw">end</span>
+73:       <span class="ruby-ivar">@xml</span>
+74:     <span class="ruby-keyword kw">end</span></pre>
 					</div>
 					
 				</div>
@@ -236,25 +242,41 @@
 
 				<div class="method-description">
 					
-					
+					<p>
+Returns Nokogiri::XML::Builder with formated xml data
+</p>
+<ul>
+<li><p>
+<tt>event_nodes</tt> - list of needed xml event from last.fm response
+</p>
+</li>
+<li><p>
+<tt>location</tt> - location of events
+</p>
+</li>
+<li><p>
+<tt>total</tt> - number of events
+</p>
+</li>
+</ul>
 					
 
 					
 					<div class="method-source-code"
 						id="xml-build-source">
 <pre>
-    <span class="ruby-comment cmt"># File lib/LastEvents/xml.rb, line 18</span>
-18:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">xml_build</span>(<span class="ruby-identifier">event_nodes</span>, <span class="ruby-identifier">location</span>, <span class="ruby-identifier">total</span>)
-19:       <span class="ruby-comment cmt">#TODO check if well formated</span>
-20:       <span class="ruby-identifier">builder</span> = <span class="ruby-constant">Nokogiri</span><span class="ruby-operator">::</span><span class="ruby-constant">XML</span><span class="ruby-operator">::</span><span class="ruby-constant">Builder</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">:encoding</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'UTF-8'</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">xml</span><span class="ruby-operator">|</span>
-21:         <span class="ruby-identifier">xml</span>.<span class="ruby-identifier">events</span>( <span class="ruby-value str">&quot;xmlns:geo&quot;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;http://www.w3.org/2003/01/geo/wgs84_pos#&quot;</span>, 
-22:                     <span class="ruby-value str">&quot;location&quot;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">location</span>,
-23:                     <span class="ruby-value str">&quot;total&quot;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">total</span>) {
-24:           <span class="ruby-identifier">xml</span>.<span class="ruby-identifier">__send__</span> <span class="ruby-value">:insert</span>, <span class="ruby-identifier">event_nodes</span>
-25:         }
-26:       <span class="ruby-keyword kw">end</span>
-27:       <span class="ruby-identifier">builder</span>.<span class="ruby-identifier">to_xml</span>
-28:     <span class="ruby-keyword kw">end</span></pre>
+    <span class="ruby-comment cmt"># File lib/LastEvents/xml.rb, line 24</span>
+24:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">xml_build</span>(<span class="ruby-identifier">event_nodes</span>, <span class="ruby-identifier">location</span>, <span class="ruby-identifier">total</span>)
+25:       <span class="ruby-comment cmt"># TODO check if well formated</span>
+26:       <span class="ruby-identifier">builder</span> = <span class="ruby-constant">Nokogiri</span><span class="ruby-operator">::</span><span class="ruby-constant">XML</span><span class="ruby-operator">::</span><span class="ruby-constant">Builder</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">:encoding</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'UTF-8'</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">xml</span><span class="ruby-operator">|</span>
+27:         <span class="ruby-identifier">xml</span>.<span class="ruby-identifier">events</span>( <span class="ruby-value str">&quot;xmlns:geo&quot;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;http://www.w3.org/2003/01/geo/wgs84_pos#&quot;</span>, 
+28:                     <span class="ruby-value str">&quot;location&quot;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">location</span>,
+29:                     <span class="ruby-value str">&quot;total&quot;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">total</span>) {
+30:           <span class="ruby-identifier">xml</span>.<span class="ruby-identifier">__send__</span> <span class="ruby-value">:insert</span>, <span class="ruby-identifier">event_nodes</span>
+31:         }
+32:       <span class="ruby-keyword kw">end</span>
+33:       <span class="ruby-identifier">builder</span>.<span class="ruby-identifier">to_xml</span>
+34:     <span class="ruby-keyword kw">end</span></pre>
 					</div>
 					
 				</div>
@@ -278,24 +300,26 @@
 
 				<div class="method-description">
 					
-					
+					<p>
+Returns Nokogiri::XML data loaded from file or false
+</p>
 					
 
 					
 					<div class="method-source-code"
 						id="xml-load-from-file-source">
 <pre>
-    <span class="ruby-comment cmt"># File lib/LastEvents/xml.rb, line 7</span>
- 7:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">xml_load_from_file</span>(<span class="ruby-identifier">file_name</span>)
- 8:       <span class="ruby-identifier">xml</span> = <span class="ruby-keyword kw">false</span>
- 9:       <span class="ruby-identifier">path</span> = <span class="ruby-node">&quot;../../data/xml/#{file_name}&quot;</span>
-10:       <span class="ruby-keyword kw">if</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exist?</span> <span class="ruby-identifier">path</span>
-11:         <span class="ruby-identifier">xml</span> = <span class="ruby-constant">Nokogiri</span><span class="ruby-operator">::</span><span class="ruby-constant">XML</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">read</span>(<span class="ruby-identifier">path</span>))
-12:       <span class="ruby-keyword kw">else</span>
-13:         <span class="ruby-identifier">xml</span> = <span class="ruby-keyword kw">false</span>
-14:       <span class="ruby-keyword kw">end</span>
-15:       <span class="ruby-identifier">xml</span>
-16:     <span class="ruby-keyword kw">end</span></pre>
+    <span class="ruby-comment cmt"># File lib/LastEvents/xml.rb, line 9</span>
+ 9:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">xml_load_from_file</span>(<span class="ruby-identifier">file_name</span>)
+10:       <span class="ruby-identifier">xml</span> = <span class="ruby-keyword kw">false</span>
+11:       <span class="ruby-identifier">path</span> = <span class="ruby-node">&quot;../../data/xml/#{file_name}&quot;</span>
+12:       <span class="ruby-keyword kw">if</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exist?</span> <span class="ruby-identifier">path</span>
+13:         <span class="ruby-identifier">xml</span> = <span class="ruby-constant">Nokogiri</span><span class="ruby-operator">::</span><span class="ruby-constant">XML</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">read</span>(<span class="ruby-identifier">path</span>))
+14:       <span class="ruby-keyword kw">else</span>
+15:         <span class="ruby-identifier">xml</span> = <span class="ruby-keyword kw">false</span>
+16:       <span class="ruby-keyword kw">end</span>
+17:       <span class="ruby-identifier">xml</span>
+18:     <span class="ruby-keyword kw">end</span></pre>
 					</div>
 					
 				</div>

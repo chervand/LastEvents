@@ -5,7 +5,9 @@ require_relative 'event'
 require_relative 'files'
 
 module LastEvents
+  # RDF.rb graph serialization
   class Graph
+    # Writes prefixes
     def initialize(xml)
       @xml_events = xml
       @prefixes = {
@@ -24,24 +26,27 @@ module LastEvents
       }
     end
 
-    def parse_events(xml)
+    # Parses xml data to Array of Event class instances
+    def parse_events(xml) #:nodoc:
       if xml.is_a? String
-      events = Nokogiri::XML(xml)
+        events = Nokogiri::XML(xml)
       else
       events = xml
       end
       parsed_events = Array.new
       events.xpath("//events/event").each do |event|
-        parsed_events << LastEvents::Event.new(event) #FIXME to_s needed?
+        parsed_events << LastEvents::Event.new(event)
       end
       parsed_events
     end
 
+    # Serializes xml data to RDF.rb graph
+    # and writes it to RDF-N3 file
     def serialize_n3(file_name)
       file_path = LastEvents::Files.new.get_rdf_data_path(file_name) + ".n3"
       @graph = RDF::Graph.new
       @xml_events.xpath('//events/event').each do |xml_event|
-        #FIXME if not to_s, ruby falls
+      # FIXME if not to_s, ruby falls
         event = LastEvents::Event.new(xml_event.to_s)
         statements = event.to_statements
         statements.each do |stmnt|
@@ -49,9 +54,8 @@ module LastEvents
         end
       end
       RDF::N3::Writer.open(file_path, :prefixes => @prefixes) do |writer|
-        writer << @graph 
+        writer << @graph
       end
     end
-
   end
 end

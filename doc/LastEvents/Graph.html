@@ -71,8 +71,6 @@
 					
 					<li><a href="#method-c-new">::new</a></li>
 					
-					<li><a href="#method-i-parse_events">#parse_events</a></li>
-					
 					<li><a href="#method-i-serialize_n3">#serialize_n3</a></li>
 					
 				</ul>
@@ -139,7 +137,10 @@
 		<h1 class="class">LastEvents::Graph</h1>
 
 		<div id="description">
-			
+			<p>
+RDF.rb graph serialization
+</p>
+
 		</div>
 
 		<!-- Constants -->
@@ -167,31 +168,33 @@
 
 				<div class="method-description">
 					
-					
+					<p>
+Writes prefixes
+</p>
 					
 
 					
 					<div class="method-source-code"
 						id="new-source">
 <pre>
-    <span class="ruby-comment cmt"># File lib/LastEvents/graph.rb, line 9</span>
- 9:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">xml</span>)
-10:       <span class="ruby-ivar">@xml_events</span> = <span class="ruby-identifier">xml</span>
-11:       <span class="ruby-ivar">@prefixes</span> = {
-12:         <span class="ruby-value">:rdf</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'http://www.w3.org/1999/02/22-rdf-syntax-ns#'</span>,
-13:         <span class="ruby-value">:rdfs</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'http://www.w3.org/2000/01/rdf-schema#'</span>,
-14:         <span class="ruby-value">:xsd</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'http://www.w3.org/2001/XMLSchema#'</span>,
-15:         <span class="ruby-value">:time</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'http://www.w3.org/2006/time#'</span>,
-16:         <span class="ruby-value">:gn</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'http://www.geonames.org/ontology#'</span>,
-17:         <span class="ruby-value">:geo</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'http://www.w3.org/2003/01/geo/wgs84_pos#'</span>,
-18:         <span class="ruby-value">:foaf</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'http://xmlns.com/foaf/0.1/'</span>,
-19:         <span class="ruby-value">:event</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'http://purl.org/NET/c4dm/event.owl#'</span>, <span class="ruby-comment cmt">#Music Event Ontology</span>
-20:         <span class="ruby-value">:mo</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'http://purl.org/ontology/mo/'</span>, <span class="ruby-comment cmt">#Music Ontology</span>
-21:         <span class="ruby-value">:mit</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'http://purl.org/ontology/mo/mit#'</span>, <span class="ruby-comment cmt">#Music Instrument</span>
-22:         <span class="ruby-value">:tl</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'http://purl.org/NET/c4dm/timeline.owl#'</span>, <span class="ruby-comment cmt">#Timeline</span>
-23:         <span class="ruby-value">:dc</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'http://purl.org/dc/terms/'</span>
-24:       }
-25:     <span class="ruby-keyword kw">end</span></pre>
+    <span class="ruby-comment cmt"># File lib/LastEvents/graph.rb, line 11</span>
+11:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">xml</span>)
+12:       <span class="ruby-ivar">@xml_events</span> = <span class="ruby-identifier">xml</span>
+13:       <span class="ruby-ivar">@prefixes</span> = {
+14:         <span class="ruby-value">:rdf</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'http://www.w3.org/1999/02/22-rdf-syntax-ns#'</span>,
+15:         <span class="ruby-value">:rdfs</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'http://www.w3.org/2000/01/rdf-schema#'</span>,
+16:         <span class="ruby-value">:xsd</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'http://www.w3.org/2001/XMLSchema#'</span>,
+17:         <span class="ruby-value">:time</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'http://www.w3.org/2006/time#'</span>,
+18:         <span class="ruby-value">:gn</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'http://www.geonames.org/ontology#'</span>,
+19:         <span class="ruby-value">:geo</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'http://www.w3.org/2003/01/geo/wgs84_pos#'</span>,
+20:         <span class="ruby-value">:foaf</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'http://xmlns.com/foaf/0.1/'</span>,
+21:         <span class="ruby-value">:event</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'http://purl.org/NET/c4dm/event.owl#'</span>, <span class="ruby-comment cmt">#Music Event Ontology</span>
+22:         <span class="ruby-value">:mo</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'http://purl.org/ontology/mo/'</span>, <span class="ruby-comment cmt">#Music Ontology</span>
+23:         <span class="ruby-value">:mit</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'http://purl.org/ontology/mo/mit#'</span>, <span class="ruby-comment cmt">#Music Instrument</span>
+24:         <span class="ruby-value">:tl</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'http://purl.org/NET/c4dm/timeline.owl#'</span>, <span class="ruby-comment cmt">#Timeline</span>
+25:         <span class="ruby-value">:dc</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'http://purl.org/dc/terms/'</span>
+26:       }
+27:     <span class="ruby-keyword kw">end</span></pre>
 					</div>
 					
 				</div>
@@ -208,49 +211,6 @@
 			<h3 class="section-header">Public Instance Methods</h3>
 
 		
-			<div id="parse-events-method" class="method-detail ">
-				<a name="method-i-parse_events"></a>
-
-				<div class="method-heading">
-				
-					<span class="method-name">parse_events</span><span
-						class="method-args">(xml)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
-
-				<div class="method-description">
-					
-					
-					
-
-					
-					<div class="method-source-code"
-						id="parse-events-source">
-<pre>
-    <span class="ruby-comment cmt"># File lib/LastEvents/graph.rb, line 27</span>
-27:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">parse_events</span>(<span class="ruby-identifier">xml</span>)
-28:       <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">xml</span>.<span class="ruby-identifier">is_a?</span> <span class="ruby-constant">String</span>
-29:       <span class="ruby-identifier">events</span> = <span class="ruby-constant">Nokogiri</span><span class="ruby-operator">::</span><span class="ruby-constant">XML</span>(<span class="ruby-identifier">xml</span>)
-30:       <span class="ruby-keyword kw">else</span>
-31:       <span class="ruby-identifier">events</span> = <span class="ruby-identifier">xml</span>
-32:       <span class="ruby-keyword kw">end</span>
-33:       <span class="ruby-identifier">parsed_events</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
-34:       <span class="ruby-identifier">events</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">&quot;//events/event&quot;</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">event</span><span class="ruby-operator">|</span>
-35:         <span class="ruby-identifier">parsed_events</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-constant">LastEvents</span><span class="ruby-operator">::</span><span class="ruby-constant">Event</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">event</span>) <span class="ruby-comment cmt">#FIXME to_s needed?</span>
-36:       <span class="ruby-keyword kw">end</span>
-37:       <span class="ruby-identifier">parsed_events</span>
-38:     <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
-
-				
-
-				
-			</div>
-
-		
 			<div id="serialize-n--method" class="method-detail ">
 				<a name="method-i-serialize_n3"></a>
 
@@ -264,29 +224,31 @@
 
 				<div class="method-description">
 					
-					
+					<p>
+Serializes xml data to RDF.rb graph and writes it to RDF-N3 file
+</p>
 					
 
 					
 					<div class="method-source-code"
 						id="serialize-n--source">
 <pre>
-    <span class="ruby-comment cmt"># File lib/LastEvents/graph.rb, line 40</span>
-40:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">serialize_n3</span>(<span class="ruby-identifier">file_name</span>)
-41:       <span class="ruby-identifier">file_path</span> = <span class="ruby-constant">LastEvents</span><span class="ruby-operator">::</span><span class="ruby-constant">Files</span>.<span class="ruby-identifier">new</span>.<span class="ruby-identifier">get_rdf_data_path</span>(<span class="ruby-identifier">file_name</span>) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;.n3&quot;</span>
-42:       <span class="ruby-ivar">@graph</span> = <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Graph</span>.<span class="ruby-identifier">new</span>
-43:       <span class="ruby-ivar">@xml_events</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">'//events/event'</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">xml_event</span><span class="ruby-operator">|</span>
-44:         <span class="ruby-comment cmt">#FIXME if not to_s, ruby falls</span>
-45:         <span class="ruby-identifier">event</span> = <span class="ruby-constant">LastEvents</span><span class="ruby-operator">::</span><span class="ruby-constant">Event</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">xml_event</span>.<span class="ruby-identifier">to_s</span>)
-46:         <span class="ruby-identifier">statements</span> = <span class="ruby-identifier">event</span>.<span class="ruby-identifier">to_statements</span>
-47:         <span class="ruby-identifier">statements</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">stmnt</span><span class="ruby-operator">|</span>
-48:           <span class="ruby-ivar">@graph</span>.<span class="ruby-identifier">insert</span> <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Statement</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">stmnt</span>)
-49:         <span class="ruby-keyword kw">end</span>
-50:       <span class="ruby-keyword kw">end</span>
-51:       <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">N3</span><span class="ruby-operator">::</span><span class="ruby-constant">Writer</span>.<span class="ruby-identifier">open</span>(<span class="ruby-identifier">file_path</span>, <span class="ruby-value">:prefixes</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@prefixes</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">writer</span><span class="ruby-operator">|</span>
-52:         <span class="ruby-identifier">writer</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-ivar">@graph</span> 
-53:       <span class="ruby-keyword kw">end</span>
-54:     <span class="ruby-keyword kw">end</span></pre>
+    <span class="ruby-comment cmt"># File lib/LastEvents/graph.rb, line 45</span>
+45:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">serialize_n3</span>(<span class="ruby-identifier">file_name</span>)
+46:       <span class="ruby-identifier">file_path</span> = <span class="ruby-constant">LastEvents</span><span class="ruby-operator">::</span><span class="ruby-constant">Files</span>.<span class="ruby-identifier">new</span>.<span class="ruby-identifier">get_rdf_data_path</span>(<span class="ruby-identifier">file_name</span>) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;.n3&quot;</span>
+47:       <span class="ruby-ivar">@graph</span> = <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Graph</span>.<span class="ruby-identifier">new</span>
+48:       <span class="ruby-ivar">@xml_events</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">'//events/event'</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">xml_event</span><span class="ruby-operator">|</span>
+49:       <span class="ruby-comment cmt"># FIXME if not to_s, ruby falls</span>
+50:         <span class="ruby-identifier">event</span> = <span class="ruby-constant">LastEvents</span><span class="ruby-operator">::</span><span class="ruby-constant">Event</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">xml_event</span>.<span class="ruby-identifier">to_s</span>)
+51:         <span class="ruby-identifier">statements</span> = <span class="ruby-identifier">event</span>.<span class="ruby-identifier">to_statements</span>
+52:         <span class="ruby-identifier">statements</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">stmnt</span><span class="ruby-operator">|</span>
+53:           <span class="ruby-ivar">@graph</span>.<span class="ruby-identifier">insert</span> <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Statement</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">stmnt</span>)
+54:         <span class="ruby-keyword kw">end</span>
+55:       <span class="ruby-keyword kw">end</span>
+56:       <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">N3</span><span class="ruby-operator">::</span><span class="ruby-constant">Writer</span>.<span class="ruby-identifier">open</span>(<span class="ruby-identifier">file_path</span>, <span class="ruby-value">:prefixes</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@prefixes</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">writer</span><span class="ruby-operator">|</span>
+57:         <span class="ruby-identifier">writer</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-ivar">@graph</span>
+58:       <span class="ruby-keyword kw">end</span>
+59:     <span class="ruby-keyword kw">end</span></pre>
 					</div>
 					
 				</div>

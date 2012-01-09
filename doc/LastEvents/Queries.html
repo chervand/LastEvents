@@ -139,7 +139,10 @@
 		<h1 class="class">LastEvents::Queries</h1>
 
 		<div id="description">
-			
+			<p>
+Inmplements queries to RDF
+</p>
+
 		</div>
 
 		<!-- Constants -->
@@ -161,7 +164,9 @@
 
 				<div class="method-description">
 				
-				
+				<p>
+RDF.rb format graph
+</p>
 				
 				</div>
 			</div>
@@ -188,17 +193,21 @@
 
 				<div class="method-description">
 					
-					
+					<p>
+Executes <a
+href="Queries.html#method-i-load_graph_from_n3">load_graph_from_n3</a>
+method
+</p>
 					
 
 					
 					<div class="method-source-code"
 						id="new-source">
 <pre>
-    <span class="ruby-comment cmt"># File lib/LastEvents/queries.rb, line 10</span>
-10:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">file_name</span>)
-11:       <span class="ruby-ivar">@graph</span> = <span class="ruby-identifier">load_graph_from_n3</span>(<span class="ruby-identifier">file_name</span>)
-12:     <span class="ruby-keyword kw">end</span></pre>
+    <span class="ruby-comment cmt"># File lib/LastEvents/queries.rb, line 13</span>
+13:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">file_name</span>)
+14:       <span class="ruby-ivar">@graph</span> = <span class="ruby-identifier">load_graph_from_n3</span>(<span class="ruby-identifier">file_name</span>)
+15:     <span class="ruby-keyword kw">end</span></pre>
 					</div>
 					
 				</div>
@@ -228,26 +237,28 @@
 
 				<div class="method-description">
 					
-					
+					<p>
+Returns titles of events from graph
+</p>
 					
 
 					
 					<div class="method-source-code"
 						id="get-titles-source">
 <pre>
-    <span class="ruby-comment cmt"># File lib/LastEvents/queries.rb, line 31</span>
-31:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">get_titles</span>
-32:       <span class="ruby-identifier">query</span> = <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Query</span>.<span class="ruby-identifier">new</span> <span class="ruby-keyword kw">do</span>
-33:         <span class="ruby-identifier">pattern</span> [<span class="ruby-value">:subject</span>, <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">DC</span>.<span class="ruby-identifier">title</span>, <span class="ruby-value">:object</span>]
-34:       <span class="ruby-keyword kw">end</span>
-35:       <span class="ruby-identifier">titles</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
-36:       <span class="ruby-identifier">query</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-ivar">@graph</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">solution</span><span class="ruby-operator">|</span>
-37:         <span class="ruby-identifier">titles</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">solution</span>[<span class="ruby-value">:object</span>].<span class="ruby-identifier">to_s</span>
+    <span class="ruby-comment cmt"># File lib/LastEvents/queries.rb, line 35</span>
+35:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">get_titles</span>
+36:       <span class="ruby-identifier">query</span> = <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Query</span>.<span class="ruby-identifier">new</span> <span class="ruby-keyword kw">do</span>
+37:         <span class="ruby-identifier">pattern</span> [<span class="ruby-value">:subject</span>, <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">DC</span>.<span class="ruby-identifier">title</span>, <span class="ruby-value">:object</span>]
 38:       <span class="ruby-keyword kw">end</span>
-39:       <span class="ruby-identifier">titles</span>.<span class="ruby-identifier">sort!</span>
-40:       <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-operator">!</span><span class="ruby-identifier">titles</span>.<span class="ruby-identifier">empty?</span>
-41:       <span class="ruby-identifier">titles</span>
-42:     <span class="ruby-keyword kw">end</span></pre>
+39:       <span class="ruby-identifier">titles</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+40:       <span class="ruby-identifier">query</span>.<span class="ruby-identifier">execute</span>(<span class="ruby-ivar">@graph</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">solution</span><span class="ruby-operator">|</span>
+41:         <span class="ruby-identifier">titles</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">solution</span>[<span class="ruby-value">:object</span>].<span class="ruby-identifier">to_s</span>
+42:       <span class="ruby-keyword kw">end</span>
+43:       <span class="ruby-identifier">titles</span>.<span class="ruby-identifier">sort!</span>
+44:       <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-operator">!</span><span class="ruby-identifier">titles</span>.<span class="ruby-identifier">empty?</span>
+45:       <span class="ruby-identifier">titles</span>
+46:     <span class="ruby-keyword kw">end</span></pre>
 					</div>
 					
 				</div>
@@ -272,7 +283,7 @@
 				<div class="method-description">
 					
 					<p>
-TODO Move to <a href="Graph.html">Graph</a> class
+Loads RDF file to RDF.rb graph
 </p>
 					
 
@@ -280,22 +291,22 @@ TODO Move to <a href="Graph.html">Graph</a> class
 					<div class="method-source-code"
 						id="load-graph-from-n--source">
 <pre>
-    <span class="ruby-comment cmt"># File lib/LastEvents/queries.rb, line 15</span>
-15:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">load_graph_from_n3</span>(<span class="ruby-identifier">file_name</span>)     
-16:       <span class="ruby-identifier">file_path</span> = <span class="ruby-constant">LastEvents</span><span class="ruby-operator">::</span><span class="ruby-constant">Files</span>.<span class="ruby-identifier">new</span>.<span class="ruby-identifier">get_rdf_data_path</span>(<span class="ruby-identifier">file_name</span>) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;.n3&quot;</span>
-17:       <span class="ruby-keyword kw">if</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exists?</span>(<span class="ruby-identifier">file_path</span>)
-18:         <span class="ruby-identifier">graph</span> = <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Graph</span>.<span class="ruby-identifier">new</span>
-19:         <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">N3</span><span class="ruby-operator">::</span><span class="ruby-constant">Reader</span>.<span class="ruby-identifier">open</span>(<span class="ruby-identifier">file_path</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">reader</span><span class="ruby-operator">|</span>
-20:           <span class="ruby-identifier">reader</span>.<span class="ruby-identifier">each_statement</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">statement</span><span class="ruby-operator">|</span>
-21:             <span class="ruby-identifier">graph</span>.<span class="ruby-identifier">insert</span> <span class="ruby-identifier">statement</span>
-22:           <span class="ruby-keyword kw">end</span>
-23:         <span class="ruby-keyword kw">end</span>
-24:       <span class="ruby-keyword kw">else</span>
-25:         <span class="ruby-comment cmt">#TODO raise 'no file' error</span>
-26:       <span class="ruby-keyword kw">end</span>
-27:       <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">graph</span>.<span class="ruby-identifier">graph?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">graph</span>.<span class="ruby-identifier">empty?</span>
-28:       <span class="ruby-identifier">graph</span>
-29:     <span class="ruby-keyword kw">end</span></pre>
+    <span class="ruby-comment cmt"># File lib/LastEvents/queries.rb, line 18</span>
+18:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">load_graph_from_n3</span>(<span class="ruby-identifier">file_name</span>) <span class="ruby-comment cmt"># TODO Move to Graph class</span>
+19:       <span class="ruby-identifier">file_path</span> = <span class="ruby-constant">LastEvents</span><span class="ruby-operator">::</span><span class="ruby-constant">Files</span>.<span class="ruby-identifier">new</span>.<span class="ruby-identifier">get_rdf_data_path</span>(<span class="ruby-identifier">file_name</span>) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;.n3&quot;</span>
+20:       <span class="ruby-keyword kw">if</span> <span class="ruby-constant">File</span>.<span class="ruby-identifier">exists?</span>(<span class="ruby-identifier">file_path</span>)
+21:         <span class="ruby-identifier">graph</span> = <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Graph</span>.<span class="ruby-identifier">new</span>
+22:         <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">N3</span><span class="ruby-operator">::</span><span class="ruby-constant">Reader</span>.<span class="ruby-identifier">open</span>(<span class="ruby-identifier">file_path</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">reader</span><span class="ruby-operator">|</span>
+23:           <span class="ruby-identifier">reader</span>.<span class="ruby-identifier">each_statement</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">statement</span><span class="ruby-operator">|</span>
+24:             <span class="ruby-identifier">graph</span>.<span class="ruby-identifier">insert</span> <span class="ruby-identifier">statement</span>
+25:           <span class="ruby-keyword kw">end</span>
+26:         <span class="ruby-keyword kw">end</span>
+27:       <span class="ruby-keyword kw">else</span>
+28:       <span class="ruby-comment cmt">#TODO raise 'no file' error</span>
+29:       <span class="ruby-keyword kw">end</span>
+30:       <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-keyword kw">unless</span> <span class="ruby-identifier">graph</span>.<span class="ruby-identifier">graph?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">graph</span>.<span class="ruby-identifier">empty?</span>
+31:       <span class="ruby-identifier">graph</span>
+32:     <span class="ruby-keyword kw">end</span></pre>
 					</div>
 					
 				</div>

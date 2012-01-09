@@ -2,8 +2,10 @@ require 'nokogiri'
 require_relative 'lastfm'
 
 module LastEvents
+  # Provides tools for work with xml data
   class XML
-    
+    # Returns Nokogiri::XML data loaded from file
+    # or false
     def xml_load_from_file(file_name)
       xml = false
       path = "../../data/xml/#{file_name}"
@@ -14,9 +16,13 @@ module LastEvents
       end
       xml
     end
-    
+    # Returns Nokogiri::XML::Builder with formated
+    # xml data
+    # * +event_nodes+ - list of needed xml event from last.fm response
+    # * +location+ - location of events
+    # * +total+ - number of events
     def xml_build(event_nodes, location, total)
-      #TODO check if well formated
+      # TODO check if well formated
       builder = Nokogiri::XML::Builder.new(:encoding => 'UTF-8') do |xml|
         xml.events( "xmlns:geo" => "http://www.w3.org/2003/01/geo/wgs84_pos#", 
                     "location" => location,
@@ -26,7 +32,9 @@ module LastEvents
       end
       builder.to_xml
     end
-    
+    # Separates needed (todays) events from last.fm's 
+    # geoGetEvents response. Returns xml data build with
+    # xml_build method
     def get_events(location, date)
       i = 1
       @total = 0
@@ -35,7 +43,6 @@ module LastEvents
       @events = ""
       @cur_date = date.to_i
       @date = date.to_i
-      
       while @cur_date.to_i < @date.to_i + 1 && api = LastEvents::LastFM.new.geoGetEvents(location, 10, i)
         page = Nokogiri::XML(api)
         @totalPages =  page.xpath("//events/@totalPages").to_s
@@ -55,7 +62,7 @@ module LastEvents
         @total = @total + page.xpath("//events/event").count       
         @events = @events + page.xpath("//events/event").to_s
         i = i + 1
-      end #end of loop
+      end # end of loop
       @nodes = Nokogiri::XML::DocumentFragment.parse(@events)
       if @total == 0
         @xml = nil
@@ -64,7 +71,6 @@ module LastEvents
         @xml = Nokogiri::XML(@doc)
       end
       @xml
-    end
-    
+    end    
   end
 end

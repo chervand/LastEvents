@@ -69,8 +69,6 @@
 				<h3 class="section-header">Methods</h3>
 				<ul class="link-list">
 					
-					<li><a href="#method-c-new">::new</a></li>
-					
 					<li><a href="#method-i-create_vocabulary">#create_vocabulary</a></li>
 					
 					<li><a href="#method-i-parse">#parse</a></li>
@@ -141,7 +139,10 @@
 		<h1 class="class">LastEvents::Event</h1>
 
 		<div id="description">
-			
+			<p>
+Implements event, suitable for RDF serialization
+</p>
+
 		</div>
 
 		<!-- Constants -->
@@ -152,49 +153,6 @@
 
 		<!-- Methods -->
 		
-		<div id="public-class-method-details" class="method-section section">
-			<h3 class="section-header">Public Class Methods</h3>
-
-		
-			<div id="new-method" class="method-detail ">
-				<a name="method-c-new"></a>
-
-				<div class="method-heading">
-				
-					<span class="method-name">new</span><span
-						class="method-args">(event)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
-
-				<div class="method-description">
-					
-					
-					
-
-					
-					<div class="method-source-code"
-						id="new-source">
-<pre>
-    <span class="ruby-comment cmt"># File lib/LastEvents/event.rb, line 5</span>
- 5:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">event</span>)
- 6:       <span class="ruby-comment cmt">#puts event.to_s.encoding.name</span>
- 7:       <span class="ruby-comment cmt">#puts event.to_s</span>
- 8:       <span class="ruby-ivar">@xml_event</span> = <span class="ruby-constant">Nokogiri</span><span class="ruby-operator">::</span><span class="ruby-constant">XML</span>(<span class="ruby-identifier">event</span>.<span class="ruby-identifier">to_s</span>, <span class="ruby-keyword kw">nil</span>, <span class="ruby-value str">'UTF-8'</span>)
- 9:       <span class="ruby-comment cmt">#puts @xml_event.encoding</span>
-10:     <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
-
-				
-
-				
-			</div>
-
-		
-		</div>
-	
 		<div id="public-instance-method-details" class="method-section section">
 			<h3 class="section-header">Public Instance Methods</h3>
 
@@ -212,22 +170,24 @@
 
 				<div class="method-description">
 					
-					
+					<p>
+Creates prefixes for RDF
+</p>
 					
 
 					
 					<div class="method-source-code"
 						id="create-vocabulary-source">
 <pre>
-    <span class="ruby-comment cmt"># File lib/LastEvents/event.rb, line 12</span>
-12:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">create_vocabulary</span>
-13:       <span class="ruby-ivar">@LFM</span>    = <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Vocabulary</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;http://www.last.fm/event/&quot;</span>)
-14:       <span class="ruby-ivar">@EVENT</span>  = <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Vocabulary</span>.<span class="ruby-identifier">new</span>(<span class="ruby-node">&quot;http://purl.org/NET/c4dm/event.owl#&quot;</span>)
-15:       <span class="ruby-ivar">@MO</span>     = <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Vocabulary</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;http://purl.org/ontology/mo/&quot;</span>)
-16:       <span class="ruby-ivar">@TL</span>     = <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Vocabulary</span>.<span class="ruby-identifier">new</span>(<span class="ruby-node">&quot;http://purl.org/NET/c4dm/timeline.owl#&quot;</span>)
-17:       <span class="ruby-ivar">@GN</span>     = <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Vocabulary</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">'http://www.geonames.org/ontology#'</span>)
-18:       <span class="ruby-ivar">@GEO</span>    = <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Vocabulary</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">'http://www.w3.org/2003/01/geo/wgs84_pos#'</span>)
-19:     <span class="ruby-keyword kw">end</span></pre>
+    <span class="ruby-comment cmt"># File lib/LastEvents/event.rb, line 13</span>
+13:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">create_vocabulary</span>
+14:       <span class="ruby-ivar">@LFM</span>    = <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Vocabulary</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;http://www.last.fm/event/&quot;</span>)
+15:       <span class="ruby-ivar">@EVENT</span>  = <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Vocabulary</span>.<span class="ruby-identifier">new</span>(<span class="ruby-node">&quot;http://purl.org/NET/c4dm/event.owl#&quot;</span>)
+16:       <span class="ruby-ivar">@MO</span>     = <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Vocabulary</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">&quot;http://purl.org/ontology/mo/&quot;</span>)
+17:       <span class="ruby-ivar">@TL</span>     = <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Vocabulary</span>.<span class="ruby-identifier">new</span>(<span class="ruby-node">&quot;http://purl.org/NET/c4dm/timeline.owl#&quot;</span>)
+18:       <span class="ruby-ivar">@GN</span>     = <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Vocabulary</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">'http://www.geonames.org/ontology#'</span>)
+19:       <span class="ruby-ivar">@GEO</span>    = <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Vocabulary</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value str">'http://www.w3.org/2003/01/geo/wgs84_pos#'</span>)
+20:     <span class="ruby-keyword kw">end</span></pre>
 					</div>
 					
 				</div>
@@ -251,45 +211,47 @@
 
 				<div class="method-description">
 					
-					
+					<p>
+Parses xml events to strings
+</p>
 					
 
 					
 					<div class="method-source-code"
 						id="parse-source">
 <pre>
-    <span class="ruby-comment cmt"># File lib/LastEvents/event.rb, line 21</span>
-21:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">parse</span> <span class="ruby-comment cmt">#unicode problem is somewhere here</span>
-22:       <span class="ruby-identifier">artists</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
-23:       <span class="ruby-ivar">@xml_event</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">'//artists/artist/text()'</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">artist</span><span class="ruby-operator">|</span>
-24:         <span class="ruby-identifier">artists</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">artist</span>.<span class="ruby-identifier">to_s</span>
-25:       <span class="ruby-keyword kw">end</span>
-26:       <span class="ruby-identifier">tags</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
-27:       <span class="ruby-ivar">@xml_event</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">'//tags/tag/text()'</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">tag</span><span class="ruby-operator">|</span>
-28:         <span class="ruby-identifier">tags</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">tag</span>.<span class="ruby-identifier">to_s</span>
-29:       <span class="ruby-keyword kw">end</span>
-30:       <span class="ruby-ivar">@parsed_event</span> = {
-31:         <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@xml_event</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">'/event/id/text()'</span>).<span class="ruby-identifier">to_s</span>,
-32:         <span class="ruby-value">:title</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@xml_event</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">'//title/text()'</span>).<span class="ruby-identifier">to_s</span>,
-33:         <span class="ruby-value">:description</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@xml_event</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">'//description/text()'</span>).<span class="ruby-identifier">to_s</span>,
-34:         <span class="ruby-value">:artists</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">artists</span>,
-35:         <span class="ruby-value">:headliner</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@xml_event</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">'//headliner/text()'</span>).<span class="ruby-identifier">to_s</span>,
-36:         <span class="ruby-value">:startDate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@xml_event</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">'//startDate/text()'</span>).<span class="ruby-identifier">to_s</span>,
-37:         <span class="ruby-value">:place</span> =<span class="ruby-operator">&gt;</span> {
-38:           <span class="ruby-value">:name</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@xml_event</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">'//venue/name/text()'</span>).<span class="ruby-identifier">to_s</span>,
-39:           <span class="ruby-value">:website</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@xml_event</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">'//venue/website/text()'</span>).<span class="ruby-identifier">to_s</span>,
-40:           <span class="ruby-value">:geo</span> =<span class="ruby-operator">&gt;</span> {
-41:             <span class="ruby-value">:lat</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@xml_event</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">'//venue/location/point/lat/text()'</span>).<span class="ruby-identifier">to_s</span>, 
-42:             <span class="ruby-value">:long</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@xml_event</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">'//venue/location/point/long/text()'</span>).<span class="ruby-identifier">to_s</span>},
-43:           <span class="ruby-comment cmt">#:city=&gt;'',</span>
-44:           <span class="ruby-comment cmt">#:country=&gt;'',</span>
-45:           <span class="ruby-comment cmt">#:street=&gt;'',</span>
-46:           <span class="ruby-comment cmt">#:postalcode=&gt;'',</span>
-47:         },
-48:         <span class="ruby-value">:tags</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">tags</span>
-49:       }
-50:       <span class="ruby-keyword kw">return</span> <span class="ruby-ivar">@parsed_event</span>
-51:     <span class="ruby-keyword kw">end</span></pre>
+    <span class="ruby-comment cmt"># File lib/LastEvents/event.rb, line 22</span>
+22:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">parse</span> <span class="ruby-comment cmt">#unicode problem is somewhere here</span>
+23:       <span class="ruby-identifier">artists</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+24:       <span class="ruby-ivar">@xml_event</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">'//artists/artist/text()'</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">artist</span><span class="ruby-operator">|</span>
+25:         <span class="ruby-identifier">artists</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">artist</span>.<span class="ruby-identifier">to_s</span>
+26:       <span class="ruby-keyword kw">end</span>
+27:       <span class="ruby-identifier">tags</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+28:       <span class="ruby-ivar">@xml_event</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">'//tags/tag/text()'</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">tag</span><span class="ruby-operator">|</span>
+29:         <span class="ruby-identifier">tags</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">tag</span>.<span class="ruby-identifier">to_s</span>
+30:       <span class="ruby-keyword kw">end</span>
+31:       <span class="ruby-ivar">@parsed_event</span> = {
+32:         <span class="ruby-value">:id</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@xml_event</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">'/event/id/text()'</span>).<span class="ruby-identifier">to_s</span>,
+33:         <span class="ruby-value">:title</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@xml_event</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">'//title/text()'</span>).<span class="ruby-identifier">to_s</span>,
+34:         <span class="ruby-value">:description</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@xml_event</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">'//description/text()'</span>).<span class="ruby-identifier">to_s</span>,
+35:         <span class="ruby-value">:artists</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">artists</span>,
+36:         <span class="ruby-value">:headliner</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@xml_event</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">'//headliner/text()'</span>).<span class="ruby-identifier">to_s</span>,
+37:         <span class="ruby-value">:startDate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@xml_event</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">'//startDate/text()'</span>).<span class="ruby-identifier">to_s</span>,
+38:         <span class="ruby-value">:place</span> =<span class="ruby-operator">&gt;</span> {
+39:           <span class="ruby-value">:name</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@xml_event</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">'//venue/name/text()'</span>).<span class="ruby-identifier">to_s</span>,
+40:           <span class="ruby-value">:website</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@xml_event</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">'//venue/website/text()'</span>).<span class="ruby-identifier">to_s</span>,
+41:           <span class="ruby-value">:geo</span> =<span class="ruby-operator">&gt;</span> {
+42:             <span class="ruby-value">:lat</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@xml_event</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">'//venue/location/point/lat/text()'</span>).<span class="ruby-identifier">to_s</span>, 
+43:             <span class="ruby-value">:long</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@xml_event</span>.<span class="ruby-identifier">xpath</span>(<span class="ruby-value str">'//venue/location/point/long/text()'</span>).<span class="ruby-identifier">to_s</span>},
+44:           <span class="ruby-comment cmt">#:city=&gt;'',</span>
+45:           <span class="ruby-comment cmt">#:country=&gt;'',</span>
+46:           <span class="ruby-comment cmt">#:street=&gt;'',</span>
+47:           <span class="ruby-comment cmt">#:postalcode=&gt;'',</span>
+48:         },
+49:         <span class="ruby-value">:tags</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">tags</span>
+50:       }
+51:       <span class="ruby-keyword kw">return</span> <span class="ruby-ivar">@parsed_event</span>
+52:     <span class="ruby-keyword kw">end</span></pre>
 					</div>
 					
 				</div>
@@ -313,154 +275,156 @@
 
 				<div class="method-description">
 					
-					
+					<p>
+Returns set of RDF statements
+</p>
 					
 
 					
 					<div class="method-source-code"
 						id="to-statements-source">
 <pre>
-     <span class="ruby-comment cmt"># File lib/LastEvents/event.rb, line 53</span>
- 53:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">to_statements</span>
- 54:       <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">parse</span>
- 55:       <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">create_vocabulary</span>
- 56:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@parsed_event</span>.<span class="ruby-identifier">nil?</span> 
- 57:         <span class="ruby-identifier">puts</span> <span class="ruby-value str">'nil event'</span>
- 58:       <span class="ruby-keyword kw">end</span>
- 59: 
- 60:       <span class="ruby-ivar">@statements</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
- 61: 
- 62:       <span class="ruby-comment cmt">#event</span>
- 63:       <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
- 64:         <span class="ruby-value">:subject</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@LFM</span>[<span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:id</span>]],
- 65:         <span class="ruby-value">:predicate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">RDF</span>[<span class="ruby-value str">'type'</span>],
- 66:         <span class="ruby-value">:object</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@EVENT</span>[<span class="ruby-value str">'Event'</span>]
- 67:       }
- 68: 
- 69:       <span class="ruby-comment cmt">#event.title</span>
- 70:       <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
- 71:         <span class="ruby-value">:subject</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@LFM</span>[<span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:id</span>]],
- 72:         <span class="ruby-value">:predicate</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">DC</span>[<span class="ruby-value str">'title'</span>],
- 73:         <span class="ruby-value">:object</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:title</span>],
- 74:       }
- 75:       
- 76:       <span class="ruby-comment cmt">#event.description</span>
- 77:       <span class="ruby-comment cmt">#@statements &lt;&lt; {</span>
- 78:       <span class="ruby-comment cmt">#  :subject    =&gt; @LFM[@parsed_event[:id]],</span>
- 79:       <span class="ruby-comment cmt">#  :predicate  =&gt; RDF::DC['description'],</span>
- 80:       <span class="ruby-comment cmt">#  :object     =&gt; @parsed_event[:description],</span>
- 81:       <span class="ruby-comment cmt">#}</span>
- 82: 
- 83:       <span class="ruby-comment cmt">#event.agent     </span>
- 84:       <span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:artists</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">artist</span><span class="ruby-operator">|</span>
- 85:         <span class="ruby-identifier">agent</span> = <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Node</span>.<span class="ruby-identifier">new</span> <span class="ruby-comment cmt">#bnode</span>
- 86:         <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
- 87:           <span class="ruby-value">:subject</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@LFM</span>[<span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:id</span>]],
- 88:           <span class="ruby-value">:predicate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@EVENT</span>[<span class="ruby-value str">'agent'</span>],
- 89:           <span class="ruby-value">:object</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">agent</span>
- 90:         }
- 91:         <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
- 92:           <span class="ruby-value">:subject</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">agent</span>,
- 93:           <span class="ruby-value">:predicate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">RDF</span>[<span class="ruby-value str">'type'</span>],
- 94:           <span class="ruby-value">:object</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@MO</span>[<span class="ruby-value str">'MusicArtist'</span>], <span class="ruby-comment cmt">#subclass of foaf:agent #TODO Change to Performer class???</span>
- 95:         }
- 96:         <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
- 97:           <span class="ruby-value">:subject</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">agent</span>,
- 98:           <span class="ruby-value">:predicate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">FOAF</span>[<span class="ruby-value str">'name'</span>],
- 99:           <span class="ruby-value">:object</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">artist</span>,
-100:         }
-101:       <span class="ruby-keyword kw">end</span>
-102: 
-103:       <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
-104:         <span class="ruby-value">:subject</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@LFM</span>[<span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:id</span>]],
-105:         <span class="ruby-value">:predicate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@MO</span>[<span class="ruby-value str">'headliner'</span>],
-106:         <span class="ruby-value">:object</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:headliner</span>],
-107:       }
-108: 
-109:       <span class="ruby-comment cmt">#event.factor</span>
-110:       <span class="ruby-comment cmt">#headliner = RDF::Node.new</span>
-111:       <span class="ruby-comment cmt">#@statements &lt;&lt; {</span>
-112:       <span class="ruby-comment cmt">#  :subject   =&gt; @LFM[@parsed_event[:id]],</span>
-113:       <span class="ruby-comment cmt">#  :predicate =&gt; @EVENT['factor'],</span>
-114:       <span class="ruby-comment cmt">#  :object    =&gt; headliner,</span>
-115:       <span class="ruby-comment cmt">#}</span>
-116:       <span class="ruby-comment cmt">#@statements &lt;&lt; {</span>
-117:       <span class="ruby-comment cmt">#  :subject   =&gt; headliner,</span>
-118:       <span class="ruby-comment cmt">#  :predicate =&gt; RDF['type'],</span>
-119:       <span class="ruby-comment cmt">#  :object    =&gt; @MO['headliner'],</span>
-120:       <span class="ruby-comment cmt">#}</span>
-121:       <span class="ruby-comment cmt">#@statements &lt;&lt; {</span>
-122:       <span class="ruby-comment cmt">#  :subject   =&gt; headliner,</span>
-123:       <span class="ruby-comment cmt">#  :predicate =&gt; RDF::FOAF['name'],</span>
-124:       <span class="ruby-comment cmt">#  :object    =&gt; @parsed_event[:headliner],</span>
-125:       <span class="ruby-comment cmt">#}</span>
-126:       
-127:       <span class="ruby-comment cmt">#event.product</span>
-128:       <span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:tags</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">tag</span><span class="ruby-operator">|</span>
-129:         <span class="ruby-identifier">product</span>= <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Node</span>.<span class="ruby-identifier">new</span>
-130:         <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
-131:           <span class="ruby-value">:subject</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@LFM</span>[<span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:id</span>]],
-132:           <span class="ruby-value">:predicate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@EVENT</span>[<span class="ruby-value str">'factor'</span>],
-133:           <span class="ruby-value">:object</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">product</span>,
-134:         }
-135:         <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
-136:           <span class="ruby-value">:subject</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">product</span>,
-137:           <span class="ruby-value">:predicate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@MO</span>[<span class="ruby-value str">'genre'</span>],
-138:           <span class="ruby-value">:object</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">tag</span>,
-139:         }
-140:       <span class="ruby-keyword kw">end</span>      
-141: 
-142:       <span class="ruby-comment cmt">#event.timeline</span>
-143:       <span class="ruby-identifier">timeline</span> = <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Node</span>.<span class="ruby-identifier">new</span>
-144:       <span class="ruby-identifier">date</span> = <span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:startDate</span>].<span class="ruby-identifier">to_s</span>
-145:       <span class="ruby-identifier">ar</span> = <span class="ruby-identifier">date</span>.<span class="ruby-identifier">split</span>
-146:       <span class="ruby-identifier">parsed_date</span> = <span class="ruby-constant">Date</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-node">&quot;#{ar[3]}-#{ar[2]}-#{ar[1]}&quot;</span>).<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-node">&quot;T#{ar[4]}&quot;</span> <span class="ruby-comment cmt">#to_f</span>
-147:       <span class="ruby-identifier">xsd_date</span> = <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Literal</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">parsed_date</span>, <span class="ruby-value">:datatype</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">XSD</span>.<span class="ruby-identifier">dateTime</span>)
-148:       <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
-149:         <span class="ruby-value">:subject</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@LFM</span>[<span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:id</span>]],
-150:         <span class="ruby-value">:predicate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@EVENT</span>[<span class="ruby-value str">'time'</span>], <span class="ruby-comment cmt">#same as OWL Time</span>
-151:         <span class="ruby-value">:object</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">timeline</span>
-152:       }
-153:       <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
-154:         <span class="ruby-value">:subject</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">timeline</span>,
-155:         <span class="ruby-value">:predicate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">RDF</span>[<span class="ruby-value str">'type'</span>],
-156:         <span class="ruby-value">:object</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@TL</span>[<span class="ruby-value str">'Instant'</span>]
-157:       }
-158:       <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
-159:         <span class="ruby-value">:subject</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">timeline</span>,
-160:         <span class="ruby-value">:predicate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@TL</span>[<span class="ruby-value str">'at'</span>],
-161:         <span class="ruby-value">:object</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">xsd_date</span>
-162:       }
-163:       
-164:       <span class="ruby-comment cmt">#event.place</span>
-165:       <span class="ruby-identifier">place</span> = <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Node</span>.<span class="ruby-identifier">new</span>
-166:       <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
-167:         <span class="ruby-value">:subject</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@LFM</span>[<span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:id</span>]],
-168:         <span class="ruby-value">:predicate</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@EVENT</span>[<span class="ruby-value str">'place'</span>],
-169:         <span class="ruby-value">:object</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">place</span>
-170:       }
-171:       <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
-172:         <span class="ruby-value">:subject</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">place</span>,
-173:         <span class="ruby-value">:predicate</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">RDF</span>[<span class="ruby-value str">'resource'</span>],
-174:         <span class="ruby-value">:object</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:place</span>][<span class="ruby-value">:website</span>]  <span class="ruby-comment cmt">#TODO check if exist</span>
-175:       }
-176:       <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
-177:         <span class="ruby-value">:subject</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">place</span>,
-178:         <span class="ruby-value">:predicate</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@GN</span>[<span class="ruby-value str">'name'</span>],
-179:         <span class="ruby-value">:object</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:place</span>][<span class="ruby-value">:name</span>]
-180:       }
-181:       <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
-182:         <span class="ruby-value">:subject</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">place</span>,
-183:         <span class="ruby-value">:predicate</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@GEO</span>[<span class="ruby-value str">'lat'</span>],
-184:         <span class="ruby-value">:object</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:place</span>][<span class="ruby-value">:geo</span>][<span class="ruby-value">:lat</span>]
-185:       }
-186:       <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
-187:         <span class="ruby-value">:subject</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">place</span>,
-188:         <span class="ruby-value">:predicate</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@GEO</span>[<span class="ruby-value str">'long'</span>],
-189:         <span class="ruby-value">:object</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:place</span>][<span class="ruby-value">:geo</span>][<span class="ruby-value">:long</span>]
-190:       }
-191:       <span class="ruby-keyword kw">return</span> <span class="ruby-ivar">@statements</span>    
-192:     <span class="ruby-keyword kw">end</span></pre>
+     <span class="ruby-comment cmt"># File lib/LastEvents/event.rb, line 54</span>
+ 54:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">to_statements</span>
+ 55:       <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">parse</span>
+ 56:       <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">create_vocabulary</span>
+ 57:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@parsed_event</span>.<span class="ruby-identifier">nil?</span> 
+ 58:         <span class="ruby-identifier">puts</span> <span class="ruby-value str">'nil event'</span>
+ 59:       <span class="ruby-keyword kw">end</span>
+ 60: 
+ 61:       <span class="ruby-ivar">@statements</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+ 62: 
+ 63:       <span class="ruby-comment cmt">#event</span>
+ 64:       <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
+ 65:         <span class="ruby-value">:subject</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@LFM</span>[<span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:id</span>]],
+ 66:         <span class="ruby-value">:predicate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">RDF</span>[<span class="ruby-value str">'type'</span>],
+ 67:         <span class="ruby-value">:object</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@EVENT</span>[<span class="ruby-value str">'Event'</span>]
+ 68:       }
+ 69: 
+ 70:       <span class="ruby-comment cmt">#event.title</span>
+ 71:       <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
+ 72:         <span class="ruby-value">:subject</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@LFM</span>[<span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:id</span>]],
+ 73:         <span class="ruby-value">:predicate</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">DC</span>[<span class="ruby-value str">'title'</span>],
+ 74:         <span class="ruby-value">:object</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:title</span>],
+ 75:       }
+ 76:       
+ 77:       <span class="ruby-comment cmt">#event.description</span>
+ 78:       <span class="ruby-comment cmt">#@statements &lt;&lt; {</span>
+ 79:       <span class="ruby-comment cmt">#  :subject    =&gt; @LFM[@parsed_event[:id]],</span>
+ 80:       <span class="ruby-comment cmt">#  :predicate  =&gt; RDF::DC['description'],</span>
+ 81:       <span class="ruby-comment cmt">#  :object     =&gt; @parsed_event[:description],</span>
+ 82:       <span class="ruby-comment cmt">#}</span>
+ 83: 
+ 84:       <span class="ruby-comment cmt">#event.agent     </span>
+ 85:       <span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:artists</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">artist</span><span class="ruby-operator">|</span>
+ 86:         <span class="ruby-identifier">agent</span> = <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Node</span>.<span class="ruby-identifier">new</span> <span class="ruby-comment cmt">#bnode</span>
+ 87:         <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
+ 88:           <span class="ruby-value">:subject</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@LFM</span>[<span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:id</span>]],
+ 89:           <span class="ruby-value">:predicate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@EVENT</span>[<span class="ruby-value str">'agent'</span>],
+ 90:           <span class="ruby-value">:object</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">agent</span>
+ 91:         }
+ 92:         <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
+ 93:           <span class="ruby-value">:subject</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">agent</span>,
+ 94:           <span class="ruby-value">:predicate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">RDF</span>[<span class="ruby-value str">'type'</span>],
+ 95:           <span class="ruby-value">:object</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@MO</span>[<span class="ruby-value str">'MusicArtist'</span>], <span class="ruby-comment cmt">#subclass of foaf:agent #TODO Change to Performer class???</span>
+ 96:         }
+ 97:         <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
+ 98:           <span class="ruby-value">:subject</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">agent</span>,
+ 99:           <span class="ruby-value">:predicate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">FOAF</span>[<span class="ruby-value str">'name'</span>],
+100:           <span class="ruby-value">:object</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">artist</span>,
+101:         }
+102:       <span class="ruby-keyword kw">end</span>
+103: 
+104:       <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
+105:         <span class="ruby-value">:subject</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@LFM</span>[<span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:id</span>]],
+106:         <span class="ruby-value">:predicate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@MO</span>[<span class="ruby-value str">'headliner'</span>],
+107:         <span class="ruby-value">:object</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:headliner</span>],
+108:       }
+109: 
+110:       <span class="ruby-comment cmt">#event.factor</span>
+111:       <span class="ruby-comment cmt">#headliner = RDF::Node.new</span>
+112:       <span class="ruby-comment cmt">#@statements &lt;&lt; {</span>
+113:       <span class="ruby-comment cmt">#  :subject   =&gt; @LFM[@parsed_event[:id]],</span>
+114:       <span class="ruby-comment cmt">#  :predicate =&gt; @EVENT['factor'],</span>
+115:       <span class="ruby-comment cmt">#  :object    =&gt; headliner,</span>
+116:       <span class="ruby-comment cmt">#}</span>
+117:       <span class="ruby-comment cmt">#@statements &lt;&lt; {</span>
+118:       <span class="ruby-comment cmt">#  :subject   =&gt; headliner,</span>
+119:       <span class="ruby-comment cmt">#  :predicate =&gt; RDF['type'],</span>
+120:       <span class="ruby-comment cmt">#  :object    =&gt; @MO['headliner'],</span>
+121:       <span class="ruby-comment cmt">#}</span>
+122:       <span class="ruby-comment cmt">#@statements &lt;&lt; {</span>
+123:       <span class="ruby-comment cmt">#  :subject   =&gt; headliner,</span>
+124:       <span class="ruby-comment cmt">#  :predicate =&gt; RDF::FOAF['name'],</span>
+125:       <span class="ruby-comment cmt">#  :object    =&gt; @parsed_event[:headliner],</span>
+126:       <span class="ruby-comment cmt">#}</span>
+127:       
+128:       <span class="ruby-comment cmt">#event.product</span>
+129:       <span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:tags</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">tag</span><span class="ruby-operator">|</span>
+130:         <span class="ruby-identifier">product</span>= <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Node</span>.<span class="ruby-identifier">new</span>
+131:         <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
+132:           <span class="ruby-value">:subject</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@LFM</span>[<span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:id</span>]],
+133:           <span class="ruby-value">:predicate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@EVENT</span>[<span class="ruby-value str">'factor'</span>],
+134:           <span class="ruby-value">:object</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">product</span>,
+135:         }
+136:         <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
+137:           <span class="ruby-value">:subject</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">product</span>,
+138:           <span class="ruby-value">:predicate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@MO</span>[<span class="ruby-value str">'genre'</span>],
+139:           <span class="ruby-value">:object</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">tag</span>,
+140:         }
+141:       <span class="ruby-keyword kw">end</span>      
+142: 
+143:       <span class="ruby-comment cmt">#event.timeline</span>
+144:       <span class="ruby-identifier">timeline</span> = <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Node</span>.<span class="ruby-identifier">new</span>
+145:       <span class="ruby-identifier">date</span> = <span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:startDate</span>].<span class="ruby-identifier">to_s</span>
+146:       <span class="ruby-identifier">ar</span> = <span class="ruby-identifier">date</span>.<span class="ruby-identifier">split</span>
+147:       <span class="ruby-identifier">parsed_date</span> = <span class="ruby-constant">Date</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-node">&quot;#{ar[3]}-#{ar[2]}-#{ar[1]}&quot;</span>).<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-node">&quot;T#{ar[4]}&quot;</span> <span class="ruby-comment cmt">#to_f</span>
+148:       <span class="ruby-identifier">xsd_date</span> = <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Literal</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">parsed_date</span>, <span class="ruby-value">:datatype</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">XSD</span>.<span class="ruby-identifier">dateTime</span>)
+149:       <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
+150:         <span class="ruby-value">:subject</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@LFM</span>[<span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:id</span>]],
+151:         <span class="ruby-value">:predicate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@EVENT</span>[<span class="ruby-value str">'time'</span>], <span class="ruby-comment cmt">#same as OWL Time</span>
+152:         <span class="ruby-value">:object</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">timeline</span>
+153:       }
+154:       <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
+155:         <span class="ruby-value">:subject</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">timeline</span>,
+156:         <span class="ruby-value">:predicate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">RDF</span>[<span class="ruby-value str">'type'</span>],
+157:         <span class="ruby-value">:object</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@TL</span>[<span class="ruby-value str">'Instant'</span>]
+158:       }
+159:       <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
+160:         <span class="ruby-value">:subject</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">timeline</span>,
+161:         <span class="ruby-value">:predicate</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@TL</span>[<span class="ruby-value str">'at'</span>],
+162:         <span class="ruby-value">:object</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">xsd_date</span>
+163:       }
+164:       
+165:       <span class="ruby-comment cmt">#event.place</span>
+166:       <span class="ruby-identifier">place</span> = <span class="ruby-constant">RDF</span><span class="ruby-operator">::</span><span class="ruby-constant">Node</span>.<span class="ruby-identifier">new</span>
+167:       <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
+168:         <span class="ruby-value">:subject</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@LFM</span>[<span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:id</span>]],
+169:         <span class="ruby-value">:predicate</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@EVENT</span>[<span class="ruby-value str">'place'</span>],
+170:         <span class="ruby-value">:object</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">place</span>
+171:       }
+172:       <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
+173:         <span class="ruby-value">:subject</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">place</span>,
+174:         <span class="ruby-value">:predicate</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">RDF</span>[<span class="ruby-value str">'resource'</span>],
+175:         <span class="ruby-value">:object</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:place</span>][<span class="ruby-value">:website</span>]  <span class="ruby-comment cmt">#TODO check if exist</span>
+176:       }
+177:       <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
+178:         <span class="ruby-value">:subject</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">place</span>,
+179:         <span class="ruby-value">:predicate</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@GN</span>[<span class="ruby-value str">'name'</span>],
+180:         <span class="ruby-value">:object</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:place</span>][<span class="ruby-value">:name</span>]
+181:       }
+182:       <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
+183:         <span class="ruby-value">:subject</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">place</span>,
+184:         <span class="ruby-value">:predicate</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@GEO</span>[<span class="ruby-value str">'lat'</span>],
+185:         <span class="ruby-value">:object</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:place</span>][<span class="ruby-value">:geo</span>][<span class="ruby-value">:lat</span>]
+186:       }
+187:       <span class="ruby-ivar">@statements</span> <span class="ruby-operator">&lt;&lt;</span> {
+188:         <span class="ruby-value">:subject</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">place</span>,
+189:         <span class="ruby-value">:predicate</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@GEO</span>[<span class="ruby-value str">'long'</span>],
+190:         <span class="ruby-value">:object</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@parsed_event</span>[<span class="ruby-value">:place</span>][<span class="ruby-value">:geo</span>][<span class="ruby-value">:long</span>]
+191:       }
+192:       <span class="ruby-keyword kw">return</span> <span class="ruby-ivar">@statements</span>    
+193:     <span class="ruby-keyword kw">end</span></pre>
 					</div>
 					
 				</div>

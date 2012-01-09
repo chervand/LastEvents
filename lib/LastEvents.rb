@@ -20,7 +20,7 @@ require_relative 'LastEvents/queries'
 # The application requests http://last.fm API for todays events
 # in defined location and converts XML response to RDF-N3
 # ontology (for more information view mi-swe_chervand.pdf).
-# XML and RDF files are stored at data/xml/ and data/rdf folders.
+# XML and RDF files are stored in data/xml/ and data/rdf folders.
 #
 # ==Runing
 #

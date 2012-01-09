@@ -1,14 +1,15 @@
 require 'nokogiri'
 require 'rdf/n3'
 module LastEvents
+  # Implements event, suitable for RDF serialization
   class Event
-    def initialize(event)
+    def initialize(event) #:nodoc:
       #puts event.to_s.encoding.name
       #puts event.to_s
       @xml_event = Nokogiri::XML(event.to_s, nil, 'UTF-8')
       #puts @xml_event.encoding
     end
-    
+    # Creates prefixes for RDF
     def create_vocabulary
       @LFM    = RDF::Vocabulary.new("http://www.last.fm/event/")
       @EVENT  = RDF::Vocabulary.new("http://purl.org/NET/c4dm/event.owl#")
@@ -17,7 +18,7 @@ module LastEvents
       @GN     = RDF::Vocabulary.new('http://www.geonames.org/ontology#')
       @GEO    = RDF::Vocabulary.new('http://www.w3.org/2003/01/geo/wgs84_pos#')
     end
-    
+    # Parses xml events to strings
     def parse #unicode problem is somewhere here
       artists = Array.new
       @xml_event.xpath('//artists/artist/text()').each do |artist|
@@ -49,7 +50,7 @@ module LastEvents
       }
       return @parsed_event
     end
-    
+    # Returns set of RDF statements
     def to_statements
       self.parse
       self.create_vocabulary
