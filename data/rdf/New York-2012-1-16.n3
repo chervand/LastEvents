@@ -1,0 +1,157 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.last.fm/event/3113271> a event:Event;
+   dc:title "Experiments in Opera";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Experiments in Opera"],
+     [ a mo:MusicArtist;
+     foaf:name "Georges Aperghis"],
+     [ a mo:MusicArtist;
+     foaf:name "Matthew Welch"],
+     [ a mo:MusicArtist;
+     foaf:name "Aaron Siegel"],
+     [ a mo:MusicArtist;
+     foaf:name "Jason Cady"];
+   event:place [ gn:name "(le) poisson rouge";
+     rdf:resource "http://lePoissonRouge.com";
+     geo:lat "40.728495";
+     geo:long "-73.999835"];
+   event:time [ a tl:Instant;
+     tl:at "2012-01-16T18:30:00"^^xsd:dateTime];
+   mo:headliner "Experiments in Opera" .
+
+<http://www.last.fm/event/3119284> a event:Event;
+   dc:title "Herman Dune";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Herman Dune"],
+     [ a mo:MusicArtist;
+     foaf:name "Herman Düne"],
+     [ a mo:MusicArtist;
+     foaf:name "Leif Vollebekk"];
+   event:factor [ mo:genre "indie"];
+   event:place [ gn:name "Joe's Pub";
+     rdf:resource "http://www.joespub.com";
+     geo:lat "40.728977";
+     geo:long "-73.992145"];
+   event:time [ a tl:Instant;
+     tl:at "2012-01-16T14:45:01"^^xsd:dateTime];
+   mo:headliner "Herman Dune" .
+
+<http://www.last.fm/event/3130849> a event:Event;
+   dc:title "A Tribute to  Stevie Wonder";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Higher Ground"];
+   event:factor [ mo:genre "melodic rock"],
+     [ mo:genre "under 2000 listeners"],
+     [ mo:genre "sweden"];
+   event:place [ gn:name "Highline Ballroom";
+     rdf:resource "http://www.highlineballroom.com/";
+     geo:lat "40.743128";
+     geo:long "-74.005666"];
+   event:time [ a tl:Instant;
+     tl:at "2012-01-16T19:00:00"^^xsd:dateTime];
+   mo:headliner "Higher Ground" .
+
+<http://www.last.fm/event/3149336> a event:Event;
+   dc:title "So is the Tongue Record Release/ Precious Metal Mondays";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "So Is The Tongue"],
+     [ a mo:MusicArtist;
+     foaf:name "So Hideous, My Love"],
+     [ a mo:MusicArtist;
+     foaf:name "Lazyblood"];
+   event:factor [ mo:genre "metal"];
+   event:place [ gn:name "Lit Lounge";
+     rdf:resource "http://litloungenyc.com";
+     geo:lat "40.727198";
+     geo:long "-73.989096"];
+   event:time [ a tl:Instant;
+     tl:at "2012-01-16T20:00:00"^^xsd:dateTime];
+   mo:headliner "So Is The Tongue" .
+
+<http://www.last.fm/event/3151799> a event:Event;
+   dc:title "Deep Space : Jan 16 : Francois K : Juan Aktins : Cielo";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Francois"],
+     [ a mo:MusicArtist;
+     foaf:name "Juan Aktins"];
+   event:factor [ mo:genre "jumpstyle"],
+     [ mo:genre "2007"],
+     [ mo:genre "under 2000 listeners"],
+     [ mo:genre "trance"],
+     [ mo:genre "freedom"],
+     [ mo:genre "set"],
+     [ mo:genre "dance"],
+     [ mo:genre "party"];
+   event:place [ gn:name "Cielo";
+     rdf:resource "http://www.cieloclub.com/";
+     geo:lat "40.741674";
+     geo:long "-74.007036"];
+   event:time [ a tl:Instant;
+     tl:at "2012-01-16T22:00:00"^^xsd:dateTime];
+   mo:headliner "Francois" .
+
+<http://www.last.fm/event/3158233> a event:Event;
+   dc:title "Phantom Family Halo";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Phantom Family Halo"],
+     [ a mo:MusicArtist;
+     foaf:name "Vensaire"],
+     [ a mo:MusicArtist;
+     foaf:name "ERAAS"],
+     [ a mo:MusicArtist;
+     foaf:name "Our Mountain"];
+   event:place [ gn:name "Glasslands Gallery";
+     rdf:resource "http://glasslands.blogspot.com/";
+     geo:lat "40.715192";
+     geo:long "-73.966414"];
+   event:time [ a tl:Instant;
+     tl:at "2012-01-16T20:30:00"^^xsd:dateTime];
+   mo:headliner "Phantom Family Halo" .
+
+<http://www.last.fm/event/3166646> a event:Event;
+   dc:title "Santigold";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Santigold"],
+     [ a mo:MusicArtist;
+     foaf:name "Spank Rock"];
+   event:factor [ mo:genre "electronic"],
+     [ mo:genre "underground hip-hop"],
+     [ mo:genre "indie"],
+     [ mo:genre "female vocalists"],
+     [ mo:genre "dub"],
+     [ mo:genre "hip-hop"],
+     [ mo:genre "alternative"],
+     [ mo:genre "hip hop"];
+   event:place [ gn:name "Music Hall of Williamsburg";
+     rdf:resource "http://www.musichallofwilliamsburg.com";
+     geo:lat "40.71942";
+     geo:long "-73.961678"];
+   event:time [ a tl:Instant;
+     tl:at "2012-01-16T21:00:00"^^xsd:dateTime];
+   mo:headliner "Santigold" .
+
+<http://www.last.fm/event/3166915> a event:Event;
+   dc:title "The Good Natured";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "The Good Natured"];
+   event:factor [ mo:genre "2011"],
+     [ mo:genre "indie"],
+     [ mo:genre "electronic"],
+     [ mo:genre "female vocalists"],
+     [ mo:genre "british"];
+   event:place [ gn:name "Mercury Lounge";
+     rdf:resource "http://www.mercuryloungenyc.com";
+     geo:lat "40.722036";
+     geo:long "-73.986806"];
+   event:time [ a tl:Instant;
+     tl:at "2012-01-16T18:30:00"^^xsd:dateTime];
+   mo:headliner "The Good Natured" .

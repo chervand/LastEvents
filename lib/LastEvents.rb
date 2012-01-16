@@ -44,10 +44,10 @@ module LastEvents
   # and options parser
   class Runner
     # Runs +parse+ method
-    def initialize(argv)
+    def initialize
       @location = nil
       @titles = false
-      parse(argv)
+      parse(ARGV)
     end
 
     # Parses comand line parameters
@@ -62,6 +62,9 @@ module LastEvents
         end
         opts.on("-t", "--titles", "Print titles") do
           @titles = true
+        end
+        opts.on("--test", "Run tests") do
+          require_relative '../test/test_lastevents'
         end
         opts.on("-h", "--help", "Show this message") do
           puts opts

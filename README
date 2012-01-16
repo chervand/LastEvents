@@ -30,3 +30,7 @@
 #  LastEvents/bin$ ruby LastEvents -l "New York" -t
 # or
 #  LastEvents/bin$ ruby LastEvents -l Prague
+#
+# ====Tests run
+#
+#  LastEvents/bin$ ruby LastEvents --test

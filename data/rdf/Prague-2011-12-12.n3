@@ -1,0 +1,108 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.last.fm/event/1954891> a event:Event;
+   dc:title "Hana Zagorová";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Hana Zagorová"];
+   event:factor [ mo:genre "czech"];
+   event:place [ gn:name "Palác Lucerna Velký Sál";
+     rdf:resource "http://www.lucpra.com";
+     geo:lat "50.08089";
+     geo:long "14.426416"];
+   event:time [ a tl:Instant;
+     tl:at "2011-12-12T19:00:00"^^xsd:dateTime];
+   mo:headliner "Hana Zagorová" .
+
+<http://www.last.fm/event/3109963> a event:Event;
+   dc:title "Teams";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Teams"],
+     [ a mo:MusicArtist;
+     foaf:name "Tempelhof"],
+     [ a mo:MusicArtist;
+     foaf:name "Beggars in a New Land"];
+   event:factor [ mo:genre "electronic"],
+     [ mo:genre "witch house"];
+   event:place [ gn:name "Final Club";
+     rdf:resource "http://www.finalclub.cz";
+     geo:lat "50.086381";
+     geo:long "14.440152"];
+   event:time [ a tl:Instant;
+     tl:at "2011-12-12T19:30:00"^^xsd:dateTime];
+   mo:headliner "Teams" .
+
+<http://www.last.fm/event/3112064> a event:Event;
+   dc:title "J. Marshall &amp; D. Robinson @ Belushi's";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "Jamie Marshall"],
+     [ a mo:MusicArtist;
+     foaf:name "Dani  Robinson"];
+   event:factor [ mo:genre "folk"],
+     [ mo:genre "singer-songwriter"];
+   event:place [ gn:name "Mosaic House";
+     rdf:resource "";
+     geo:lat "50.077505";
+     geo:long "14.418014"];
+   event:time [ a tl:Instant;
+     tl:at "2011-12-12T16:41:01"^^xsd:dateTime];
+   mo:headliner "Jamie Marshall" .
+
+<http://www.last.fm/event/3120032> a event:Event;
+   dc:title "Free Mondays Live w/ HC3";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "HC3"];
+   event:factor [ mo:genre "czech"],
+     [ mo:genre "hardcore"],
+     [ mo:genre "crossover"],
+     [ mo:genre "alternative"];
+   event:place [ gn:name "Roxy";
+     rdf:resource "http://www.roxy.cz";
+     geo:lat "50.090681";
+     geo:long "14.425809"];
+   event:time [ a tl:Instant;
+     tl:at "2011-12-12T11:55:01"^^xsd:dateTime];
+   mo:headliner "HC3" .
+
+<http://www.last.fm/event/3124403> a event:Event;
+   dc:title "LaFest 2011";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "F.O.B."],
+     [ a mo:MusicArtist;
+     foaf:name "Fake It"],
+     [ a mo:MusicArtist;
+     foaf:name "The Vacant Eyes"],
+     [ a mo:MusicArtist;
+     foaf:name "Morhold"],
+     [ a mo:MusicArtist;
+     foaf:name "SWYF"];
+   event:place [ gn:name "Modrá Vopice";
+     rdf:resource "http://www.modravopice.eu/";
+     geo:lat "50.101325";
+     geo:long "14.488952"];
+   event:time [ a tl:Instant;
+     tl:at "2011-12-12T14:33:01"^^xsd:dateTime];
+   mo:headliner "F.O.B." .
+
+<http://www.last.fm/event/3139169> a event:Event;
+   dc:title "EKG - Surrealistické Vánoce";
+   event:agent [ a mo:MusicArtist;
+     foaf:name "VOBEZDUD"];
+   event:factor [ mo:genre "folk"],
+     [ mo:genre "czech"],
+     [ mo:genre "alternative"],
+     [ mo:genre "funny"];
+   event:place [ gn:name "Divadlo Archa";
+     rdf:resource "http://www.archatheatre.cz/";
+     geo:lat "50.089489";
+     geo:long "14.434094"];
+   event:time [ a tl:Instant;
+     tl:at "2011-12-12T20:00:00"^^xsd:dateTime];
+   mo:headliner "VOBEZDUD" .

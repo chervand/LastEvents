@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" location="Praha, Czech Republic" total="6">
+  <event>
+  <id>3120032</id>
+  <title>Free Mondays Live w/ HC3</title>
+  <artists>
+    <artist>HC3</artist>
+    <headliner>HC3</headliner>
+  </artists>
+    <venue>
+    <id>8779248</id>
+    <name>Roxy</name>
+    <location>
+      <city>Praha</city>
+      <country>Czech Republic</country>
+      <street>Dlouhá 33</street>
+      <postalcode>110 00</postalcode>
+      <geo:point>
+         <geo:lat>50.090681</geo:lat>
+         <geo:long>14.425809</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8779248+Roxy</url>
+    <website>http://www.roxy.cz</website>
+    <phonenumber/>
+    <image size="small">http://userserve-ak.last.fm/serve/34/249642.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/249642.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/249642.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/249642.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/249642/Roxy.jpg</image>
+  </venue>    <startDate>Mon, 12 Dec 2011 11:55:01</startDate>
+  <description/>
+  <image size="small">http://userserve-ak.last.fm/serve/34/253757.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/253757.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/253757.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/253757.jpg</image>
+  <attendance>0</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3120032</tag>    
+  <url>http://www.last.fm/event/3120032+Free+Mondays+Live+w-+HC3</url>
+  <website/>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>czech</tag>
+      <tag>hardcore</tag>
+      <tag>crossover</tag>
+      <tag>alternative</tag>
+    </tags>
+    </event>
+  <event>
+  <id>3124403</id>
+  <title>LaFest 2011</title>
+  <artists>
+    <artist>F.O.B.</artist>
+    <artist>Fake It</artist>
+    <artist>The Vacant Eyes</artist>
+    <artist>Morhold</artist>
+    <artist>SWYF</artist>
+    <headliner>F.O.B.</headliner>
+  </artists>
+    <venue>
+    <id>8906746</id>
+    <name>Modrá Vopice</name>
+    <location>
+      <city>Praha</city>
+      <country>Czech Republic</country>
+      <street>Spojovací 1901/12</street>
+      <postalcode>19000</postalcode>
+      <geo:point>
+         <geo:lat>50.101325</geo:lat>
+         <geo:long>14.488952</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8906746+Modr%C3%A1+Vopice</url>
+    <website>http://www.modravopice.eu/</website>
+    <phonenumber>+420777665516‎</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/13120431.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/13120431.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/13120431.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/13120431.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/13120431/Modr+Vopice+IMGP0064JPG.jpg</image>
+  </venue>    <startDate>Mon, 12 Dec 2011 14:33:01</startDate>
+  <description/>
+  <image size="small">http://userserve-ak.last.fm/serve/34/14302127.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/14302127.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/14302127.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/14302127.jpg</image>
+  <attendance>4</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3124403</tag>    
+  <url>http://www.last.fm/event/3124403+LaFest+2011</url>
+  <website/>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    </event>
+  <event>
+  <id>3112064</id>
+  <title>J. Marshall &amp; D. Robinson @ Belushi's</title>
+  <artists>
+    <artist>Jamie Marshall</artist>
+    <artist>Dani  Robinson</artist>
+    <headliner>Jamie Marshall</headliner>
+  </artists>
+    <venue>
+    <id>9135609</id>
+    <name>Mosaic House</name>
+    <location>
+      <city>Praha</city>
+      <country>Czech Republic</country>
+      <street/>
+      <postalcode/>
+      <geo:point>
+         <geo:lat>50.077505</geo:lat>
+         <geo:long>14.418014</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/9135609+Mosaic+House</url>
+    <website/>
+    <phonenumber/>
+    <image size="small"/>
+	<image size="medium"/>
+	<image size="large"/>
+	<image size="extralarge"/>
+	<image size="mega"/>
+  </venue>    <startDate>Mon, 12 Dec 2011 16:41:01</startDate>
+  <description/>
+  <image size="small">http://userserve-ak.last.fm/serve/34/377925.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/377925.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/377925.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/377925.jpg</image>
+  <attendance>0</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3112064</tag>    
+  <url>http://www.last.fm/event/3112064+J.+Marshall+-+D.+Robinson+%40+Belushi%27s</url>
+  <website/>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>singer-songwriter</tag>
+    </tags>
+    </event>
+  <event>
+  <id>1954891</id>
+  <title>Hana Zagorová</title>
+  <artists>
+    <artist>Hana Zagorová</artist>
+    <headliner>Hana Zagorová</headliner>
+  </artists>
+    <venue>
+    <id>9092347</id>
+    <name>Palác Lucerna Velký Sál</name>
+    <location>
+      <city>Praha</city>
+      <country>Czech Republic</country>
+      <street>Štěpánská 61</street>
+      <postalcode>11000</postalcode>
+      <geo:point>
+         <geo:lat>50.08089</geo:lat>
+         <geo:long>14.426416</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/9092347+Pal%C3%A1c+Lucerna+Velk%C3%BD+S%C3%A1l</url>
+    <website>http://www.lucpra.com</website>
+    <phonenumber/>
+    <image size="small">http://userserve-ak.last.fm/serve/34/40652781.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/40652781.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/40652781.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/40652781.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/40652781/Palc+Lucerna+Velk+Sl+Lucerna.jpg</image>
+  </venue>    <startDate>Mon, 12 Dec 2011 19:00:00</startDate>
+  <description/>
+  <image size="small">http://userserve-ak.last.fm/serve/34/209332.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/209332.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/209332.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/209332.jpg</image>
+  <attendance>1</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=1954891</tag>    
+  <url>http://www.last.fm/event/1954891+Hana+Zagorov%C3%A1</url>
+  <website>http://zagorovahana.cz/modules.php?name=Content&amp;pa=showpage&amp;pid=654</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>czech</tag>
+    </tags>
+    </event>
+  <event>
+  <id>3109963</id>
+  <title>Teams</title>
+  <artists>
+    <artist>Teams</artist>
+    <artist>Tempelhof</artist>
+    <artist>Beggars in a New Land</artist>
+    <headliner>Teams</headliner>
+  </artists>
+    <venue>
+    <id>9068955</id>
+    <name>Final Club</name>
+    <location>
+      <city>Praha</city>
+      <country>Czech Republic</country>
+      <street>Příbenická 8</street>
+      <postalcode>130 00</postalcode>
+      <geo:point>
+         <geo:lat>50.086381</geo:lat>
+         <geo:long>14.440152</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/9068955+Final+Club</url>
+    <website>http://www.finalclub.cz</website>
+    <phonenumber/>
+    <image size="small"/>
+	<image size="medium"/>
+	<image size="large"/>
+	<image size="extralarge"/>
+	<image size="mega"/>
+  </venue>    <startDate>Mon, 12 Dec 2011 19:30:00</startDate>
+  <description><![CDATA[<div class="bbcode">AMDISCS/A.M.180 &amp; CREEPY TEEPEE festival present<br /><br />AMDISCS WINTER SHOWCASE @ PRAGUE<br /><br />w/<br /><br />TEAMS (US, AMDISCS / Mexican Summer)<br /><a href="http://teeeams.bandcamp.com/" rel="nofollow">http://teeeams.bandcamp.com/</a><br /><a href="http://soundcloud.com/teams" rel="nofollow">http://soundcloud.com/teams</a><br /><a href="http://asdf.us/teams/" rel="nofollow">http://asdf.us/teams/</a><br /><a href="http://asdf.us/jordan/" rel="nofollow">http://asdf.us/jordan/</a><br /><br />BEGGARS IN A NEW LAND (US, AMDISCS / Crash Symbols) poslední vystoupení beggars v preze před návratem zpet do statů !<br /><a href="http://www.myspace.com/beggarsinanewland" rel="nofollow">http://www.myspace.com/beggarsinanewland</a><br /><a href="http://soundcloud.com/user8482482" rel="nofollow">http://soundcloud.com/user8482482</a><br /><br />TEMPELHOF (CZ, AMDISCS)<br /><a href="http://cultoftempelhof.tumblr.com/" rel="nofollow">http://cultoftempelhof.tumblr.com/</a><br /><a href="http://soundcloud.com/amdiscs/sets/tempelhof-tempelhof-2011" rel="nofollow">http://soundcloud.com/amdiscs/sets/tempelhof-tempelhof-2011</a><br /><br />A.M.180 / AMDISCS Djs<br /><br />DJ Sami Nagasaki (Wurst Eater)<br /><br /><br />AMDISCS: Futures Reserve Label / <a href="http://www.amdiscs.com" rel="nofollow">www.amdiscs.com</a><br />A.M.180 Collective / <a href="http://www.am180.org" rel="nofollow">www.am180.org</a></div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/67164204.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/67164204.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/67164204.png</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/67164204.png</image>
+  <attendance>22</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3109963</tag>    
+  <url>http://www.last.fm/event/3109963+Teams+at+Final+Club+on+12+December+2011</url>
+  <website>http://www.facebook.com/event.php?eid=275755379128611</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>electronic</tag>
+      <tag>witch house</tag>
+    </tags>
+    </event>
+  <event>
+  <id>3139169</id>
+  <title>EKG - Surrealistické Vánoce</title>
+  <artists>
+    <artist>VOBEZDUD</artist>
+    <headliner>VOBEZDUD</headliner>
+  </artists>
+    <venue>
+    <id>8784125</id>
+    <name>Divadlo Archa</name>
+    <location>
+      <city>Praha</city>
+      <country>Czech Republic</country>
+      <street>Na Poříčí 26</street>
+      <postalcode>110 00</postalcode>
+      <geo:point>
+         <geo:lat>50.089489</geo:lat>
+         <geo:long>14.434094</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8784125+Divadlo+Archa</url>
+    <website>http://www.archatheatre.cz/</website>
+    <phonenumber>+420 221 716 333</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/32292.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/32292.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/32292.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/32292.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/32292/Divadlo+Archa.jpg</image>
+  </venue>    <startDate>Mon, 12 Dec 2011 20:00:00</startDate>
+  <description/>
+  <image size="small">http://userserve-ak.last.fm/serve/34/58061371.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/58061371.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/58061371.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/58061371.jpg</image>
+  <attendance>2</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3139169</tag>    
+  <url>http://www.last.fm/event/3139169+EKG+-+Surrealistick%C3%A9+V%C3%A1noce</url>
+  <website/>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>czech</tag>
+      <tag>alternative</tag>
+      <tag>funny</tag>
+    </tags>
+    </event>
+</events>

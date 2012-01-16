@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" location="New York, United States" total="8">
+  <event>
+  <id>3119284</id>
+  <title>Herman Dune</title>
+  <artists>
+    <artist>Herman Dune</artist>
+    <artist>Herman Düne</artist>
+    <artist>Leif Vollebekk</artist>
+    <headliner>Herman Dune</headliner>
+  </artists>
+    <venue>
+    <id>8778940</id>
+    <name>Joe's Pub</name>
+    <location>
+      <city>New York</city>
+      <country>United States</country>
+      <street>425 Lafayette St</street>
+      <postalcode>10003</postalcode>
+      <geo:point>
+         <geo:lat>40.728977</geo:lat>
+         <geo:long>-73.992145</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8778940+Joe%27s+Pub</url>
+    <website>http://www.joespub.com</website>
+    <phonenumber>(212) 539-8770</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/5743640.gif</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/5743640.gif</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/5743640.gif</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/5743640.gif</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/5743640/Joes+Pub+public2.gif</image>
+  </venue>    <startDate>Mon, 16 Jan 2012 14:45:01</startDate>
+  <description/>
+  <image size="small">http://userserve-ak.last.fm/serve/34/42950145.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/42950145.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/42950145.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/42950145.jpg</image>
+  <attendance>5</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3119284</tag>    
+  <url>http://www.last.fm/event/3119284+Herman+Dune+at+Joe%27s+Pub+on+16+January+2012</url>
+  <website/>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>indie</tag>
+    </tags>
+    </event>
+  <event>
+  <id>3166915</id>
+  <title>The Good Natured</title>
+  <artists>
+    <artist>The Good Natured</artist>
+    <headliner>The Good Natured</headliner>
+  </artists>
+    <venue>
+    <id>8899833</id>
+    <name>Mercury Lounge</name>
+    <location>
+      <city>New York</city>
+      <country>United States</country>
+      <street>217 East Houston Street</street>
+      <postalcode>10002</postalcode>
+      <geo:point>
+         <geo:lat>40.722036</geo:lat>
+         <geo:long>-73.986806</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8899833+Mercury+Lounge</url>
+    <website>http://www.mercuryloungenyc.com</website>
+    <phonenumber>+1-(212)-260-4700</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/5163255.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/5163255.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/5163255.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/5163255.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/5163255/Mercury+Lounge+logo.jpg</image>
+  </venue>    <startDate>Mon, 16 Jan 2012 18:30:00</startDate>
+  <description><![CDATA[<div class="bbcode"><a href="http://www.last.fm/music/The+Good+Natured" class="bbcode_artist">The Good Natured</a></div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/62511341.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/62511341.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/62511341.png</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/62511341.png</image>
+  <attendance>1</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3166915</tag>    
+  <url>http://www.last.fm/event/3166915+The+Good+Natured+at+Mercury+Lounge+on+16+January+2012</url>
+  <website/>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>2011</tag>
+      <tag>indie</tag>
+      <tag>electronic</tag>
+      <tag>female vocalists</tag>
+      <tag>british</tag>
+    </tags>
+    </event>
+  <event>
+  <id>3113271</id>
+  <title>Experiments in Opera</title>
+  <artists>
+    <artist>Experiments in Opera</artist>
+    <artist>Georges Aperghis</artist>
+    <artist>Matthew Welch</artist>
+    <artist>Aaron Siegel</artist>
+    <artist>Jason Cady</artist>
+    <headliner>Experiments in Opera</headliner>
+  </artists>
+    <venue>
+    <id>8931541</id>
+    <name>(le) poisson rouge</name>
+    <location>
+      <city>New York</city>
+      <country>United States</country>
+      <street>158 Bleecker Street</street>
+      <postalcode>10012</postalcode>
+      <geo:point>
+         <geo:lat>40.728495</geo:lat>
+         <geo:long>-73.999835</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8931541+%28le%29+poisson+rouge</url>
+    <website>http://lePoissonRouge.com</website>
+    <phonenumber>212-505-FISH</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/10368285.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/10368285.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/10368285.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/10368285.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/10368285/le+poisson+rouge+logoredinblack.jpg</image>
+  </venue>    <startDate>Mon, 16 Jan 2012 18:30:00</startDate>
+  <description><![CDATA[<div class="bbcode">Experiments in Opera: <br />featuring excerpts of operas by Matthew Welch, Jason Cady, Georges Aperghis, and Aaron Siegel<br />1.16.11<br />$20 GA // $15 student<br /><br />6:30pm doors // 7:30pm show // All Ages<br /><br />EXPERIMENTS IN OPERAfeaturing excerpts of operas by Matthew Welch, Jason Cady, Georges Aperghis and Aaron Siegel <br />Experiments in Opera is a composer- and performer-driven festival, featuring recent and new works with unorthodox answers to the traditional questions about how to connect words, story and music. This inaugural event at Le Poisson Rouge on January 16, 2012 will feature excerpts from four works: <br /><br />Borges and the Other by Matthew Welch Happiness is the Problem with music by Jason Cady; libretto by Nadia Berenstein, Jason Cady, and Amy Cimini; graphics by Nadia Berenstein Sextour: l'origine des especes with a libretto by François Reginault and Georges Aperghis (based on texts by Charles Darwin and Stephen Jay Gould) and music by George Aperghis Brother Brother with words and music by Aaron Siegel. <br /><br />1. Borges and the Other Music by Matthew Welch <br />Featuring:<br />Joe Bergen, vibraphone<br />Tomas Fujiwara, drumset<br />Ian Riggs, bass guitar<br />Mary Halvorson, guitar<br />Leah Paul, flute <br /><br />2. Happiness is the ProblemMusic by Jason Cady; libretto by Nadia Berenstein, Jason Cady, and Amy Ciminigraphics by Nadia Berenstein <br />Featuring:<br />Lisa Komara, mezzo-soprano<br />Mimi Watkins, soprano<br />Megan Schubert, soprano <br /><br />3. Sextour: l'origine des especes with a libretto by François Reginault and Georges Aperghis (based on texts by Charles Darwin and Stephen Jay Gould) music by George Aperghis, artistic <br />Featuring:<br />Megan Schubert, Sop I <br />Christie Finn, Sop II <br />Gelsey Bell, Sop III<br />Silvie Jensen, Mezzo<br />Amirtha Kidambi, Contralto<br />Émilie Girard-Charest, Cello <br />Jeremy Bloom, Director <br />Kryssy Wright, Lighting Designer<br />Nick DeMaison, Rehearsal Conductor<br /><br />4. Brother BrotherWords and Music by Aaron Siegel <br />Featuring:<br />Michele Kennedy, soprano<br />Patrick Fennig, countertenor<br />Joe Bergen, vibraphone<br />Al Cerulo, vibraphone<br /><br />For more information or to purchase tickets, please visit<br /><a href="http://lepoissonrouge.com/events/view/2809" rel="nofollow">http://lepoissonrouge.com/events/view/2809</a></div>]]></description>
+  <image size="small"/>
+  <image size="medium"/>
+  <image size="large"/>
+  <image size="extralarge"/>
+  <attendance>0</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3113271</tag>    
+  <url>http://www.last.fm/event/3113271+Experiments+in+Opera+at+%28le%29+poisson+rouge+on+16+January+2012</url>
+  <website>http://lepoissonrouge.com/events/view/2809</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    </event>
+  <event>
+  <id>3130849</id>
+  <title>A Tribute to  Stevie Wonder</title>
+  <artists>
+    <artist>Higher Ground</artist>
+    <headliner>Higher Ground</headliner>
+  </artists>
+    <venue>
+    <id>8825122</id>
+    <name>Highline Ballroom</name>
+    <location>
+      <city>New York</city>
+      <country>United States</country>
+      <street>431 West 16th Street</street>
+      <postalcode>10011</postalcode>
+      <geo:point>
+         <geo:lat>40.743128</geo:lat>
+         <geo:long>-74.005666</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8825122+Highline+Ballroom</url>
+    <website>http://www.highlineballroom.com/</website>
+    <phonenumber>(212) 414-5994</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/23401189.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/23401189.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/23401189.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/23401189.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/23401189/Highline+Ballroom+stage_1.jpg</image>
+  </venue>    <startDate>Mon, 16 Jan 2012 19:00:00</startDate>
+  <description><![CDATA[<div class="bbcode">Doors open @ 5PM<br />Tickets $15.00 in advance<br />$20.00 day of show. <br /><br /><br />Full dinner menu available<br />General Admission Seating<br />First come, first seated<br />$10 min. per person at tables<br />All ages<br /><br /><br />Packages &amp; Discounts for Large Groups of 10 or more (Subject to Availability)</div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/36246735.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/36246735.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/36246735.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/36246735.jpg</image>
+  <attendance>0</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3130849</tag>    
+  <url>http://www.last.fm/event/3130849+A+Tribute+to++Stevie+Wonder</url>
+  <website>http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=4129795&amp;REFID=lfm&amp;utm_source=lastfm&amp;utm_medium=eventlink%2B&amp;utm_campaign=stevie%2Bwonder</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>melodic rock</tag>
+      <tag>under 2000 listeners</tag>
+      <tag>sweden</tag>
+    </tags>
+    </event>
+  <event>
+  <id>3149336</id>
+  <title>So is the Tongue Record Release/ Precious Metal Mondays</title>
+  <artists>
+    <artist>So Is The Tongue</artist>
+    <artist>So Hideous, My Love</artist>
+    <artist>Lazyblood</artist>
+    <headliner>So Is The Tongue</headliner>
+  </artists>
+    <venue>
+    <id>8906339</id>
+    <name>Lit Lounge</name>
+    <location>
+      <city>New York, NY</city>
+      <country>United States</country>
+      <street>93 2nd Ave.</street>
+      <postalcode>10003</postalcode>
+      <geo:point>
+         <geo:lat>40.727198</geo:lat>
+         <geo:long>-73.989096</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8906339+Lit+Lounge</url>
+    <website>http://litloungenyc.com</website>
+    <phonenumber>(212)777-7987</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/6533795.gif</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/6533795.gif</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/6533795.gif</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/6533795.gif</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/6533795/Lit+Lounge+Logo.gif</image>
+  </venue>    <startDate>Mon, 16 Jan 2012 20:00:00</startDate>
+  <description/>
+  <image size="small">http://userserve-ak.last.fm/serve/34/72095542.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/72095542.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/72095542.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/72095542.jpg</image>
+  <attendance>0</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3149336</tag>    
+  <url>http://www.last.fm/event/3149336+So+is+the+Tongue+Record+Release-+Precious+Metal+Mondays</url>
+  <website/>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>metal</tag>
+    </tags>
+    </event>
+  <event>
+  <id>3158233</id>
+  <title>Phantom Family Halo</title>
+  <artists>
+    <artist>Phantom Family Halo</artist>
+    <artist>Vensaire</artist>
+    <artist>ERAAS</artist>
+    <artist>Our Mountain</artist>
+    <headliner>Phantom Family Halo</headliner>
+  </artists>
+    <venue>
+    <id>8802455</id>
+    <name>Glasslands Gallery</name>
+    <location>
+      <city>Brooklyn</city>
+      <country>United States</country>
+      <street>289 Kent Ave</street>
+      <postalcode>11211</postalcode>
+      <geo:point>
+         <geo:lat>40.715192</geo:lat>
+         <geo:long>-73.966414</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8802455+Glasslands+Gallery</url>
+    <website>http://glasslands.blogspot.com/</website>
+    <phonenumber>+1-(718)-599-1450</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/9326.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/9326.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/9326.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/9326.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/9326/Glasslands+Gallery.jpg</image>
+  </venue>    <startDate>Mon, 16 Jan 2012 20:30:00</startDate>
+  <description><![CDATA[<div class="bbcode"><a href="http://www.popgunbooking.com/event/84921/" rel="nofollow">http://www.popgunbooking.com/event/84921/</a><br /><br />21+, Doors: 8:30pm, $10, TICKETS: <a href="http://www.ticketfly.com/purchase/event/84921" rel="nofollow">http://www.ticketfly.com/purchase/event/84921</a></div>]]></description>
+  <image size="small"/>
+  <image size="medium"/>
+  <image size="large"/>
+  <image size="extralarge"/>
+  <attendance>2</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3158233</tag>    
+  <url>http://www.last.fm/event/3158233+Phantom+Family+Halo</url>
+  <website/>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    </event>
+  <event>
+  <id>3166646</id>
+  <title>Santigold</title>
+  <artists>
+    <artist>Santigold</artist>
+    <artist>Spank Rock</artist>
+    <headliner>Santigold</headliner>
+  </artists>
+    <venue>
+    <id>8851989</id>
+    <name>Music Hall of Williamsburg</name>
+    <location>
+      <city>Brooklyn</city>
+      <country>United States</country>
+      <street>66 N 6th St</street>
+      <postalcode>11211</postalcode>
+      <geo:point>
+         <geo:lat>40.71942</geo:lat>
+         <geo:long>-73.961678</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8851989+Music+Hall+of+Williamsburg</url>
+    <website>http://www.musichallofwilliamsburg.com</website>
+    <phonenumber>(718) 486-5400</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/50741161.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/50741161.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/50741161.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/50741161.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/50741161/Music+Hall+of+Williamsburg+mhow.jpg</image>
+  </venue>    <startDate>Mon, 16 Jan 2012 21:00:00</startDate>
+  <description><![CDATA[<div class="bbcode">2nd Show Added by Overwhelming Demand<br /><br />Doors 8pm / Show 9pm<br />$25<br />18+</div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/28101003.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/28101003.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/28101003.png</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/28101003.png</image>
+  <attendance>5</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3166646</tag>    
+  <url>http://www.last.fm/event/3166646+Santigold+at+Music+Hall+of+Williamsburg+on+16+January+2012</url>
+  <website>http://www.musichallofwilliamsburg.com/event/89699</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>electronic</tag>
+      <tag>underground hip-hop</tag>
+      <tag>indie</tag>
+      <tag>female vocalists</tag>
+      <tag>dub</tag>
+      <tag>hip-hop</tag>
+      <tag>alternative</tag>
+      <tag>hip hop</tag>
+    </tags>
+    </event>
+  <event>
+  <id>3151799</id>
+  <title>Deep Space : Jan 16 : Francois K : Juan Aktins : Cielo</title>
+  <artists>
+    <artist>Francois</artist>
+    <artist>Juan Aktins</artist>
+    <headliner>Francois</headliner>
+  </artists>
+    <venue>
+    <id>8807009</id>
+    <name>Cielo</name>
+    <location>
+      <city>New York</city>
+      <country>United States</country>
+      <street>18 Little W 12th St</street>
+      <postalcode>10014</postalcode>
+      <geo:point>
+         <geo:lat>40.741674</geo:lat>
+         <geo:long>-74.007036</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8807009+Cielo</url>
+    <website>http://www.cieloclub.com/</website>
+    <phonenumber>212-645-5700</phonenumber>
+    <image size="small"/>
+	<image size="medium"/>
+	<image size="large"/>
+	<image size="extralarge"/>
+	<image size="mega"/>
+  </venue>    <startDate>Mon, 16 Jan 2012 22:00:00</startDate>
+  <description><![CDATA[<div class="bbcode">[NYC] Deep Space : January 16th : Francois K &amp; Juan Aktins : Cielo<br /><br />Deep Space is an adventure into future dub, spacey vibes, and abstract grooves. It’s the kind of event where sounds of all origins are played, not limited to one particular format but always sharing this common link of dub, whether improvised live at the mixing console or played from original recordings.<br /><br />*January 16*<br />•JUAN AKTINS/ François K.<br /><br />UPCOMING DATES:<br />*January 23 &amp; 30*<br />•François K. all night<br /><br />To get free admission, join DEEP SPACE SELECTOR, by sending an email to <a href="mailto:selector@deepspacenyc.com">selector@deepspacenyc.com</a>. <br /><br />When you receive our weekly eflyer, Deep Space Selector, simply print out flyer for free admission to our party before 11pm on most Mondays. <br />Selector members also receive discounts to special events, win tickets and music, and generally get to fly in our spaceship with more leg room<br /><br />Cielo, 18 Little W. 12th Street, NYC<br />between Washington St. and 9th Ave <br />A C E 1 9 2 or 3 at 14th St; L at 8th Ave <br /><br />$15 CASH at the door or $12 with this printed eflyer<br />10pm – 3:30am<br />21+ with photo ID <br /><br />NO dress code - just an open mind<br /><br />Visit us on Facebook:<br /><a href="http://www.facebook.com/pages/New-York-NY/Deep-Space/38308587559" rel="nofollow">www.facebook.com/pages/New-York-NY/Deep-Space/38308587559</a> <br /><br />Visit our website:<br /><a href="http://www.deepspacenyc.com" rel="nofollow">www.deepspacenyc.com</a><br /><br />Check out our myspace page:<br /><a href="http://www.myspace.com/deepspacenyc" rel="nofollow">www.myspace.com/deepspacenyc</a><br /><br />For dub-inspired music from Deep Space Media, please visit: <br /><a href="http://www.wavemusic.com/wave-label/9" rel="nofollow">www.wavemusic.com/wave-label/9</a></div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/15275295.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/15275295.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/15275295.jpg</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/15275295.jpg</image>
+  <attendance>1</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3151799</tag>    
+  <url>http://www.last.fm/event/3151799+Deep+Space+%3A+Jan+16+%3A+Francois+K+%3A+Juan+Aktins+%3A+Cielo</url>
+  <website/>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>jumpstyle</tag>
+      <tag>2007</tag>
+      <tag>under 2000 listeners</tag>
+      <tag>trance</tag>
+      <tag>freedom</tag>
+      <tag>set</tag>
+      <tag>dance</tag>
+      <tag>party</tag>
+    </tags>
+    </event>
+</events>

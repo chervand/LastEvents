@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
 require '../lib/LastEvents'
-runner = LastEvents::Runner.new(ARGV)
+runner = LastEvents::Runner.new
 runner.run
